@@ -1,78 +1,90 @@
-# Road Traffic Classification from Public Map Data
+# Global Road Traffic Classification from Public Map Data
 
 Assignment submission by Karanvir Singh.
 
-A lightweight, fully transparent algorithm that classifies roads as Low, Moderate, or High traffic using only free public data. It was applied to every named road in a Cambridge / Allston, MA study area (1,783 OSM road segments, 667 named roads) and runs end to end in under a second on a laptop. A 20 road sample table is in `results.md`, the full output is in `results.csv`, and `index.html` is an interactive map of the whole study area.
+A lightweight, fully transparent algorithm that classifies roads as Low, Moderate, or High traffic using only free public data, and runs on **any city on Earth by name**:
 
-## 1. Data sources (all public, all free)
+```
+python3 classify.py "Nairobi, Kenya"
+python3 classify.py "Tokyo, Japan"
+python3 classify.py --bbox 42.360,-71.130,42.390,-71.090 --name "Cambridge, USA"
+```
 
-| Source | What it provides | Access |
-|---|---|---|
-| OpenStreetMap via the Overpass API | Road class (`highway` tag), lane counts, speed limits, one way flags, geometry | Free HTTP API, no key |
-| OSM bus route relations | Which roads carry transit service (MBTA routes are mapped as relations) | Same Overpass query |
-| OSM land use and amenity polygons | Commercial, retail, industrial areas plus universities, hospitals, schools (trip generators) | Same Overpass query |
-| Published traffic counts (MassDOT Transportation Data Management System, or any state DOT equivalent) | Ground truth AADT for spot checking thresholds | Free download, used for calibration only, not required at runtime |
+It has been applied to eight cities on five continents (Cambridge USA, London, Paris, Tokyo, Nairobi, Sao Paulo, Mumbai, Sydney), about 84,000 road segments in total. Classification itself takes about a tenth of a second per city; the one time data fetch is a few seconds. `index.html` is an interactive world map with a city picker. Per city outputs live under `data/<city>/`: `results.csv` (full), `results.md` (20 road sample table), `map.json` (map data).
 
-Everything the classifier needs at runtime comes from three cached Overpass queries, so the method works anywhere OSM has coverage, which is essentially everywhere.
+## 1. Data sources (all public, all free, no API keys)
 
-## 2. Features
+| Source | What it provides |
+|---|---|
+| OpenStreetMap via the Overpass API (with mirror fallback) | Road class, lanes, speed limits, one way flags, surface, geometry |
+| OSM transit route relations (bus, trolleybus, tram, share taxi) | Which roads carry transit service, a proven demand signal that works from Boston's MBTA to Nairobi's matatus |
+| OSM land use and amenity polygons | Commercial, retail, industrial areas plus universities, hospitals, schools, marketplaces (trip generators) |
+| Nominatim geocoder | City name to bounding box |
+| Published traffic counts (any DOT's AADT data) | Ground truth for calibrating thresholds; used for spot checks only, not required at runtime |
 
-Per road segment:
+One Overpass request per city fetches everything and is cached, so reruns are fully offline.
 
-1. **Functional road class** (`highway=motorway/trunk/primary/secondary/tertiary/residential/...`). The strongest single predictor: road class encodes the network role the road was built and signed for.
-2. **Lane count** (`lanes`). Capacity that exists because demand justified it.
-3. **Speed limit** (`maxspeed`, normalized to mph). Higher design speed correlates with arterial function.
-4. **Transit overlap**: is the segment a member of any bus route relation. Transit agencies route buses along corridors with proven demand, so this is a free demand signal.
-5. **Commercial proximity**: is the segment within about 150 m of commercial, retail, or industrial land use or a major trip generator (university, hospital, school). Computed with a coarse spatial grid rather than exact distances, which keeps it O(n).
+## 2. Features (8 per segment)
+
+1. **Functional road class** (`highway=*`), the strongest single predictor: class encodes the network role the road was built and signed for. Link roads (ramps) are scored explicitly.
+2. **Lane count**: capacity that exists because demand justified it.
+3. **Speed limit**, normalized to km/h from any tagging style (`50`, `30 mph`, `walk`, multi values).
+4. **One way pairing**: one way primary/secondary/tertiary streets are usually halves of an arterial couplet.
+5. **Transit overlap**: membership in any bus/trolleybus/tram/share taxi route relation.
+6. **Commercial proximity**: within about 150 m of commercial/retail/industrial land use or a major trip generator, computed with a coarse spatial grid, O(n).
+7. **Junction connectivity**: an endpoint shared by 4+ road segments marks an intersection hub, a free proxy for network centrality.
+8. **Surface**: unpaved roads suppress through traffic (matters greatly outside North America and Europe).
 
 ## 3. Scoring algorithm
 
 A plain additive score. No ML, every point is explainable.
 
 ```
-score = class_points                  (motorway 40 ... residential 5)
-      + 4  * (lanes - 1)
-      + 0.4 * max(0, speed_mph - 25)
-      + 6 if on a bus route
-      + 5 if commercial land use nearby
+score = class_points                (motorway 40 ... residential 5, links in between)
+      + 4    * (lanes - 1)
+      + 0.25 * max(0, kmh - 40)
+      + 2 if one way arterial        + 6 if on a transit route
+      + 5 if commercial nearby       + 3 if junction hub
+      - 6 if unpaved
 
 category: score <= 20 -> Low, <= 38 -> Moderate, else High
 ```
 
-Named roads are aggregated from their segments (mean score, max lanes and speed, any() for the boolean features). Thresholds were sanity checked against known Cambridge corridors: Memorial Drive, McGrath Highway, and Soldiers Field Road land in High, neighborhood streets land in Low, which matches published MassDOT count patterns for these corridors.
+Named roads aggregate their segments (mean score, max lanes/speed, any() for booleans). Thresholds were sanity checked against known corridors: in Cambridge, Memorial Drive, McGrath Highway, and Soldiers Field Road land in High and neighborhood streets in Low, matching published MassDOT count patterns.
 
-Why this design, per the brief's priorities:
+Per the brief's priorities:
 
-* **Speed**: pure arithmetic over tags, roughly 2,000 segments per run in well under a second. A whole state is minutes.
-* **Simplicity**: five features, one formula, two thresholds. Anyone can audit why a road got its label.
-* **Scalability**: the only spatial operation is a grid hash lookup, so cost is linear in segment count. Swap the bounding box and it runs on any city.
+* **Speed**: pure arithmetic over tags; about 2,000 segments classify in ~0.1 s. A whole country is minutes.
+* **Simplicity**: eight features, one formula, two thresholds. Anyone can audit why a road got its label.
+* **Scalability**: the only spatial operations are hash lookups (grid cells, endpoints), so cost is linear in segment count. The same code and weights ran unchanged on five continents.
 
 ## 4. Missing data handling
 
-OSM tagging is incomplete (in this study area lanes and maxspeed are missing on most residential streets). The rule is: impute from road class, and say so.
+OSM tagging completeness varies enormously by region. The rule is: impute from road class, and say so.
 
-* Missing `lanes` or `maxspeed` are filled with class based defaults (e.g. residential defaults to 1 lane, 25 mph; primary to 2 lanes, 30 mph).
-* Every output row carries a **confidence** flag: `high` when both tags were observed, `medium` when one was imputed, `low` when both were. Imputation is never silent.
-* Roads missing a `name` are still scored and mapped, they are just excluded from the named roads table.
-* If the transit or land use layers are unavailable for a region, those terms contribute zero and the class based core still produces a usable ranking.
+* Missing `lanes` or `maxspeed` fill from class based defaults (e.g. residential: 1 lane, 30 km/h; primary: 2 lanes, 50 km/h).
+* Every output row carries a **confidence** flag: `high` when both tags were observed, `medium` when one was imputed, `low` when both were. Imputation is never silent, and the flag doubles as a per city map coverage indicator.
+* Unnamed roads are still scored and mapped, just excluded from the named road tables.
+* If transit or land use layers are empty for a region, those terms contribute zero and the class based core still ranks sensibly.
+* Overpass mirror fallback and response caching make the fetch robust and repeatable.
 
 ## 5. Sample results
 
-20 roads spanning all three categories are in `results.md`; the full 667 road output is `results.csv`. Open `index.html` for the interactive map with per road score breakdowns.
+Each `data/<city>/results.md` holds a 20 road sample spanning all three categories; `results.csv` holds every named road. Open `index.html` (serve the folder with any static server) and switch cities from the dropdown.
 
 ## 6. Limitations and improvements
 
-* **It measures designed capacity and demand proxies, not measured flow.** A road can be over built or a shortcut street can be rat run. Fix: calibrate the weights and thresholds by regressing against published AADT counts where they exist, then apply the fitted weights everywhere.
-* **No time dimension.** The label is static; real traffic peaks. Improvement: add peak factors from land use mix (office heavy corridors peak on weekdays) or ingest GTFS headways so 10 buses per hour counts for more than 1 per hour.
-* **OSM tag quality varies by region.** The confidence flag surfaces this, but in poorly mapped areas the classifier degrades toward class only. Improvement: fall back to satellite derived lane detection or centrality measures (betweenness on the road graph is a strong volume proxy and still free).
-* **Thresholds are hand set.** They were sanity checked, not fitted. With even 30 to 50 count stations, the two cut points could be chosen to maximize agreement with binned AADT.
-* **Aggregation by name is coarse.** Long roads change character (Massachusetts Avenue in Boston vs Lexington). Improvement: classify per segment (the map already does) and report named roads as a distribution rather than a single label.
+* **It measures designed capacity and demand proxies, not measured flow.** Fix: regress the weights against published AADT counts where available, then apply the fitted weights globally.
+* **No time dimension.** Improvement: ingest GTFS headways so 10 buses per hour counts for more than 1, and derive peak factors from land use mix.
+* **Tag quality varies by region.** The confidence flag surfaces this; in sparsely tagged areas the classifier degrades toward class only. Improvement: betweenness centrality on the road graph (still free) or satellite derived lane counts.
+* **Thresholds are hand set**, sanity checked rather than fitted. Even 30 to 50 count stations per region would let the two cut points be chosen to maximize agreement with binned AADT.
+* **Name aggregation is coarse** for long roads that change character. The map already classifies per segment; tables could report distributions instead of a single label.
 
 ## Files
 
-* `classify.py` - fetch parsing, feature extraction, scoring, output generation
-* `roads.json`, `bus_members.json`, `context.json` - cached Overpass responses
-* `results.csv` / `results.md` - full and sample outputs
-* `index.html` + `map_data.js` - interactive map
+* `classify.py` - geocoding, single request Overpass fetch with caching and mirror fallback, feature extraction, scoring, all outputs
+* `data/<city>/` - cached raw data plus results.csv, results.md, map.json per city
+* `data/cities.js` - manifest for the map UI
+* `index.html` - interactive multi city map
 
-To reproduce: `python3 classify.py` (regenerates all outputs from the cached data). The Overpass queries used to build the caches are documented at the top of `classify.py`.
+To reproduce a city: `python3 classify.py "City, Country"`. Everything regenerates from one command.

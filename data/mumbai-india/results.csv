@@ -1,0 +1,880 @@
+road,osm_class,segments,lanes,speed_kmh,transit,commercial,score,category,confidence
+Rajiv Gandhi Sea Link,motorway,10,8,90,False,True,75.8,High,low
+Western Express Highway,motorway,34,5,100,True,True,68.1,High,low
+Kalina-Vakola Flyover,motorway,12,4,120,True,True,66.1,High,low
+Airport Flyover,motorway,4,4,90,True,True,65.8,High,low
+Western Freeway,motorway,1,3,90,False,True,65.5,High,low
+Khodadad Circle,trunk,8,4,70,True,True,64.5,High,medium
+Sion Panvel Highway,trunk,53,5,70,True,True,64.3,High,medium
+Bandra Worli Sea Link Flyover,motorway,7,3,120,True,True,62.6,High,low
+Eastern Freeway,motorway,38,3,120,True,True,62.5,High,medium
+Jeejabai Bhosale Marg,trunk,3,3,70,True,True,62.5,High,medium
+Dr Babasaheb Ambedkar Marg (Vincent Road),trunk,14,4,70,True,True,62.4,High,medium
+Ghatkopar - Mankhurd Link Road,trunk,8,3,70,True,True,61.2,High,medium
+Laxmibai Kelkar Marg,trunk,18,4,70,True,True,60.6,High,medium
+King's Circle,trunk,6,3,70,True,True,60.5,High,medium
+Eastern Express Highway,trunk,24,4,70,True,True,59.7,High,medium
+BARC Flyover,trunk,2,3,70,True,True,58.0,High,medium
+Sahitya Ratna Annabhau Sathe Flyover,trunk,3,2,70,True,True,56.5,High,medium
+Annabhau Sathe Flyover,trunk,1,2,70,True,True,56.5,High,medium
+Santa Cruz – Chembur Link Road,trunk,65,3,100,True,True,56.2,High,low
+Kalanagar Flyover,motorway,6,4,40,True,True,56.0,High,medium
+Eastern Express Highway Flyover,trunk,6,2,70,True,True,55.7,High,medium
+Santa Cruz – Chembur Link Road Flyover,trunk,9,2,100,True,True,55.5,High,medium
+C S T Kurla Junction Flyover,trunk,4,3,70,False,True,54.5,High,medium
+C S M T Kurla Junction Flyover,trunk,2,3,70,False,True,54.5,High,medium
+Ghatkopar - Mankhurd Link Road Flyover,trunk,4,3,70,False,True,54.5,High,medium
+Shahid Major Kaustubh Rane flyover,trunk,8,2,120,True,True,54.0,High,medium
+Bandra Kurla Complex Road,primary,38,5,50,True,True,53.3,High,low
+Sion Hospital Flyover,trunk,4,2,80,False,True,51.8,High,medium
+Sayani Marg,primary,1,3,50,True,True,51.5,High,medium
+King's Circle Flyover,trunk,5,3,70,False,True,51.3,High,medium
+Sion Circle,primary,6,3,50,True,True,51.2,High,medium
+Dadar TT flyover,trunk,2,4,70,False,True,50.8,High,medium
+Jaganath Shankur Seth (Dadar TT) Flyover,trunk,2,2,70,False,True,50.5,High,medium
+Lady Jamshedji Road,primary,17,2,50,True,True,50.1,High,low
+Swami Vivekanand Road,primary,36,2,50,True,True,49.9,High,low
+Katrak Road,primary,4,2,50,True,True,49.8,High,low
+Magan Nathuram Road,primary,2,2,50,True,True,49.5,High,low
+Lal Bahadur Shastri Marg,primary,66,2,120,True,True,49.5,High,low
+Ghatkopar-Andheri Link Road Extention,primary,13,2,50,True,True,49.4,High,medium
+Padmabushan Vasantdada Patil Marg,primary,8,2,50,True,True,49.4,High,low
+Road No 16,primary,7,2,50,True,True,49.2,High,low
+BKC Flyover,motorway,2,2,40,False,True,49.0,High,high
+Sion Bandra Link Road,motorway_link,34,2,60,True,True,48.7,High,low
+Tilak Bridge,primary,6,2,50,True,True,48.5,High,low
+Vasantdada Patil Marg,primary,22,2,50,True,True,48.5,High,medium
+Raobahadur S.K. Bole Marg,primary,18,2,50,True,True,48.3,High,low
+Carter Road,secondary,8,4,50,True,True,48.2,High,medium
+Ghatkopar Flyover,trunk,4,4,70,False,False,48.2,High,medium
+Chembur Flyover,trunk,8,4,70,True,True,48.2,High,medium
+Nana Phadnavis Flyover,primary,6,2,50,True,True,48.0,High,low
+Gokhale Road,primary,19,2,50,True,True,48.0,High,low
+Mahim Causeway,primary,4,2,50,True,True,47.5,High,low
+Dharavi Depot Road,primary,4,2,50,True,True,47.5,High,low
+Sewri-Chembur Road,primary,8,2,50,True,True,47.5,High,medium
+Bhagwan Swaminarayan Flyover,primary,5,2,50,True,True,47.5,High,medium
+BKC - Sealink Road,motorway,5,2,40,False,True,47.4,High,high
+Amar Mahal Junction Flyover,trunk,6,2,70,False,True,47.2,High,high
+Sion Flyover,trunk,4,3,70,False,True,46.9,High,medium
+Shankar Ghanekar Marg,primary,3,2,50,True,True,46.5,High,low
+Kabutarkhana,primary,5,2,50,True,True,46.3,High,low
+Sant Rohidas Marg,primary,4,2,50,True,True,46.0,High,low
+Rafi Ahmed Kidwai Marg,primary,4,2,50,True,True,46.0,High,low
+V.N. Purav Marg,trunk_link,1,2,50,True,True,45.5,High,medium
+Kamraj Nagar Flyover,trunk,6,2,70,False,False,45.5,High,medium
+SCLR Flyover,trunk,2,2,50,False,True,45.5,High,medium
+Dayaldas Road,primary,2,2,50,True,True,45.0,High,low
+Service road,primary,2,2,50,True,True,45.0,High,low
+Santa Cruz Flyover,primary,5,2,50,True,True,44.5,High,low
+N C Kelkar Marg,primary,15,2,50,True,True,44.5,High,low
+Kale Marg,secondary,2,2,50,True,True,44.5,High,low
+Master Vinayak Road (Perry Road),secondary,1,2,50,True,True,44.5,High,medium
+BKC - SCLR Connector,primary,1,2,50,False,True,44.5,High,medium
+Sion Circle Flyover,trunk,4,3,70,False,True,44.4,High,medium
+Khan Abdul Gaffar Khan Marg,primary,9,2,50,True,True,44.2,High,medium
+Juhu Tara Road,secondary,9,2,50,True,True,44.2,High,low
+Linking Road,secondary,23,2,50,True,True,44.1,High,low
+PV Avasare Marg,primary,3,2,50,True,True,44.0,High,low
+Danda Boulevard (1st Road),secondary,5,2,50,True,True,43.9,High,low
+Senapati Bapat Marg,primary,11,2,50,True,True,43.6,High,low
+Road No 17,secondary,2,2,50,True,True,43.5,High,low
+Chitrakar Dhurandar Road,secondary,5,2,50,True,True,43.5,High,medium
+Kavi Keshavsut Flyover,primary,5,2,50,True,True,43.5,High,low
+60 Feet Road,secondary,9,2,50,True,True,43.5,High,medium
+St Sebastian Road,secondary,2,2,50,True,True,43.5,High,low
+Bandra Station Road,secondary,5,2,50,True,True,43.3,High,low
+Sitaladevi Temple Road,secondary,3,2,50,True,True,43.2,High,low
+Flyover,trunk,8,2,80,False,True,43.2,High,low
+Sitaladevi Temple Road (West),secondary,2,2,50,True,True,43.0,High,low
+Swatantrya Veer Savarkar Marg,primary,33,5,50,True,True,43.0,High,low
+Prabhadevi New Road,primary,4,2,50,True,True,43.0,High,medium
+S G Barve Marg (C S T Road),secondary,8,2,50,True,True,43.0,High,low
+Freeway Exit,motorway_link,3,1,60,False,True,43.0,High,low
+V B Phadke Marg,primary,4,2,50,True,True,42.9,High,low
+P V Avsare Marg,primary,5,2,50,True,True,42.9,High,low
+Mount Carmel Road,secondary,3,2,50,True,True,42.5,High,low
+Tilak Road Extension,primary,4,2,50,True,True,42.5,High,low
+Bhawani Shankar Marg,primary,7,2,50,True,True,42.4,High,low
+Mahim Sion Link Road,secondary,16,2,50,True,True,42.2,High,low
+Waman Tukaram Patil Marg,secondary,4,2,50,True,True,42.2,High,medium
+Perry Road,secondary,9,2,50,True,True,42.2,High,low
+SG Barve Marg,secondary,19,2,50,True,True,41.9,High,low
+P.L. Lokhande Marg,secondary,14,2,50,True,True,41.8,High,low
+Saint Sebastian Road,secondary,1,2,50,True,True,41.5,High,low
+Avenue 3: Lane 2,secondary,1,2,50,True,True,41.5,High,medium
+Mathuradas Vasanji Road (Andheri Kurla Road),primary,6,2,50,True,True,41.5,High,low
+D Saraswati Marg (Central Avenue),secondary,5,2,50,True,True,41.5,High,low
+Dr Babasaheb Ambedkar Udyan Circle,secondary,6,2,50,True,True,41.5,High,medium
+Ramakrishna Chemburkar Marg (Ghatkopar Mahul Road),secondary,6,2,50,True,True,41.5,High,low
+Danda Boulevard,secondary,1,2,50,True,True,41.5,High,medium
+KC Marg,secondary,2,2,50,True,True,41.5,High,low
+D S Baretto Road,secondary,7,2,50,True,True,41.3,High,low
+Sant Shitolebaba Maharaj Marg,primary,5,2,50,True,False,41.3,High,low
+N S Mankikar Marg,secondary,6,2,50,True,True,41.2,High,low
+M Ambedkar Marg,secondary,17,2,50,True,True,41.1,High,low
+Dayanand Saraswati Marg (Central Avenue Road),secondary,6,2,50,True,True,41.0,High,medium
+Sealink Road,motorway_link,1,2,40,False,True,41.0,High,high
+Ramakrishna Chemburkar Marg,secondary,11,2,50,True,True,40.8,High,medium
+Hemu Kalani Marg,secondary,4,2,50,True,True,40.8,High,low
+Takandas H. Kataria Marg,secondary,17,2,50,True,True,40.8,High,low
+Street 3,secondary,8,2,50,True,True,40.8,High,medium
+Sulochana Shetty Marg,secondary,14,2,50,True,True,40.6,High,low
+Barkat Ali Dargah Road,secondary,2,2,50,True,True,40.5,High,low
+Chunabhatti Road,secondary,3,2,50,True,True,40.5,High,low
+SCLR - LBS Marg Connector,primary,1,1,50,False,True,40.5,High,medium
+Chapel Road,secondary,4,4,50,True,True,40.1,High,medium
+G.D. Ambedkar Marg,secondary,2,2,50,True,True,40.0,High,low
+Gurunanak Marg (Turner Road),secondary,3,2,50,True,True,39.8,High,low
+Sheikh Misari Road,secondary,7,2,50,True,True,39.7,High,low
+Gurunanak Marg,secondary,18,1,50,True,True,39.5,High,medium
+Santa Cruz – Chembur Link Road Flyover Ramp,trunk_link,1,2,50,False,True,39.5,High,medium
+L K Mehta Marg,primary_link,6,2,50,True,True,39.4,High,low
+S.G. Barve Marg,secondary,3,2,50,True,True,39.2,High,low
+Vidya Nagari Marg,secondary,5,2,50,True,True,39.1,High,low
+Mori Road,secondary,3,2,50,True,True,39.0,High,low
+Hill Road,secondary,11,2,50,True,True,39.0,High,low
+BKC Connector,secondary,8,2,35,True,True,39.0,High,high
+Choitram Gidwani Marg (Kolwada Borla Road),secondary,12,2,50,True,True,38.9,High,low
+Road Number 29,secondary,3,2,50,True,True,38.8,High,low
+Waman Tukaram Patil Marg (Ghatkopar Sewri Wadala Road),trunk_link,2,2,50,True,True,38.5,High,low
+Nathalal Parekh Road,primary,9,2,50,True,True,38.5,High,low
+Avenue 3: Lane 3,secondary,4,2,50,False,True,38.5,High,medium
+Jawaharlal Nehru Road,secondary,15,2,50,True,True,38.2,High,low
+K C Marg,secondary,13,2,50,True,True,37.8,Moderate,low
+Mehboob Kahn Chowk,secondary,5,2,50,True,True,37.8,Moderate,low
+Aloysius Soares Marg,secondary,5,2,50,True,False,37.7,Moderate,low
+B S Devashi Marg,secondary,8,2,50,True,True,37.6,Moderate,low
+D P Road,motorway_link,14,2,60,True,True,37.5,Moderate,low
+Moreshwar Chintaman Jawle Marg,primary,2,2,50,True,True,37.2,Moderate,low
+Road No 10,secondary,2,2,50,True,True,37.0,Moderate,low
+N G Acharya Marg,secondary,10,2,50,True,True,37.0,Moderate,low
+RCF Road,secondary,5,2,50,True,True,36.9,Moderate,low
+Jangaleswar Mahadeo Mandir Road,secondary,3,2,50,True,False,36.5,Moderate,low
+Mother Dairy Road,secondary,7,2,50,False,True,36.4,Moderate,low
+Tilak Road,primary,19,2,50,True,True,36.2,Moderate,low
+SL Raheja Hospital Marg,secondary,5,2,50,True,True,36.1,Moderate,low
+Mankhurd - EEH Link Road,trunk_link,5,2,50,False,True,36.0,Moderate,medium
+Manuel Gonsalves Road,secondary,4,2,50,True,True,35.6,Moderate,low
+Ghatkopar Mahul Road,secondary,15,2,50,True,True,35.1,Moderate,low
+Shankara Colony Road,secondary,5,2,50,False,True,35.1,Moderate,low
+R.A. Kidwai Marg,primary,12,2,50,True,True,34.6,Moderate,low
+Vasantarao Naik Marg,secondary,7,2,50,True,True,34.2,Moderate,low
+Jawahar Road,tertiary,1,2,40,True,True,34.0,Moderate,low
+A K Marg (Station Road),tertiary,1,2,40,True,True,34.0,Moderate,low
+Prof V.S. Agashe Marg,secondary,1,2,50,False,True,33.5,Moderate,low
+Avenue 3,secondary,13,2,50,True,True,33.5,Moderate,low
+Swami Vallabhdas Road,secondary,2,2,50,False,True,33.2,Moderate,low
+Street 7,secondary,6,2,50,False,True,33.0,Moderate,medium
+Telephone Exchange Road,tertiary,2,2,40,True,True,33.0,Moderate,low
+General Arun Kumar Vaidya Marg,secondary,10,2,50,True,True,32.8,Moderate,low
+Kakasaheb Gadgil Marg,secondary,3,2,50,True,True,32.7,Moderate,low
+Flank Road,tertiary,6,2,40,True,True,32.3,Moderate,low
+Kalina Kurla Road,tertiary,6,2,40,True,True,32.0,Moderate,low
+Pant Nagar Colony Road,tertiary,1,2,40,True,True,32.0,Moderate,low
+RK Patkar Marg,tertiary,2,2,40,True,True,32.0,Moderate,low
+SA Smira Road,tertiary,1,2,40,True,True,32.0,Moderate,low
+Sasmira Road,tertiary,1,2,40,True,True,32.0,Moderate,low
+Kirol Road,tertiary,3,2,40,True,True,32.0,Moderate,low
+Ramrao Nayak Marg,tertiary,6,2,40,True,True,31.8,Moderate,low
+Raoji Ganatra Road,tertiary,4,2,40,True,True,31.8,Moderate,low
+D K Sandu Marg,secondary,5,2,50,True,True,31.7,Moderate,low
+RK Patkar Marg (Waterfield Road),tertiary,4,2,40,True,True,31.0,Moderate,low
+HK Bhaba Road,tertiary,1,2,40,True,True,31.0,Moderate,low
+Municipal Road,tertiary,6,2,40,True,True,31.0,Moderate,low
+Shell Colony Road,tertiary,3,2,40,True,True,31.0,Moderate,low
+90 Feet Road,secondary,18,2,50,True,True,31.0,Moderate,low
+Derasar Lane,tertiary,1,2,40,True,True,31.0,Moderate,low
+MT Sangam Road,tertiary,2,2,40,True,True,31.0,Moderate,low
+Hirachand Desai Road,tertiary,6,2,40,True,True,31.0,Moderate,low
+Dr. BR Ambedkar Road,tertiary,3,2,40,True,True,31.0,Moderate,medium
+Air Port Road,tertiary,1,2,40,True,True,31.0,Moderate,low
+S D Mandir Marg,tertiary,8,2,40,True,True,30.9,Moderate,low
+Bhikaji Damaji Patil Marg,tertiary,2,2,40,True,True,30.5,Moderate,low
+PG Kher Marg,tertiary,6,2,40,True,True,30.3,Moderate,low
+LM Nadkarni Road,tertiary,3,2,40,True,True,30.3,Moderate,low
+Kanu Desai Road,tertiary,4,2,40,True,True,30.2,Moderate,low
+Golibar Road,tertiary,2,2,40,True,True,30.0,Moderate,medium
+Hingwala Lane,tertiary,2,2,40,True,True,30.0,Moderate,low
+Barrister Nath Pai Road,tertiary,2,2,40,True,True,29.5,Moderate,low
+Prateeksha Nagar Road,tertiary,1,2,40,True,True,29.0,Moderate,low
+Vallabh Baug lane,tertiary,1,2,40,True,True,29.0,Moderate,low
+VB Worlikar Marg,tertiary,1,2,40,True,True,29.0,Moderate,low
+Kohinoor - Vidyavihar Road,tertiary,1,2,40,True,True,29.0,Moderate,medium
+BKC - CST Link Road,tertiary,2,3,40,False,True,29.0,Moderate,medium
+Groove Street,tertiary,3,2,40,True,True,29.0,Moderate,medium
+Veer Nariman Marg,tertiary,1,2,40,True,True,29.0,Moderate,medium
+Madhusudan Kalekar Marg,tertiary,6,2,40,True,True,28.7,Moderate,low
+PD Hinduja Road (Khar Pali Road),tertiary,6,2,40,True,True,28.7,Moderate,low
+Ambedkar Chowk,tertiary,5,2,40,True,True,28.6,Moderate,low
+Anant Kanekar Marg,tertiary,14,3,40,True,True,28.6,Moderate,low
+Lokmanya Tilak Terminus Road,secondary,12,2,50,True,True,28.5,Moderate,low
+Ratilal Mehta Marg,tertiary,11,2,40,True,True,28.0,Moderate,low
+Swami Gyan Jiwandas Marg,tertiary,3,2,40,True,True,28.0,Moderate,low
+Ranade Road Extension,tertiary,1,2,40,False,True,28.0,Moderate,low
+Bharat Nagar Road,tertiary,2,2,40,False,True,28.0,Moderate,medium
+Sant Narsee Mehta Marg,tertiary,3,2,40,True,True,28.0,Moderate,low
+St. Paul Road,tertiary,1,2,40,False,True,28.0,Moderate,low
+Khau Galli,tertiary,4,2,40,True,True,28.0,Moderate,low
+R B Kadam Road,tertiary,3,2,40,True,True,28.0,Moderate,low
+Avenue 3: Lane 1,tertiary,2,2,40,True,True,28.0,Moderate,medium
+Sharada Devi Road,tertiary,10,2,40,True,True,27.8,Moderate,low
+Chitrakar Durandhar Road (2nd Road),secondary,11,2,50,True,True,27.8,Moderate,low
+Naupada Road,tertiary,6,2,40,True,True,27.8,Moderate,low
+JL Shirshekar Marg,tertiary,4,2,40,True,True,27.5,Moderate,low
+Father Peter Periera Road,tertiary,6,2,40,True,True,27.5,Moderate,low
+Street 5,tertiary,5,2,40,False,True,27.4,Moderate,medium
+Road No 29,secondary,2,2,50,True,True,27.2,Moderate,low
+Road No 32A,tertiary,2,2,40,True,True,27.0,Moderate,low
+Relief Road,tertiary,3,2,40,False,True,27.0,Moderate,low
+Street 1,tertiary,8,2,40,True,True,27.0,Moderate,low
+Lakhamsi Nappu Road,tertiary,3,2,40,False,True,27.0,Moderate,low
+Bhagoji Balooji Keer Marg,tertiary,3,2,40,False,True,26.7,Moderate,low
+Nathani Road,tertiary,13,2,40,True,True,26.7,Moderate,low
+A.S. Gawde Marg,tertiary,6,2,40,True,True,26.7,Moderate,low
+Avenue 5,tertiary,5,2,40,True,True,26.6,Moderate,low
+Pereira Road,tertiary,2,2,40,True,False,26.5,Moderate,low
+Mahatma Gandhi Road,tertiary,23,2,40,True,True,26.4,Moderate,low
+Nanasaheb Dharmadhikari Marg,tertiary,7,2,40,True,True,26.4,Moderate,low
+Ramdev Pir Road,tertiary,11,2,40,False,True,26.4,Moderate,low
+Kapad Bazaar Road,tertiary,3,2,40,False,True,26.3,Moderate,low
+Jugaldas Modi Marg,tertiary,3,2,40,False,True,26.3,Moderate,low
+Bhandarkar Road,tertiary,6,2,40,False,True,26.0,Moderate,low
+Road No 1,secondary,9,3,50,False,True,26.0,Moderate,low
+Ramakrishna Mission Road,tertiary,1,2,40,False,True,26.0,Moderate,low
+St Peter's Road,tertiary,1,2,40,False,True,26.0,Moderate,low
+Premier Road,tertiary,1,2,40,False,True,26.0,Moderate,low
+Vallabh Baug Lane,tertiary,4,2,40,True,False,26.0,Moderate,low
+Kohinoor City Road,tertiary,3,2,40,False,True,26.0,Moderate,low
+Maru Aai Mandir Road,tertiary,1,2,30,False,True,26.0,Moderate,high
+Lady Jehangir Road,tertiary,14,2,40,True,True,25.8,Moderate,low
+Station Road,primary,16,2,50,True,True,25.8,Moderate,low
+Byramji Jeejeebhoy Road,tertiary,7,2,40,True,True,25.6,Moderate,low
+Manmala Tank Path,tertiary,2,2,40,False,True,25.5,Moderate,low
+Waroda Road,tertiary,2,2,40,False,True,25.5,Moderate,low
+Ranade Road,tertiary,11,2,40,True,True,25.4,Moderate,low
+L J Marg,tertiary,2,2,40,False,True,25.0,Moderate,low
+Gabriel Road,tertiary,5,2,40,False,True,25.0,Moderate,low
+Padmabai Thakkar Marg,tertiary,1,2,40,False,True,25.0,Moderate,low
+D S Babrekar Marg,tertiary,4,2,40,False,True,25.0,Moderate,low
+Nehru Road,tertiary,1,2,40,False,True,25.0,Moderate,low
+Jarimari Road,tertiary,2,2,40,False,True,25.0,Moderate,low
+Bhiva Bapu Magre Marg,tertiary,1,2,40,False,True,25.0,Moderate,low
+Khokhani Lane,tertiary,1,2,40,False,True,25.0,Moderate,low
+Chheda Nagar Service Road,tertiary,2,2,40,False,True,25.0,Moderate,low
+Nathalal Parekh Marg,tertiary,1,2,40,False,True,25.0,Moderate,low
+Mumbai Marathi Granth Sangrahalaya Marg,tertiary,1,2,40,False,True,25.0,Moderate,low
+Street 9,tertiary,2,2,40,False,True,25.0,Moderate,medium
+Sir Pochkhanwala Marg,tertiary,1,2,40,False,True,25.0,Moderate,low
+New Prabhadevi Marg,tertiary,1,2,40,False,True,25.0,Moderate,medium
+STV Relief Road,tertiary,1,2,40,False,True,25.0,Moderate,low
+Ambedkar Chok,tertiary,2,2,40,False,True,25.0,Moderate,low
+Old Prabhadevi Marg,tertiary,1,2,40,False,True,25.0,Moderate,low
+Deonar Village Road,secondary,2,2,50,True,True,24.8,Moderate,low
+Road No 19,secondary,4,2,50,True,True,24.8,Moderate,low
+J K Sawant Marg,tertiary,2,2,40,False,True,24.5,Moderate,low
+Hasanabad Road No 2,tertiary,2,2,40,False,True,24.5,Moderate,low
+R. Raikar Marg,tertiary,3,2,40,False,True,24.3,Moderate,low
+K N Gaiakwad Marg,tertiary,3,2,40,False,True,24.3,Moderate,low
+St Vershaw Kakkaya Marg,tertiary,3,2,40,False,True,24.3,Moderate,low
+S B Patil Road,tertiary,4,2,40,False,True,24.2,Moderate,low
+Deonar Road,tertiary,5,2,40,True,True,24.2,Moderate,low
+Mia Mohd Chhotani Road,tertiary,2,2,40,False,True,24.0,Moderate,low
+Veer MakrandGhanekar Marg,tertiary,1,2,40,True,False,24.0,Moderate,low
+Service Road; P V Avsare Marg,tertiary,1,2,40,True,False,24.0,Moderate,low
+Milan Subway,tertiary,1,2,40,True,False,24.0,Moderate,low
+Veer Makarand Ghnekar Marg,tertiary,1,2,40,True,False,24.0,Moderate,low
+Mogul Lane,tertiary,2,2,40,False,True,24.0,Moderate,low
+Janardan Patil Road,tertiary,1,1,60,False,True,24.0,Moderate,high
+A H Wadia Marg,tertiary,5,2,40,False,True,23.8,Moderate,low
+Lakhamasi Nappu Road,tertiary,5,2,40,False,True,23.8,Moderate,low
+Dadasaheb Phalke Marg,tertiary,3,2,40,False,True,23.7,Moderate,medium
+Bal Govind Das Road,tertiary,3,2,40,False,True,23.7,Moderate,low
+Anik Wadala Link Road,tertiary,7,2,40,True,True,23.7,Moderate,low
+Road No 24,tertiary,3,2,40,False,True,23.7,Moderate,low
+Sharadbhau Acharya Marg,tertiary,3,2,40,False,True,23.7,Moderate,low
+Service Road,trunk,15,2,70,True,True,23.6,Moderate,low
+Road No 32,tertiary,5,2,40,False,True,23.0,Moderate,low
+Road No 18,tertiary,1,2,40,True,True,23.0,Moderate,low
+Gulmohar Road,tertiary,1,2,40,False,True,23.0,Moderate,low
+North Avenue,tertiary,1,2,40,False,True,23.0,Moderate,low
+Street 3: Lane 1,tertiary,1,2,40,False,True,23.0,Moderate,low
+Street 9: Lane 1,tertiary,1,2,40,False,True,23.0,Moderate,medium
+Somaiya College Road,tertiary,1,2,40,False,True,23.0,Moderate,low
+Road No.10,tertiary,1,2,40,False,True,23.0,Moderate,low
+Shanta Jog Marg,tertiary,1,2,40,False,True,23.0,Moderate,low
+C V Raman Road,tertiary,3,2,40,False,True,23.0,Moderate,low
+Road No. 6,tertiary,1,2,40,False,True,23.0,Moderate,low
+Road No. 4,tertiary,1,2,40,False,True,23.0,Moderate,low
+Shanti Path,tertiary,3,2,40,False,True,23.0,Moderate,low
+Ram Mandir Road,tertiary,1,2,40,False,True,23.0,Moderate,medium
+Dr BR Ambedkar Road,tertiary,2,2,40,False,True,23.0,Moderate,medium
+South Avenue,tertiary,1,2,40,False,True,23.0,Moderate,medium
+Jagat Vidya Marg,tertiary,1,2,40,False,True,23.0,Moderate,low
+Professor V.S. Agashe Marg,tertiary,1,2,40,False,True,23.0,Moderate,low
+S G Barve Marg,tertiary,4,2,40,True,True,22.8,Moderate,low
+J K Bhasin Marg,tertiary,4,2,40,False,True,22.2,Moderate,low
+Church Avenue,tertiary,4,2,40,False,True,22.0,Moderate,low
+Sainath Mandir Road,tertiary,4,2,40,False,True,22.0,Moderate,low
+Shraddhanand Road,tertiary,4,2,40,True,True,21.8,Moderate,low
+Mahul Road,tertiary,10,2,40,True,True,21.7,Moderate,low
+Road Number 7,tertiary,4,2,40,False,True,21.5,Moderate,low
+Kanzul Iman Road,tertiary,10,2,40,False,True,20.6,Moderate,low
+Dr. A P J Abdul Kalam Road,tertiary,2,2,40,False,True,20.5,Moderate,high
+Avenue 5: Lane 3,unclassified,2,2,40,True,True,20.0,Low,medium
+Ramakrishna Paramahansa Marg,tertiary,6,2,40,False,True,19.7,Low,low
+N.M. Kale Marg,tertiary,7,2,40,False,True,19.4,Low,low
+"K,W, Chitale Marg",primary_link,3,1,40,False,True,19.3,Low,low
+Road No 7,tertiary,3,2,40,False,True,19.3,Low,low
+Air India Road,tertiary,7,2,40,False,False,19.1,Low,low
+Puranmal Singhani Road,residential,3,1,30,True,True,19.0,Low,low
+Road No 6,tertiary,7,2,40,False,True,19.0,Low,low
+St John Baptist Road,residential,1,1,30,True,True,19.0,Low,low
+3rd Cross Road,residential,2,1,30,True,True,19.0,Low,low
+Union Park Road,residential,1,1,30,True,True,19.0,Low,low
+Vidyalankar Marg,residential,4,1,30,True,True,19.0,Low,low
+Navroji Lane,tertiary,5,2,40,False,True,18.8,Low,low
+Road No 8,tertiary,9,2,40,True,True,18.7,Low,low
+Kamgar Nagar Road,tertiary,3,2,40,False,True,18.7,Low,low
+Sir Bhalchandra Road,tertiary,5,2,40,False,True,18.6,Low,low
+Guru Narayan Marg,tertiary,6,2,40,False,True,18.2,Low,low
+lal dongar road,residential,1,3,40,False,True,18.0,Low,high
+Cama Lane,tertiary,7,2,40,False,True,17.9,Low,low
+7th Road,tertiary,5,2,40,False,True,17.8,Low,low
+Prakash Thorat Marg,trunk,8,2,70,True,True,17.8,Low,low
+Dada Rege Marg,residential,2,1,30,True,True,17.5,Low,low
+Scheme 57 Road no.32,residential,3,1,30,True,True,17.0,Low,low
+Sherly Rajan Road,residential,1,2,30,False,True,17.0,Low,medium
+Graffiti Lane,residential,2,2,30,False,True,17.0,Low,medium
+33rd Road,tertiary,2,2,40,False,True,16.5,Low,low
+Nath Pai Nagar,tertiary,2,2,40,False,True,16.5,Low,low
+Postal Colony Road,tertiary,3,2,40,False,True,16.3,Low,low
+N Patkar Marg,tertiary,4,2,40,True,False,16.2,Low,low
+Hormusji Adenwala Road,residential,2,1,30,True,True,16.0,Low,low
+Lt Dilip Gupte Marg,residential,2,1,30,True,True,16.0,Low,low
+M D Abasaheb Shinde Marg,residential,2,1,30,True,True,16.0,Low,low
+Nathalal M Parekh Marg,residential,1,1,30,True,True,16.0,Low,low
+Bhaudaji Road Extension,residential,4,1,30,True,True,16.0,Low,low
+Bhau Daji Road,residential,1,1,30,True,True,16.0,Low,low
+Jam-e-Jamshed Road,residential,3,2,30,False,True,16.0,Low,high
+Major R Parameswaran Road,residential,4,1,30,True,True,16.0,Low,low
+Shayir Kishan Kharat Road,residential,2,1,30,True,True,16.0,Low,low
+Masrani Lane,tertiary,2,2,40,False,True,15.5,Low,low
+Mancherji Joshi Road,residential,7,1,30,True,True,15.1,Low,low
+Private Road,residential,3,2,30,False,True,15.0,Low,medium
+Dhruvraj Singh Road,residential,3,1,30,True,True,15.0,Low,low
+Pali Mala Road,residential,7,2,30,False,True,14.9,Low,low
+4th Road,tertiary,4,2,40,False,True,14.8,Low,low
+Samadhan Road,residential,5,1,30,True,True,14.6,Low,low
+Jame Jamshed Road,residential,4,1,30,True,True,14.5,Low,low
+Road No 5,residential,4,1,30,True,True,14.5,Low,low
+N P Thakkar Road,tertiary,2,2,40,True,False,14.5,Low,low
+Padmabhushan Jagjit Singh Chowk,residential,2,1,30,True,True,14.5,Low,low
+Road No 2,tertiary,5,2,40,True,True,14.4,Low,low
+Sant Dnyaneshwar Marg,tertiary,3,2,40,False,True,14.3,Low,low
+Jam-e-Jamshed Lane,residential,1,2,30,False,True,14.0,Low,high
+26th Road (Sumatilal Manilal Shah Marg),residential,1,2,30,False,True,14.0,Low,medium
+S Chatterji Marg (East Avenue),residential,1,2,30,False,True,14.0,Low,medium
+Rebello Road,residential,3,1,30,True,True,14.0,Low,low
+Road 2,tertiary,8,2,40,False,True,14.0,Low,low
+Hindustan Petroleum Road,residential,2,1,30,True,False,14.0,Low,low
+St. Dhyneshwar marg,residential,1,2,40,False,True,14.0,Low,high
+R B Anant Desai Marg,residential,1,2,30,False,True,14.0,Low,medium
+Pandurang Naik Marg,residential,4,1,30,True,True,13.8,Low,low
+Kherwadi Road,tertiary,3,2,40,False,True,13.7,Low,low
+Sindhi Society Road Number 1,residential,2,1,30,True,True,13.5,Low,low
+Road No 25,residential,2,2,30,False,True,13.5,Low,low
+V R C Bhide Marg,residential,3,2,30,False,True,13.3,Low,low
+1st Road,tertiary,6,2,40,True,True,13.3,Low,low
+13th Road,residential,3,2,30,False,True,13.3,Low,low
+P Balu Marg,tertiary,6,2,40,False,True,13.2,Low,low
+Jethalal Parekh Road,residential,2,1,30,False,True,13.0,Low,low
+Scheme 57 Road no.14A,residential,1,1,30,False,True,13.0,Low,low
+Chidambaram Marg,residential,1,1,30,False,True,13.0,Low,low
+Dinshaw Master Road,residential,1,1,30,False,True,13.0,Low,low
+Rajaram Keshav Vaidya Marg,residential,1,1,30,False,True,13.0,Low,low
+Bhimani Street,residential,2,1,30,False,True,13.0,Low,low
+Laxmi Narayan Lane,residential,2,1,30,False,True,13.0,Low,low
+Bhagwandas Narottamdas Marg,residential,2,1,30,False,True,13.0,Low,low
+Shivaji Park Road no.2,residential,2,1,30,False,True,13.0,Low,low
+Church Road,residential,2,1,30,True,True,13.0,Low,low
+Jay Prakash Road,tertiary,2,2,40,False,False,13.0,Low,low
+Saibaba Road,residential,2,1,30,False,True,13.0,Low,low
+B C Chatterjee Marg (Main Avenue),residential,2,1,30,False,True,13.0,Low,low
+12th Road,residential,4,1,30,False,True,13.0,Low,low
+Dattatray Road,residential,2,1,30,False,True,13.0,Low,low
+Ahinsa Marg,residential,2,1,30,False,True,13.0,Low,low
+Talmaki Road,residential,1,1,30,False,True,13.0,Low,low
+St Roque Road,residential,1,1,30,False,True,13.0,Low,low
+Bazar Road,residential,1,1,30,False,True,13.0,Low,low
+D. P. Marg,residential,1,1,30,False,True,13.0,Low,low
+St. Andrews Road,residential,1,1,30,False,True,13.0,Low,low
+D'monte Street,residential,1,1,20,False,True,13.0,Low,high
+N Dayabhai Road,residential,1,1,30,False,True,13.0,Low,low
+29th Road,residential,2,1,30,False,True,13.0,Low,low
+Boran Road,residential,1,1,30,False,True,13.0,Low,low
+Dr KS Hedgewar Road (30th Road),residential,2,1,30,False,True,13.0,Low,low
+32nd Road,residential,1,1,30,False,True,13.0,Low,low
+New Kantwadi Road,residential,4,1,30,False,True,13.0,Low,low
+Siddharth Nagar Road,residential,1,1,30,False,True,13.0,Low,low
+16th Cross Road,residential,1,1,30,False,True,13.0,Low,low
+17th Road,residential,3,1,30,False,True,13.0,Low,low
+Avenue 3: Lane 4,unclassified,1,1,40,False,True,13.0,Low,low
+Hotel Trident Road,unclassified,1,1,40,False,True,13.0,Low,low
+Jain Mandir Road,residential,1,1,30,False,True,13.0,Low,low
+TEC Niwas Sthan Road,residential,2,1,30,False,True,13.0,Low,low
+V B Worlikar Marg,residential,2,1,30,False,True,13.0,Low,low
+Dr. Peter Dias Road,residential,1,1,30,False,True,13.0,Low,low
+Sunshine Lane,residential,2,1,30,False,True,13.0,Low,low
+PV Marg,residential,1,1,30,False,True,13.0,Low,low
+Upashray Lane,residential,2,1,30,False,True,13.0,Low,low
+A S Gaya Cross Road 1,residential,2,1,30,False,True,13.0,Low,low
+5th Road,residential,5,1,30,True,True,13.0,Low,low
+St. Anne's Lane,residential,1,1,30,False,True,13.0,Low,medium
+Sainath Nagar Marg,residential,2,1,30,False,True,13.0,Low,low
+Auxilium Convent Road,residential,1,1,30,False,True,13.0,Low,medium
+24th Road (St. Theresa's Road),residential,2,1,30,False,True,13.0,Low,low
+Kolivery Road,residential,1,1,30,False,True,13.0,Low,low
+Laxman Umaji Gadkari Marg,unclassified,1,1,40,False,True,13.0,Low,low
+St. Andrew Road,residential,1,1,30,False,True,13.0,Low,low
+Kadeshwari Mandir Marg,residential,3,2,20,False,True,12.7,Low,high
+Khareghat Road,residential,7,1,30,True,True,12.6,Low,low
+Telang Road,residential,5,1,30,False,True,12.4,Low,low
+Shradhanand Road,residential,4,1,30,False,True,12.2,Low,low
+Lt Prakash Kotnis Path,residential,4,1,30,False,True,12.2,Low,low
+Padmashree Mohammed Rafi Marg (16th Road),residential,7,1,30,False,True,12.1,Low,low
+Deodhar Road,residential,3,1,30,False,True,12.0,Low,low
+U Bhat Marg,residential,3,1,30,False,True,12.0,Low,low
+8th Road,residential,3,1,30,False,True,12.0,Low,low
+Podar Road,residential,3,1,30,False,True,12.0,Low,low
+15th Road,residential,6,1,30,False,True,12.0,Low,low
+Almeida Park Road,residential,3,1,30,False,True,12.0,Low,low
+St. Andrews Road Extension,residential,3,1,30,False,True,12.0,Low,medium
+Subhash Nagar Road,residential,3,1,30,False,True,12.0,Low,low
+Road No. 5,residential,2,2,30,False,True,12.0,Low,low
+Principal Mandalecha Marg,residential,3,1,30,False,True,12.0,Low,low
+36th Road,residential,3,1,30,False,True,12.0,Low,low
+RCF Marg,residential,3,1,30,False,True,12.0,Low,low
+30th Cross Road,residential,2,2,30,False,True,12.0,Low,medium
+Road No 3,residential,6,1,30,True,True,11.7,Low,low
+P L K Marg,residential,2,1,30,False,True,11.5,Low,low
+Taikalwadi Marg,residential,2,1,30,False,True,11.5,Low,low
+Shastri Nagar Road,residential,8,1,30,False,True,11.5,Low,low
+Sunder Nagar Road Number 2,residential,2,1,30,False,True,11.5,Low,low
+Pherozeshah Mehta Road,residential,2,1,30,False,True,11.5,Low,low
+Veronica Street,residential,2,1,30,False,True,11.5,Low,low
+HM Patil Road,residential,2,1,30,False,True,11.5,Low,low
+Gurudwara Road,residential,2,1,30,False,True,11.5,Low,low
+Dharavi Main Road,residential,8,1,30,False,True,11.5,Low,low
+28th Road,residential,3,2,30,False,True,11.3,Low,low
+Soonawala Agiary Lane,residential,5,1,30,False,True,11.2,Low,low
+Tabkeshwari Mahadev Mandir Road,residential,5,1,30,False,True,11.2,Low,low
+Dr Madhukar B. Raut Marg,residential,8,1,30,False,True,11.1,Low,low
+Pipeline Road,tertiary,18,2,40,False,True,11.1,Low,low
+Kokri Agar Road,residential,3,1,30,False,True,11.0,Low,low
+Balaram Khedekar Marg,residential,3,1,30,False,True,11.0,Low,low
+6th Road,residential,6,1,30,False,True,11.0,Low,low
+Naushad Ali Road,residential,4,2,30,False,True,11.0,Low,low
+3rd Road,residential,3,1,30,False,True,11.0,Low,low
+30th Road,residential,3,1,30,False,True,11.0,Low,low
+D'Monte Park Road Extension,residential,3,1,30,False,True,11.0,Low,medium
+Deonar Farm Road,residential,3,1,30,False,True,11.0,Low,low
+Veronica Road,residential,4,1,30,False,True,10.8,Low,low
+10th Road,residential,5,1,30,False,True,10.6,Low,low
+Munjra Street,residential,2,1,30,False,True,10.5,Low,low
+Eknath Buwa Hatiskar Marg,residential,3,1,30,False,True,10.3,Low,low
+Perry Cross Road,residential,4,1,30,False,True,10.2,Low,low
+Road No 4,residential,15,1,30,False,True,10.1,Low,low
+Din Quarry Road,residential,2,1,30,False,True,10.0,Low,low
+Scheme 57 Road no.1A,residential,1,1,30,False,True,10.0,Low,low
+I D Bhuva Road,residential,1,1,30,False,True,10.0,Low,low
+Road No 14,residential,1,1,30,False,True,10.0,Low,low
+Road No 27,residential,1,1,30,False,True,10.0,Low,low
+P B Sule Marg,residential,1,1,30,False,True,10.0,Low,low
+Road No 28A,residential,1,1,30,False,True,10.0,Low,low
+Road No 15,residential,2,1,30,False,True,10.0,Low,low
+Road No 13,residential,4,1,30,False,True,10.0,Low,low
+Marg No 2,residential,1,1,30,False,True,10.0,Low,low
+Parsi Colony Road No 4,residential,1,1,30,False,True,10.0,Low,low
+Jain Derasar Road,residential,1,1,30,False,True,10.0,Low,low
+Parsi Colony Road No 5,residential,1,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.5,residential,1,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.4,residential,1,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.3,residential,1,1,30,False,True,10.0,Low,low
+Lokmanya Tilak Vasahat Road No. 1,residential,1,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.2,residential,1,1,30,False,True,10.0,Low,low
+R K Parekh Road,residential,1,1,30,False,True,10.0,Low,low
+Road no.10,residential,1,1,30,False,True,10.0,Low,low
+Dr Ghanti Road,residential,1,1,30,False,True,10.0,Low,low
+Parsi Colony Road No.13,residential,1,1,30,False,True,10.0,Low,low
+D.V. Pradhan Road,residential,1,1,30,False,True,10.0,Low,low
+Jehangir Vimadalal Road,residential,1,1,30,False,True,10.0,Low,low
+Firdausi Road,residential,2,1,30,False,True,10.0,Low,low
+Chhabildas Road,residential,2,1,30,False,True,10.0,Low,low
+Dr D'Silva Marg,residential,2,1,30,False,True,10.0,Low,low
+V. S. Matkar Marg,residential,1,1,30,False,True,10.0,Low,low
+D Vachanalaya Marg,residential,1,1,30,False,True,10.0,Low,low
+D Raul Marg,residential,1,1,30,False,True,10.0,Low,low
+Baburao Parulekar Marg,residential,6,1,30,False,True,10.0,Low,low
+Mahilashram Road,residential,1,1,30,False,True,10.0,Low,low
+K A Subramanyam Marg,residential,2,1,30,False,True,10.0,Low,low
+Matunga Station Road,residential,2,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.9,residential,3,1,30,False,True,10.0,Low,low
+R.P. Masani Marg,residential,1,1,30,False,True,10.0,Low,low
+Road No 33,residential,1,1,30,False,True,10.0,Low,low
+Telang Cross Road no.3,residential,1,1,30,False,True,10.0,Low,low
+Scheme 57 Road no.10,residential,2,1,30,False,True,10.0,Low,low
+Varadraj Addye Road,residential,1,1,30,False,True,10.0,Low,low
+Pandit Satawlekar Marg,residential,5,1,30,False,True,10.0,Low,low
+Telang Cross Road,residential,1,1,30,False,True,10.0,Low,low
+Wenden Avenue,residential,1,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.6,residential,1,1,30,False,True,10.0,Low,low
+Scheme 6 Road no.1,residential,1,1,30,False,True,10.0,Low,low
+Scheme 5 Road no.10,residential,1,1,30,False,True,10.0,Low,low
+VJTI Marg,residential,1,1,30,False,True,10.0,Low,low
+Pitamber Lane,residential,2,1,30,False,True,10.0,Low,low
+St michael school road,residential,1,1,30,False,True,10.0,Low,low
+Narayan Pathare Marg,residential,2,1,30,False,True,10.0,Low,low
+HMA Faqir Street,residential,1,1,30,False,True,10.0,Low,low
+S B Kadri Marg,residential,1,1,30,False,True,10.0,Low,low
+L. J. Cross Road No 2,residential,1,1,30,False,True,10.0,Low,low
+Ganesh Peth Lane,residential,1,1,30,False,True,10.0,Low,low
+Ram Maruti Marg,residential,2,1,30,False,True,10.0,Low,low
+D L Vaidya Marg,residential,1,1,30,False,True,10.0,Low,low
+Pandit Gunidas Road,residential,1,1,30,False,True,10.0,Low,low
+Shiv Sena Bhavan Path,residential,1,1,30,False,True,10.0,Low,low
+Anant Patil Marg,residential,1,1,30,False,True,10.0,Low,low
+Bhagat Gully,residential,2,1,30,False,True,10.0,Low,low
+Mahim Sarvajanik Vachnalaya Marg,residential,1,1,30,False,True,10.0,Low,low
+Gopi Tank Marg,residential,1,1,30,False,True,10.0,Low,low
+S K S Marg,residential,2,1,30,False,True,10.0,Low,low
+Jambhekar Path,residential,1,1,30,False,True,10.0,Low,low
+Khot Gali,residential,1,1,30,False,True,10.0,Low,low
+Bhandar Gully,residential,1,1,30,False,True,10.0,Low,low
+MN Marg,residential,1,1,30,False,True,10.0,Low,low
+Chalankar Arvind Hari Raut Marg,residential,1,1,30,False,True,10.0,Low,low
+Yadav Patil Lane,residential,1,1,30,False,True,10.0,Low,low
+Road 13,residential,4,1,30,False,True,10.0,Low,low
+Road No.11,residential,2,1,30,False,True,10.0,Low,low
+Road 16,residential,1,1,30,False,True,10.0,Low,low
+Road 14,residential,1,1,30,False,True,10.0,Low,low
+Road 12,residential,1,1,30,False,True,10.0,Low,low
+New Hall Road,residential,1,1,30,False,True,10.0,Low,low
+St Anthony Road,residential,1,1,30,False,True,10.0,Low,low
+Parshiwadi Road,residential,3,1,30,False,True,10.0,Low,low
+Swadeshi Mills Road,residential,1,1,30,False,True,10.0,Low,low
+Bhai Dhondu Tambe Marg,residential,2,1,30,False,True,10.0,Low,low
+Bhomiya Mandir Marg,residential,1,1,30,False,True,10.0,Low,low
+Daima Marg Road,residential,1,1,30,False,True,10.0,Low,low
+Polytechinc Road,residential,1,1,30,False,True,10.0,Low,low
+Kher Nagar Road Number 6,residential,1,1,30,False,True,10.0,Low,low
+Saraswati Road,residential,2,1,30,False,True,10.0,Low,low
+Chapel Lane,residential,2,1,30,False,True,10.0,Low,low
+Nivas Road,residential,2,1,30,False,True,10.0,Low,low
+Tilak Lane,residential,1,1,30,False,True,10.0,Low,low
+Tagore Road,residential,3,1,30,False,True,10.0,Low,low
+Besant Road,residential,1,1,30,False,True,10.0,Low,low
+Anand Nagar Lane,residential,1,1,30,False,True,10.0,Low,low
+V M Bhargav Road,residential,2,1,30,False,True,10.0,Low,low
+Convent Avenue,residential,1,1,30,False,True,10.0,Low,low
+9th Road,residential,6,1,30,False,True,10.0,Low,low
+West Avenue,residential,1,1,30,False,True,10.0,Low,low
+Central Avenue,residential,1,1,30,False,True,10.0,Low,low
+11th Road,residential,2,1,30,False,True,10.0,Low,low
+Road No 11,residential,5,1,30,False,True,10.0,Low,low
+Saint Francis Road,residential,2,1,30,False,True,10.0,Low,low
+14th B Road,residential,1,1,30,False,True,10.0,Low,low
+Craft Lane,residential,1,1,30,False,True,10.0,Low,low
+Sarojini Extension road,residential,1,1,30,False,True,10.0,Low,low
+Best Colony Road,residential,1,1,30,False,True,10.0,Low,low
+Dadabhai Cross Road No 3,residential,1,1,30,False,True,10.0,Low,low
+2nd Road,residential,2,1,30,False,True,10.0,Low,low
+Dadabhai Cross Road No 2,residential,1,1,30,False,True,10.0,Low,low
+Dadabhai Cross Road No 1,residential,1,1,30,False,True,10.0,Low,low
+18th Road,residential,1,1,30,False,True,10.0,Low,low
+19th Road,residential,2,1,30,False,True,10.0,Low,low
+Chuim Village Road,residential,2,1,30,False,True,10.0,Low,low
+16th Road,residential,2,1,30,False,True,10.0,Low,low
+Jitendra Road,residential,1,1,30,False,True,10.0,Low,low
+21st Road,residential,4,1,30,False,True,10.0,Low,low
+Road Nr 3,residential,1,1,30,False,True,10.0,Low,low
+Parsi Colony Road No 6,residential,1,1,30,False,True,10.0,Low,low
+Kane Road,residential,1,1,30,False,True,10.0,Low,low
+Nityanand Street,residential,1,1,30,False,True,10.0,Low,low
+Mount Mary Road,residential,3,1,30,False,True,10.0,Low,low
+Smt. Shobha Bhaskar Joshi Marg,residential,2,1,30,False,True,10.0,Low,medium
+Chimbai Road Extension,residential,1,1,30,False,True,10.0,Low,low
+Chimbai Road,residential,1,1,30,False,True,10.0,Low,low
+St. Dominic Road,residential,2,1,30,False,True,10.0,Low,low
+Saint Joseph Road,residential,1,1,30,False,True,10.0,Low,low
+Bullock Road,residential,1,1,30,False,True,10.0,Low,low
+Cross Road 2,residential,1,1,30,False,True,10.0,Low,low
+Cross Road 1,residential,1,1,30,False,True,10.0,Low,low
+St Sebastian Cross Road,residential,1,1,30,False,True,10.0,Low,low
+St. Martin's Road,residential,2,1,30,False,True,10.0,Low,low
+Somnath Lane,residential,1,1,30,False,True,10.0,Low,low
+23rd Road (St. Theresa's Road),residential,3,1,30,False,True,10.0,Low,low
+St. John Street,residential,1,1,30,False,True,10.0,Low,low
+St. Cyril Road,residential,1,1,30,False,True,10.0,Low,low
+Dr. Raghunath Road,residential,1,1,30,False,True,10.0,Low,low
+SG Joshi Marg,residential,1,1,30,False,True,10.0,Low,low
+31st Road,residential,1,1,30,False,True,10.0,Low,low
+Ice Factory Lane,residential,2,1,15,False,True,10.0,Low,medium
+14th Road,residential,4,1,30,False,True,10.0,Low,low
+Convent Road,residential,1,1,30,False,True,10.0,Low,low
+St. Alexius Road,residential,2,1,30,False,True,10.0,Low,low
+25th Road,residential,1,1,30,False,True,10.0,Low,low
+St. Leo Road,residential,2,1,30,False,True,10.0,Low,low
+D'Monte Road,residential,1,1,30,False,True,10.0,Low,low
+St. Anthony Road,residential,2,1,30,False,True,10.0,Low,low
+SV Patel Road,residential,1,1,30,False,True,10.0,Low,low
+Datta Mandir Road,residential,1,1,30,False,True,10.0,Low,low
+Zig Zag Road,residential,1,1,30,False,True,10.0,Low,medium
+St Anne's Road,residential,1,1,30,False,True,10.0,Low,medium
+YMCA Road,residential,1,1,30,False,True,10.0,Low,low
+V Manjrekar Marg,residential,3,1,30,False,True,10.0,Low,low
+Parsi Colony Road No 7,residential,1,1,30,False,True,10.0,Low,low
+Sohrab Palamkote Road,residential,1,1,30,False,True,10.0,Low,low
+Parsi Colony Road No.14,residential,1,1,30,False,True,10.0,Low,low
+Ardeshir B Homavazir Road,residential,1,1,30,False,True,10.0,Low,medium
+Saint Monica Road,residential,1,1,30,False,True,10.0,Low,low
+SIES Lane,residential,1,1,30,False,True,10.0,Low,medium
+Shankar Aabaji Bhise Road,residential,1,1,30,False,True,10.0,Low,low
+Jasmine Mill Road,residential,3,1,30,False,True,10.0,Low,low
+23rd Road,residential,1,1,30,False,True,10.0,Low,low
+Road No 27A,residential,1,1,30,False,True,10.0,Low,low
+United Jain Student Home Road,residential,1,1,30,False,True,10.0,Low,low
+D.V Deshpande Marg,residential,1,1,30,False,True,10.0,Low,low
+Shankar Rao H. Parelkar Marg,residential,3,1,30,False,True,10.0,Low,low
+Shivaji Park Road no.1,residential,1,1,30,False,True,10.0,Low,low
+Bhikoba Waman Pathare Marg,residential,1,1,30,False,True,10.0,Low,low
+Dr V.J. Rath Path,residential,1,1,30,False,True,10.0,Low,low
+Ganesh Mandir Marg,residential,1,1,30,False,True,10.0,Low,low
+Sewri Cross Road,residential,1,1,30,False,True,10.0,Low,low
+H R Mahajani Road (College Road),residential,1,1,30,False,True,10.0,Low,low
+Ashoka Vriksh Path,residential,1,1,30,False,True,10.0,Low,low
+College Street,residential,1,1,30,False,True,10.0,Low,low
+Swadeshi Mill Road,residential,4,1,30,False,True,10.0,Low,low
+P R Kadam Marg,residential,1,1,30,False,True,10.0,Low,low
+Garden Road,residential,2,1,30,False,True,10.0,Low,low
+Shreyas Cinema Road,residential,1,1,30,False,True,10.0,Low,low
+Govandi Police Station Lane,residential,3,1,30,False,True,10.0,Low,low
+Gaothan Path No 1,residential,1,1,30,False,True,10.0,Low,low
+Ghatla Road,residential,2,1,30,False,True,10.0,Low,low
+"Chaitanya Nagar, MHB Colony",residential,1,1,30,False,True,10.0,Low,low
+Shree Kheteshwar Marg,residential,1,1,30,False,True,10.0,Low,low
+Shri Gurudatta Mandir Marg,residential,1,1,30,False,True,10.0,Low,low
+Ram Narayan Narkar marg,residential,3,1,30,False,True,10.0,Low,low
+Mysore Colony internal road,residential,5,1,30,False,True,10.0,Low,low
+Deobai Lane,residential,1,1,30,False,True,10.0,Low,low
+Danda Avenue,residential,1,1,30,False,True,10.0,Low,low
+Vasantrao Bhagwati Marg,residential,1,1,30,False,True,10.0,Low,low
+Shrimad Rajchandra Lane,residential,1,1,30,False,True,10.0,Low,low
+Babli Mahadev Kanekar Marg,residential,1,1,30,False,True,10.0,Low,low
+Bhakti Dham Mandir Road,residential,2,1,30,False,True,10.0,Low,low
+Shree Ahobila Mutt Road,residential,1,1,30,False,True,10.0,Low,low
+Saint Anthony Road,residential,1,1,30,False,True,10.0,Low,low
+Shri Ahobila Mutt Road,residential,1,1,30,False,True,10.0,Low,low
+7th Cross Road,residential,3,1,30,False,True,10.0,Low,low
+St. Anthony's Road,residential,3,1,30,False,True,10.0,Low,low
+Vishnu Nagar Road,residential,1,1,30,False,True,10.0,Low,low
+our lady of velankanni marg,residential,1,1,30,False,True,10.0,Low,low
+P Keluskar Mg,residential,1,1,30,False,True,10.0,Low,low
+Golpha Devi Mandir Marg,residential,3,1,30,False,True,10.0,Low,low
+Anant Vishram Nagvekar Marg,residential,2,1,30,False,True,10.0,Low,low
+Vasant Patil Marg,residential,1,1,30,False,True,10.0,Low,low
+Trimurti Road,residential,1,1,30,False,True,10.0,Low,low
+Vidyabhavan Road,residential,1,1,30,False,True,10.0,Low,low
+Street 1: Lane 1,residential,3,1,30,False,True,10.0,Low,low
+Street 1: Lane 2,residential,1,1,30,False,True,10.0,Low,low
+Raheja Acropolis Lane,residential,1,1,30,False,True,10.0,Low,low
+38th Road,residential,1,1,30,False,True,10.0,Low,low
+Rd4-Rd6 Connector 1,residential,1,1,30,False,True,10.0,Low,low
+Rd4 - Rd6 Connector 2,residential,1,1,30,False,True,10.0,Low,low
+Rd5-Rd6 Connector,residential,1,1,30,False,True,10.0,Low,low
+Ingalwadi Lane,residential,3,1,30,False,True,10.0,Low,low
+Dayawati Modi Marg,residential,1,1,30,False,True,10.0,Low,low
+St. Joseph's Avenue,residential,2,1,30,False,True,10.0,Low,low
+Guru Gangeshwar Marg,residential,2,1,30,False,True,10.0,Low,low
+34th Road,residential,1,1,30,False,True,10.0,Low,low
+35th Road,residential,1,1,30,False,True,10.0,Low,low
+37th Road,residential,1,1,30,False,True,10.0,Low,low
+Gangawadi Lane,residential,1,1,30,False,True,10.0,Low,low
+Gopal Lane,residential,1,1,30,False,True,10.0,Low,low
+Laxminarayan Lane,residential,1,1,30,False,True,10.0,Low,low
+Mahindra Park Road,residential,1,1,30,False,True,10.0,Low,low
+Netaji Palkar Marg,residential,2,1,30,False,True,10.0,Low,low
+Sanitorium Lane,residential,1,1,30,False,True,10.0,Low,low
+TPS Lane 3,residential,1,1,30,False,True,10.0,Low,low
+Khot Lane,residential,1,1,30,False,True,10.0,Low,low
+Rajaram Bane Marg,residential,1,1,30,False,True,10.0,Low,low
+Dhamma Kutti Marg,residential,1,1,30,False,True,10.0,Low,low
+Khimji Punja Road,residential,1,1,30,False,True,10.0,Low,low
+Mavla Maratha Road,residential,1,1,30,False,True,10.0,Low,low
+Rajawadi Road Number 4,residential,1,1,30,False,True,10.0,Low,low
+Ramachandra Marg,residential,1,1,30,False,True,10.0,Low,low
+Shree Harishwar Marg,residential,1,1,30,False,True,10.0,Low,low
+Last Lane,residential,1,1,30,False,True,10.0,Low,low
+Babu Kamble Marg,residential,1,1,30,False,True,10.0,Low,low
+Rajawadi Road Number 3,residential,1,1,30,False,True,10.0,Low,low
+Brahman Wadi Road,residential,1,1,30,False,True,10.0,Low,low
+father peter periera road,residential,1,1,30,False,True,10.0,Low,low
+Jagdusha Nagar,residential,1,1,30,False,True,10.0,Low,low
+Chinchpokli Rd,residential,1,1,30,False,True,10.0,Low,low
+Dr Ratnakar Bhaindarkar Rd,residential,1,1,30,False,True,10.0,Low,low
+National Library Road / Nandi Galli,residential,1,1,30,False,True,10.0,Low,low
+Prabhu Ramchandra Mandir Road,residential,1,1,30,False,True,10.0,Low,low
+SJ Joshi Marg,residential,2,1,30,False,True,10.0,Low,low
+RJ Gaikwad Marg,residential,2,1,30,False,True,10.0,Low,low
+Navjivan Society Road,residential,1,1,30,False,True,10.0,Low,low
+Postal Colony Lane 2,residential,1,1,30,False,True,10.0,Low,low
+Din-Quarry Deonar-Farm Link road,residential,2,1,30,False,True,10.0,Low,low
+Eden Garden Bunglows Road,residential,2,1,30,False,True,10.0,Low,low
+VashiNaka Road,residential,1,1,30,False,True,10.0,Low,low
+Saras Baug internal private road,residential,1,1,30,False,True,10.0,Low,low
+Kuttiwadi Road,residential,1,1,30,False,True,10.0,Low,low
+Tertullian Road,residential,1,1,30,False,True,10.0,Low,low
+Shivaji Nagar Road,residential,1,1,30,False,True,10.0,Low,low
+Shankar Mandir Road,residential,1,1,20,False,True,10.0,Low,medium
+Mysore Colony owned Road,residential,2,1,30,False,True,10.0,Low,low
+janta raod,residential,1,1,30,False,True,10.0,Low,low
+9th Cross Road,residential,1,1,30,False,True,10.0,Low,low
+Gregorios Path,residential,1,1,30,False,True,10.0,Low,low
+4th Cross Road,residential,1,1,30,False,True,10.0,Low,low
+Vithoba Nathu Gawad Marg,residential,1,1,30,False,True,10.0,Low,low
+Suresh Pednekar Road,residential,1,1,30,False,True,10.0,Low,low
+datta mandhiar foot path,residential,1,1,30,False,True,10.0,Low,low
+Bandh Creek Road 2,residential,1,1,30,False,True,10.0,Low,low
+20th A Road,residential,1,1,30,False,True,10.0,Low,low
+Cozihom Lane,residential,1,1,30,False,True,10.0,Low,low
+HS Revdankar Marg,residential,3,1,30,False,True,10.0,Low,low
+Mangelwadi Lane,residential,1,1,30,False,True,10.0,Low,low
+Bandh Creek Road 3,residential,1,1,30,False,True,10.0,Low,low
+Ajmera l-Land Road,residential,1,1,30,False,True,10.0,Low,low
+27th Road (Pandurang Ashram Marg),residential,1,1,30,False,True,10.0,Low,low
+St. Andrew Road Extension,residential,1,1,30,False,True,10.0,Low,medium
+Cemetry Road,residential,1,1,30,False,True,10.0,Low,low
+NL Road,residential,1,1,30,False,True,10.0,Low,low
+Tajjushsharia Road,residential,2,1,30,False,True,10.0,Low,low
+Bandh Creek Road 1,residential,2,1,30,False,True,10.0,Low,low
+Mia Mohd Chhotani Cross Road No. 3,residential,1,1,30,False,True,10.0,Low,low
+3rd Gaothan Road,residential,1,1,30,False,True,10.0,Low,low
+Krishna Niwas Road,residential,1,1,30,False,True,10.0,Low,low
+1st Gaothan Road,residential,1,1,30,False,True,10.0,Low,low
+Pushpavihar road,residential,1,1,30,False,True,10.0,Low,low
+Kapadia Main Road,residential,1,1,30,False,True,10.0,Low,low
+Culbaver road,residential,1,1,30,False,True,10.0,Low,low
+Sumantai Mhatre Road,residential,1,1,30,False,True,10.0,Low,low
+Bimal Roy Lane,residential,1,1,30,False,True,10.0,Low,low
+R. B. Vasudevrao Anant Bambardekar Road,residential,1,1,30,False,True,10.0,Low,low
+30th Road (Dr KS Hedgewar Road),residential,1,1,30,False,True,10.0,Low,low
+Matunga Road,residential,1,1,30,False,True,10.0,Low,low
+Vidhya Nagari Street,residential,1,1,30,False,True,10.0,Low,low
+Road No.2,residential,1,1,30,False,True,10.0,Low,low
+Marinagar Road,residential,1,1,30,False,True,10.0,Low,low
+Father peter periera road,residential,1,1,30,False,True,10.0,Low,low
+Borbadevi Nagar street,residential,1,1,30,False,True,10.0,Low,low
+Shri Ramnath Parkar Road,residential,1,1,30,False,True,10.0,Low,low
+Road 21,residential,2,1,30,False,True,10.0,Low,low
+St Paul Road Extension,residential,1,1,30,False,True,10.0,Low,medium
+Nibbana Road,residential,1,1,30,False,True,10.0,Low,low
+Pali Market Road,residential,1,1,30,False,True,10.0,Low,low
+Chandavarkar Marg,residential,2,1,30,False,True,10.0,Low,low
+N B Patil Marg,residential,1,1,30,False,True,10.0,Low,low
+Culbaver Road,residential,1,1,30,False,True,10.0,Low,low
+St. Cyril Road Extension,residential,1,1,30,False,True,10.0,Low,low
+L J Cross Road 1,residential,1,1,30,False,True,10.0,Low,low
+Jogiraj Ashram Lane,residential,1,1,30,False,True,10.0,Low,low
+Rizvi College Road,residential,2,1,30,False,True,10.0,Low,low
+Manuel Menezes Road,residential,1,1,30,False,True,10.0,Low,low
+Smokers lane,residential,2,1,30,False,True,10.0,Low,low
+Railway Colony Road,residential,7,1,30,False,True,10.0,Low,low
+"20th Road, St.Elias Marg",residential,1,1,30,False,True,10.0,Low,low
+Borbadevi Nagar Road,residential,1,1,30,False,True,10.0,Low,low
+Don Bosco Campus Road,residential,2,1,30,False,True,10.0,Low,low
+Parsi Colony Road No 9,residential,1,1,30,False,True,10.0,Low,low
+Parsi Colony Road No 10,residential,1,1,30,False,True,10.0,Low,low
+Kolifornia street,residential,2,1,30,False,True,10.0,Low,low
+Cross Lane,residential,1,1,30,False,True,10.0,Low,low
+St John Road Extension,residential,1,1,30,False,True,10.0,Low,medium
+Chavkute Lane,residential,1,1,30,False,True,10.0,Low,low
+Ganesh Nagar,residential,1,1,30,False,True,10.0,Low,low
+Road No 20,residential,1,1,30,False,True,10.0,Low,low
+Vitta Sanchay Internal road,residential,4,1,30,False,True,10.0,Low,low
+Cross Road,residential,1,1,30,False,True,10.0,Low,low
+Galaxy Apartments Road,residential,1,1,30,False,True,10.0,Low,low
+Vitta Sanchay Parking Internal road,residential,2,1,30,False,True,10.0,Low,low
+Mohmmad Road,residential,2,1,30,False,True,10.0,Low,low
+Haji Mohammad Noora Road,residential,1,1,20,False,True,10.0,Low,high
+Road No.15,residential,1,1,30,False,True,10.0,Low,low
+4th Lane,residential,1,1,30,False,True,10.0,Low,low
+Buntar Bhavan Cross road,residential,2,1,30,False,True,10.0,Low,low
+Pushpa Vihar Road,residential,1,1,30,False,True,10.0,Low,low
+Keluskar Road North,residential,4,1,30,False,True,9.8,Low,low
+Nargis Dutt Road,residential,4,1,30,False,True,9.5,Low,low
+S. G. Joshi Marg,residential,1,2,30,False,False,9.0,Low,medium
+Harba Mauli Rd Pier No. 3,residential,2,2,20,False,False,9.0,Low,high
+Patil Pada Pier no 2,residential,1,2,20,False,False,9.0,Low,high
+Road Number 5,residential,4,1,30,False,True,8.8,Low,low
+Sant Chokha Mela Path,tertiary,5,2,40,True,False,8.8,Low,low
+Keluskar Road South,residential,5,2,40,False,True,8.8,Low,low
+Kamaraj Nagar Road,residential,4,1,30,False,True,8.8,Low,low
+Mysore Colony Connector,residential,5,1,30,False,True,8.6,Low,low
+Road 1,residential,5,1,30,False,True,8.6,Low,low
+Dr Narayan Joshi Rd,residential,3,1,30,False,True,8.3,Low,low
+Sarojini Road,residential,3,1,30,False,True,8.3,Low,low
+Road 3,residential,3,1,30,False,True,8.3,Low,low
+Danda Creek Road,residential,4,1,30,False,True,8.2,Low,low
+Dnanyeshwar Mandir Marg,residential,1,1,30,False,False,8.0,Low,low
+Sufras Street,residential,2,1,30,False,False,8.0,Low,low
+Pipe Line Road,residential,5,1,30,False,True,8.0,Low,low
+3rd Lane,residential,2,1,30,False,False,8.0,Low,low
+R C Marg,residential,2,1,30,False,False,8.0,Low,low
+Inlaks Hospital Road,residential,4,1,30,False,False,8.0,Low,low
+Salt Pan Road,residential,4,1,30,False,True,7.5,Low,low
+Road No 28B,residential,4,1,30,False,True,7.5,Low,low
+Maneklal Mehta Road,residential,3,1,30,False,True,6.7,Low,low
+Janata Society Road,residential,1,1,30,False,False,5.0,Low,low
+G Dardi Marg,residential,1,1,30,False,False,5.0,Low,low
+L Kasbe Marg,residential,1,1,30,False,False,5.0,Low,low
+R Jaimal Yagnik Road,residential,2,1,30,False,False,5.0,Low,low
+Madhavdas Pasta Marg,residential,1,1,30,False,False,5.0,Low,low
+Old CST Road,residential,1,1,30,False,False,5.0,Low,low
+Adarsh Lane,residential,1,1,30,False,False,5.0,Low,low
+Jain Derasar Marg,residential,1,1,30,False,False,5.0,Low,low
+BC Chatterjee Marg,residential,1,1,30,False,False,5.0,Low,low
+St Francis Road,residential,2,1,30,False,False,5.0,Low,low
+Nariman Road,residential,1,1,30,False,False,5.0,Low,low
+Pheroze Shah Mehta Road,residential,1,1,30,False,False,5.0,Low,low
+M Dandekar Marg,residential,4,1,30,False,False,5.0,Low,low
+Varinpada Pier No.1,residential,1,1,30,False,False,5.0,Low,low
+Dr Nandita Rane's Eye Clinic,residential,1,1,30,False,False,5.0,Low,medium
+Road 4,residential,3,1,30,False,False,5.0,Low,low
+Vashinaka Road,residential,2,1,30,False,False,5.0,Low,low
+S Nagar Road,residential,1,1,30,False,False,5.0,Low,low
+Bhavani Lane,residential,1,1,30,False,False,5.0,Low,low
+Bhagwan Mahaveer Lane,residential,1,1,30,False,False,5.0,Low,low
+Bhaweshwar Road,residential,1,1,30,False,False,5.0,Low,low
+Pestom Sagar Road Number 3,residential,1,1,30,False,False,5.0,Low,low
+Bhanushali Lane,residential,2,1,30,False,False,5.0,Low,low
+Joshi Lane,residential,2,1,30,False,False,5.0,Low,low
+SaiBaba Lane,residential,1,1,30,False,False,5.0,Low,low
+Bazar Ward Road,residential,5,1,30,False,False,5.0,Low,low
+Narayan D Mistri Marg,residential,1,1,30,False,False,5.0,Low,low
+Nehru Nagar Police Station Marg,residential,1,1,30,False,False,5.0,Low,low
+Nityanand Baug Road,residential,3,1,30,False,False,5.0,Low,low
+Trilok Kapoor Marg,residential,3,1,30,False,False,5.0,Low,low
+KN Gaikwad Marg,residential,1,1,30,False,False,5.0,Low,low
+Sanjana Lane,residential,1,1,30,False,False,5.0,Low,low
+market road,residential,1,1,30,False,False,5.0,Low,low
+Dr M P Vaidya Marg,residential,1,1,30,False,False,5.0,Low,low
+Varinpada Gully,residential,1,1,30,False,False,5.0,Low,low
+Razia Pathan Lane,residential,1,1,30,False,False,5.0,Low,low
+Danda Seaface Promenade,residential,2,1,30,False,False,5.0,Low,low
+MIG Colony Road,residential,2,1,30,False,False,5.0,Low,low
+Kolifornia Street,residential,1,1,30,False,False,5.0,Low,low
+Harbhanji Lane,residential,1,1,30,False,False,5.0,Low,low
+Khimji Lane,residential,1,1,30,False,False,5.0,Low,low
+Rajesh PK Society Road,residential,1,1,30,False,False,5.0,Low,low
+Arihant Road,residential,2,1,30,False,False,5.0,Low,low
+Danda-Juhu-Versova beach walk,residential,1,1,30,False,False,-1.0,Low,low
