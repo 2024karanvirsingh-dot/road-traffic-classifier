@@ -11,31 +11,39 @@
   .panel {
     position: absolute; top: 12px; right: 12px; z-index: 1000;
     background: rgba(255,255,255,.96); border-radius: 12px; padding: 14px 16px;
-    box-shadow: 0 4px 18px rgba(0,0,0,.18); width: 300px; font-size: 13px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.18); width: 302px; font-size: 13px;
   }
   .panel h1 { font-size: 16px; margin: 0 0 8px; }
   .panel p { margin: 6px 0; color: #444; }
-  select {
+  select, #q {
     width: 100%; font-size: 14px; padding: 7px 8px; border-radius: 8px;
-    border: 1px solid #ccc; background: #fff; margin-bottom: 8px;
+    border: 1px solid #ccc; background: #fff; box-sizing: border-box;
   }
+  select { margin-bottom: 8px; }
+  .search { display: flex; gap: 6px; margin-bottom: 8px; }
+  #go {
+    font-size: 14px; padding: 7px 12px; border-radius: 8px; border: none;
+    background: #1a56db; color: #fff; cursor: pointer; white-space: nowrap;
+  }
+  #go:disabled { background: #9db4e8; cursor: wait; }
   .sw { display: inline-block; width: 22px; height: 5px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
   .row { margin: 3px 0; cursor: pointer; user-select: none; }
   .row.off { opacity: .35; }
   .stats { color: #666; font-size: 12px; margin-top: 8px; }
   .bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin: 8px 0 2px; }
-  #loading {
-    position: absolute; inset: 0; z-index: 2000; display: none;
-    background: rgba(255,255,255,.6); align-items: center; justify-content: center;
-    font-size: 15px; color: #333;
-  }
+  #status { color: #1a56db; font-size: 12px; min-height: 15px; margin: 2px 0 4px; }
+  #status.err { color: #c0392b; }
 </style>
 </head>
 <body>
 <div id="map"></div>
-<div id="loading">Loading city…</div>
 <div class="panel">
   <h1>Global Road Traffic Classification</h1>
+  <div class="search">
+    <input id="q" type="text" placeholder="Classify any city on Earth&hellip;" autocomplete="off">
+    <button id="go">Go</button>
+  </div>
+  <div id="status"></div>
   <select id="city"></select>
   <p>Every road segment scored from public OpenStreetMap data only: road class, lanes, speed limit, one way pairing, transit routes, land use, junction connectivity, surface. Click any road for its score breakdown.</p>
   <div class="bar" id="bar"></div>
@@ -55,8 +63,10 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 const COLORS = { High: '#d73027', Moderate: '#fc8d2f', Low: '#4a90d9' };
 const WEIGHTS = { High: 5, Moderate: 4, Low: 2 };
 let layers = null;
+const liveCache = {};   // slug -> classified data for cities searched this session
 
 const sel = document.getElementById('city');
+const statusEl = document.getElementById('status');
 CITIES.forEach(c => {
   const o = document.createElement('option');
   o.value = c.slug;
@@ -65,10 +75,12 @@ CITIES.forEach(c => {
 });
 
 function yn(v) { return v ? 'yes' : 'no'; }
+function setStatus(msg, err) {
+  statusEl.textContent = msg;
+  statusEl.className = err ? 'err' : '';
+}
 
-async function loadCity(slug) {
-  document.getElementById('loading').style.display = 'flex';
-  const d = await (await fetch(`data/${slug}/map.json`)).json();
+function render(d, note) {
   if (layers) Object.values(layers).forEach(l => map.removeLayer(l));
   layers = { High: L.layerGroup(), Moderate: L.layerGroup(), Low: L.layerGroup() };
   const counts = { High: 0, Moderate: 0, Low: 0 };
@@ -99,12 +111,163 @@ async function loadCity(slug) {
     document.getElementById('n-' + c).textContent =
       `(${counts[c].toLocaleString()} segments, ${(100 * counts[c] / total).toFixed(0)}%)`);
   document.getElementById('stats').textContent =
-    `${total.toLocaleString()} segments in ${d.city}, scored in a fraction of a second from free public data. Same formula for every city on Earth.`;
+    `${total.toLocaleString()} segments in ${d.city}${note || ''}. Same formula for every city on Earth.`;
   map.setView(d.center, 13);
   document.querySelectorAll('.row').forEach(el => el.classList.remove('off'));
-  document.getElementById('loading').style.display = 'none';
 }
 
+async function loadCity(slug) {
+  if (liveCache[slug]) return render(liveCache[slug], ', classified live in your browser');
+  setStatus('Loading…');
+  const d = await (await fetch(`data/${slug}/map.json`)).json();
+  setStatus('');
+  render(d);
+}
+
+/* ---------------- live classification: the same algorithm as classify.py,
+   ported to JS so any city on Earth can be scored with no backend at all. */
+const CLASS_POINTS = { motorway: 40, motorway_link: 32, trunk: 34, trunk_link: 28,
+  primary: 28, primary_link: 24, secondary: 22, secondary_link: 19,
+  tertiary: 14, unclassified: 8, residential: 5 };
+const DEF_LANES = { motorway: 3, motorway_link: 1, trunk: 2, trunk_link: 1,
+  primary: 2, primary_link: 1, secondary: 2, secondary_link: 1,
+  tertiary: 2, unclassified: 1, residential: 1 };
+const DEF_KMH = { motorway: 90, motorway_link: 60, trunk: 70, trunk_link: 50,
+  primary: 50, primary_link: 40, secondary: 50, secondary_link: 40,
+  tertiary: 40, unclassified: 40, residential: 30 };
+const UNPAVED = new Set(['unpaved','dirt','gravel','sand','ground','earth','grass',
+  'mud','compacted','fine_gravel','pebblestone','rock']);
+
+function parseKmh(tag) {
+  if (!tag) return null;
+  const t = tag.split(';')[0].trim().toLowerCase();
+  if (t === 'walk') return 10;
+  const m = t.match(/^(\d+(?:\.\d+)?)\s*(mph|knots)?$/);
+  if (!m) return null;
+  let v = parseFloat(m[1]);
+  if (m[2] === 'mph') v *= 1.609344;
+  if (m[2] === 'knots') v *= 1.852;
+  return v;
+}
+
+function classifyElements(elements) {
+  const roads = [], rels = [], land = [];
+  elements.forEach(e => {
+    if (e.type === 'relation') rels.push(e);
+    else if (e.tags && CLASS_POINTS[e.tags.highway] !== undefined) roads.push(e);
+    else land.push(e);
+  });
+  const transitWays = new Set();
+  rels.forEach(r => (r.members || []).forEach(m => { if (m.type === 'way') transitWays.add(m.ref); }));
+
+  const CELL = 0.0015, hot = new Set();
+  land.forEach(e => (e.geometry || []).forEach(p =>
+    hot.add(Math.round(p.lat / CELL) + ':' + Math.round(p.lon / CELL))));
+  const nearCommercial = g => {
+    const step = Math.max(1, Math.floor(g.length / 8));
+    for (let i = 0; i < g.length; i += step) {
+      const r0 = Math.round(g[i].lat / CELL), c0 = Math.round(g[i].lon / CELL);
+      for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++)
+        if (hot.has((r0 + dr) + ':' + (c0 + dc))) return true;
+    }
+    return false;
+  };
+
+  const endCount = {};
+  const ek = p => p.lat.toFixed(5) + ':' + p.lon.toFixed(5);
+  roads.forEach(w => {
+    const g = w.geometry || [];
+    if (g.length < 2) return;
+    endCount[ek(g[0])] = (endCount[ek(g[0])] || 0) + 1;
+    endCount[ek(g[g.length - 1])] = (endCount[ek(g[g.length - 1])] || 0) + 1;
+  });
+
+  const segments = [];
+  roads.forEach(w => {
+    const tags = w.tags || {}, g = w.geometry || [];
+    if (g.length < 2) return;
+    const cls = tags.highway;
+    let lanes = parseInt(tags.lanes), kmh = parseKmh(tags.maxspeed);
+    const lanesI = isNaN(lanes), speedI = kmh === null;
+    if (lanesI) lanes = DEF_LANES[cls];
+    if (speedI) kmh = DEF_KMH[cls];
+    const oneway = tags.oneway === 'yes' || tags.oneway === '-1';
+    const transit = transitWays.has(w.id);
+    const commercial = nearCommercial(g);
+    const junction = Math.max(endCount[ek(g[0])] || 0, endCount[ek(g[g.length - 1])] || 0) >= 4;
+    const unpaved = UNPAVED.has(tags.surface);
+    let s = CLASS_POINTS[cls] + 4 * (lanes - 1) + 0.25 * Math.max(0, kmh - 40);
+    if (oneway && ['primary', 'secondary', 'tertiary'].includes(cls)) s += 2;
+    if (transit) s += 6;
+    if (commercial) s += 5;
+    if (junction) s += 3;
+    if (unpaved) s -= 6;
+    s = Math.round(s * 10) / 10;
+    segments.push({
+      name: tags.name || '(unnamed)', class: cls, lanes, kmh: Math.round(kmh),
+      oneway, transit, commercial, junction, unpaved, score: s,
+      confidence: (!lanesI && !speedI) ? 'high' : (lanesI && speedI) ? 'low' : 'medium',
+      category: s <= 20 ? 'Low' : s <= 38 ? 'Moderate' : 'High',
+      geometry: g.map(p => [Math.round(p.lat * 1e5) / 1e5, Math.round(p.lon * 1e5) / 1e5]),
+    });
+  });
+  return segments;
+}
+
+async function searchCity(place) {
+  const go = document.getElementById('go');
+  go.disabled = true;
+  try {
+    setStatus('Geocoding…');
+    const geo = await (await fetch('https://nominatim.openstreetmap.org/search?' +
+      new URLSearchParams({ q: place, format: 'json', limit: 1 }))).json();
+    if (!geo.length) return setStatus(`Could not find "${place}"`, true);
+    const lat = +geo[0].lat, lon = +geo[0].lon;
+    const span = 0.04, b = [lat - span, lon - span * 1.3, lat + span, lon + span * 1.3]
+      .map(v => v.toFixed(4)).join(',');
+    const classes = Object.keys(CLASS_POINTS).join('|');
+    const query = `[out:json][timeout:120];
+way["highway"~"^(${classes})$"](${b});out tags geom;
+relation["route"~"^(bus|trolleybus|tram|share_taxi)$"](${b});out;
+(way["landuse"~"^(commercial|retail|industrial)$"](${b});
+ way["amenity"~"^(university|hospital|school|marketplace)$"](${b}););out tags geom;`;
+    setStatus('Fetching roads from OpenStreetMap (can take up to a minute)…');
+    const resp = await fetch('https://overpass-api.de/api/interpreter', {
+      method: 'POST', body: new URLSearchParams({ data: query }) });
+    if (!resp.ok) return setStatus('OpenStreetMap server is busy, try again in a minute', true);
+    const data = await resp.json();
+    setStatus('Classifying…');
+    const t0 = performance.now();
+    const segments = classifyElements(data.elements);
+    const ms = Math.round(performance.now() - t0);
+    if (!segments.length) return setStatus('No roads found there, try a bigger place', true);
+    const cityName = geo[0].display_name.split(',')[0];
+    const d = { city: cityName, center: [lat, lon], segments };
+    const slug = 'live-' + cityName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    liveCache[slug] = d;
+    if (![...sel.options].some(o => o.value === slug)) {
+      const o = document.createElement('option');
+      o.value = slug;
+      o.textContent = `${cityName} (${segments.length.toLocaleString()} segments, live)`;
+      sel.appendChild(o);
+    }
+    sel.value = slug;
+    setStatus('');
+    render(d, `, classified live in your browser in ${ms} ms`);
+  } catch (e) {
+    setStatus('Something went wrong: ' + e.message, true);
+  } finally {
+    go.disabled = false;
+  }
+}
+
+document.getElementById('go').addEventListener('click', () => {
+  const q = document.getElementById('q').value.trim();
+  if (q) searchCity(q);
+});
+document.getElementById('q').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { const q = e.target.value.trim(); if (q) searchCity(q); }
+});
 document.querySelectorAll('.row').forEach(el => el.addEventListener('click', () => {
   const c = el.dataset.cat;
   if (!layers) return;

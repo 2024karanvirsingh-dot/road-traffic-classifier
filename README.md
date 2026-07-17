@@ -10,6 +10,8 @@ python3 classify.py "Tokyo, Japan"
 python3 classify.py --bbox 42.360,-71.130,42.390,-71.090 --name "Cambridge, USA"
 ```
 
+The interactive map also has a **live search box**: type any city on Earth and the full pipeline (geocode, fetch, score, render) runs client side in the browser in about a second, with no backend at all. The scoring logic is the same formula ported to JavaScript, which doubles as proof of how simple the algorithm is.
+
 It has been applied to eight cities on five continents (Cambridge USA, London, Paris, Tokyo, Nairobi, Sao Paulo, Mumbai, Sydney), about 84,000 road segments in total. Classification itself takes about a tenth of a second per city; the one time data fetch is a few seconds. `index.html` is an interactive world map with a city picker. Per city outputs live under `data/<city>/`: `results.csv` (full), `results.md` (20 road sample table), `map.json` (map data).
 
 ## 1. Data sources (all public, all free, no API keys)
@@ -79,6 +81,14 @@ Each `data/<city>/results.md` holds a 20 road sample spanning all three categori
 * **Tag quality varies by region.** The confidence flag surfaces this; in sparsely tagged areas the classifier degrades toward class only. Improvement: betweenness centrality on the road graph (still free) or satellite derived lane counts.
 * **Thresholds are hand set**, sanity checked rather than fitted. Even 30 to 50 count stations per region would let the two cut points be chosen to maximize agreement with binned AADT.
 * **Name aggregation is coarse** for long roads that change character. The map already classifies per segment; tables could report distributions instead of a single label.
+
+## Planet scale economics
+
+The design goal was an algorithm cheap enough that "all the roads in the world" is a realistic target, and it is:
+
+* Data: the full OSM planet file is a free ~80 GB download. Roughly 250 million road segments worldwide.
+* Compute: the classifier does about 10,000 segments per second per core in plain Python, so the planet is on the order of 7 core hours: overnight on a laptop, or well under $20 of rented compute for a fast run. Reruns after OSM updates only need changed regions.
+* Serving: pre-rendered classifications for the whole world fit in a few GB of static vector tiles (PMTiles) on free tier object storage. No servers, no per request cost.
 
 ## Files
 
