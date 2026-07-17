@@ -188,6 +188,7 @@ function classifyElements(elements) {
     if (g.length < 2) return;
     const cls = tags.highway;
     let lanes = parseInt(tags.lanes), kmh = parseKmh(tags.maxspeed);
+    if (lanes < 1) lanes = NaN;
     const lanesI = isNaN(lanes), speedI = kmh === null;
     if (lanesI) lanes = DEF_LANES[cls];
     if (speedI) kmh = DEF_KMH[cls];

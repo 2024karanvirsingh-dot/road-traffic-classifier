@@ -1,832 +1,832 @@
-road,osm_class,segments,lanes,speed_kmh,transit,commercial,score,category,confidence
-Nyayo Stadium Roundabout,trunk,6,4,70,True,True,63.5,High,medium
-Nairobi Expressway,motorway,44,3,90,False,True,59.7,High,medium
-Chiromo Road,trunk,8,3,70,True,True,58.6,High,medium
-Muranga Road,trunk,4,2,70,True,True,56.5,High,low
-Haile Selassie Roundabout,trunk,6,3,50,True,True,55.5,High,high
-University Way Round About,trunk,4,2,70,True,True,55.2,High,low
-Uhuru Highway,trunk,16,3,70,True,True,54.9,High,medium
-Mombasa Road,trunk,23,3,70,True,True,54.5,High,medium
-Nairobi - Mombasa Road,trunk,2,3,70,True,False,53.5,High,low
-Globe Roundabout,trunk,11,3,70,True,True,52.7,High,low
-University Way,trunk,8,4,50,True,True,52.2,High,high
-Kiambu Road,trunk,1,2,70,True,False,51.5,High,low
-Westlands Roundabout,trunk,6,2,70,True,True,50.8,High,low
-Waiyaki Way,trunk,6,2,70,True,True,50.5,High,low
-Kenyatta Avenue Round About,trunk,5,2,50,True,True,50.3,High,medium
-Southern Bypass,trunk,17,2,100,False,True,50.1,High,low
-Bunyala Roundabout,trunk,5,2,70,True,True,50.1,High,low
-Murang'a Road,trunk,54,4,70,True,True,49.9,High,low
-Slip Road,trunk,5,3,50,True,True,47.1,High,medium
-City Mortuary Round About,secondary,7,4,50,True,True,46.6,High,medium
-Southern Bypass Expressway Entry,motorway_link,6,2,80,False,True,45.8,High,low
-Ladhies Road-,secondary,1,3,50,True,True,45.5,High,medium
-Mondlane Street,tertiary,1,4,50,True,True,44.5,High,high
-Capital Centre Expressway Entry,motorway_link,5,2,80,False,True,44.4,High,low
-Westlands Expressway Entry,motorway_link,2,2,60,False,True,44.0,High,low
-Oloitokitok Road,secondary,9,2,50,True,True,43.1,High,low
-Park Road,secondary,4,2,50,True,True,43.0,High,low
-Capital Center Exit B,motorway_link,3,2,50,False,True,42.2,High,high
-Riverside Westlands Lane,secondary,2,2,50,True,True,42.0,High,low
-Museum Hill Exit A,motorway_link,3,1,60,False,True,42.0,High,low
-Capital Center Exit A,motorway_link,3,1,60,False,True,42.0,High,low
-Museum Hill Expressway Exit,motorway_link,1,1,60,False,True,42.0,High,low
-Haile Selassie Avenue,secondary,50,4,50,True,True,41.9,High,low
-Madaraka Roundabout,secondary,7,2,50,True,True,41.5,High,low
-Mbagathi Way,secondary,1,2,50,True,True,41.5,High,medium
-Old Mombasa Road,primary,3,2,50,False,True,41.5,High,low
-Raila Odinga Way,secondary,19,2,50,True,True,41.3,High,medium
-Limuru Road,primary,18,2,50,True,True,41.3,High,low
-Dr. G.W. Griffin Road,primary_link,20,3,50,True,True,41.1,High,low
-First Avenue Eastleigh,secondary,12,2,50,True,True,41.1,High,low
-Langata Road,secondary,30,3,50,True,True,41.0,High,low
-Southern Bypass Expressway Exit,motorway_link,2,2,50,False,True,41.0,High,high
-City Stadium Roundabout,secondary,9,3,50,True,True,40.8,High,low
-Valley Road,secondary,9,2,50,True,True,40.8,High,medium
-ICD Road,primary,3,2,50,False,True,40.8,High,low
-Racecourse Road,secondary,13,2,50,True,True,40.6,High,low
-Ojijo Rd.,secondary,2,2,50,True,True,40.5,High,medium
-Juja Road,secondary,34,2,50,True,True,40.4,High,low
-Ojijo Road,secondary,5,2,50,True,True,40.3,High,low
-Tom Mboya Street,secondary,24,2,50,True,True,40.2,High,low
-Prof. Wangari Maathai Road,trunk,34,3,70,True,True,40.2,High,low
-Moi Avenue,secondary,33,2,50,True,True,39.9,High,low
-Landhies Road,secondary,5,2,50,True,True,39.8,High,low
-Eastleigh 1st Avenue,secondary,9,2,50,True,True,39.8,High,low
-Farm Engineering Industrial,secondary,1,2,50,True,True,39.5,High,medium
-Muniami Street,secondary,1,2,50,True,True,39.5,High,low
-Prof. Wangari Mathai Road,secondary,1,3,50,False,True,39.5,High,medium
-Digo Road,secondary,5,2,50,True,True,39.5,High,low
-Cargen Roundabout,secondary,8,2,50,True,True,39.5,High,low
-M.P. Shah Roundabout,secondary,6,2,50,True,True,39.5,High,low
-Cotton Avenue,secondary,13,2,50,True,True,39.3,High,medium
-Ring Road,secondary,9,2,50,True,True,39.3,High,low
-Ngong Road,secondary,57,3,50,True,True,39.2,High,low
-Lusaka Road,secondary,17,3,50,True,True,39.1,High,medium
-Enterprise Road,secondary,38,3,50,True,True,38.5,High,low
-Oloiktoktok Road,secondary,7,2,50,True,True,38.5,High,low
-Argwings Kodhek Road,secondary,20,2,50,True,True,38.5,High,medium
-Lusaka Road Round About,secondary,6,2,50,True,True,38.5,High,medium
-Ring Road Kileleshwa,secondary,7,2,50,True,True,38.2,High,medium
-Ring Road Kilimani,secondary,8,2,50,True,True,38.1,High,medium
-Parklands Road,primary,16,2,50,True,True,37.8,Moderate,low
-Outer Ring Road,primary,25,2,100,True,False,37.7,Moderate,low
-Rabai Road,secondary,11,2,50,True,True,37.6,Moderate,low
-Jogoo Road,secondary,35,3,50,True,True,37.5,Moderate,low
-River Road,trunk,10,2,70,True,True,37.4,Moderate,low
-Kipande Road,secondary,8,2,50,True,True,37.2,Moderate,low
-Lunga Lunga Road,secondary,5,2,50,True,True,37.1,Moderate,low
-General Waruingi Street,secondary,8,2,50,True,True,37.1,Moderate,low
-Mumias Road,secondary,6,2,50,True,False,36.8,Moderate,low
-D.O.D Roundabout,secondary,4,2,50,True,True,36.5,Moderate,medium
-Bunyala Road Roundabout,secondary,2,2,50,True,True,36.5,Moderate,medium
-General Waruinge Street,secondary,4,2,50,True,True,36.5,Moderate,low
-Thika Road,secondary,1,2,50,True,False,36.5,Moderate,low
-Haile Selassie Exit,motorway_link,5,1,60,False,True,36.4,Moderate,low
-Northview Road,secondary,3,2,50,True,True,36.2,Moderate,low
-Ronald Ngala Street,secondary,15,2,50,True,True,36.2,Moderate,low
-Ring Road Ngara,secondary,4,2,50,True,False,36.0,Moderate,low
-Ladhies Road,secondary,3,2,50,True,True,35.5,Moderate,medium
-Aerodrome Road,secondary,1,2,50,False,True,35.5,Moderate,medium
-Narayan Road,primary,3,2,50,False,True,35.5,Moderate,low
-Lang'ata Link Road,secondary,41,2,50,True,True,35.3,Moderate,low
-Suna Road,tertiary,1,2,50,True,True,34.5,Moderate,medium
-Kariakor Roundabout,secondary,8,2,50,True,False,34.5,Moderate,low
-Uyoma Street,tertiary,4,2,50,True,True,34.4,Moderate,low
-Ring Road Westlands,secondary,12,3,50,True,True,34.1,Moderate,low
-Likoni Road,secondary,18,2,50,True,True,34.1,Moderate,low
-Kirinyaga Road,tertiary,2,2,60,True,True,34.0,Moderate,medium
-Dennis Pritt Road,secondary,14,2,50,True,True,33.9,Moderate,low
-Latema Road,tertiary,13,2,50,True,True,33.8,Moderate,low
-Mumias South Road,secondary,7,2,50,True,True,33.8,Moderate,low
-Oloitoktok Road,secondary,3,2,50,True,False,33.8,Moderate,medium
-Mutarawka Road,primary_link,2,2,50,True,False,33.2,Moderate,low
-Kimathi Street,tertiary,6,2,50,True,True,32.5,Moderate,medium
-Kenyatta Avenue,secondary,23,2,50,True,True,32.0,Moderate,low
-Heshima Road,tertiary,3,2,40,True,True,32.0,Moderate,low
-State House Road,secondary,16,2,50,False,True,31.7,Moderate,low
-State House Avenue,secondary,3,2,50,False,True,31.5,Moderate,low
-Kibera Drive,tertiary,1,2,50,True,True,31.5,Moderate,medium
-Nairobi Park East Gate Road,primary,3,2,50,False,True,31.3,Moderate,low
-Charles New Road,tertiary,3,2,40,True,True,31.0,Moderate,low
-Kilimani Roundabout,tertiary,2,2,40,True,True,31.0,Moderate,low
-Commercial Street,secondary,4,2,50,False,True,30.9,Moderate,low
-Elgon Road,tertiary,4,2,50,True,True,30.8,Moderate,low
-Joseph Kang'ethe,tertiary,4,2,50,True,True,30.5,Moderate,medium
-Muratina Street,secondary,7,2,50,False,True,30.1,Moderate,low
-Kungu Karumba Road,secondary,10,2,50,True,True,30.1,Moderate,low
-Chiromo Lane,tertiary,3,2,40,True,True,30.0,Moderate,low
-Hospital Road,tertiary,8,2,50,True,True,29.4,Moderate,low
-Riverside Drive,tertiary,13,2,50,True,True,29.4,Moderate,low
-Karbarnet Road,tertiary,2,2,50,True,True,29.2,Moderate,low
-City Hall Way,tertiary,14,2,50,True,True,29.1,Moderate,low
-Nyasa Road,tertiary,2,2,40,True,True,29.0,Moderate,low
-Desai Road,secondary,11,2,50,True,True,29.0,Moderate,low
-Wangu Avenue,tertiary,1,2,40,True,True,29.0,Moderate,low
-Kabarnet Road,tertiary,2,2,50,True,False,29.0,Moderate,medium
-Bunyala Road,secondary,10,2,50,True,True,28.9,Moderate,low
-Nyerere Road,tertiary,4,2,50,False,True,28.6,Moderate,low
-Elgeyo Marakwet Road,tertiary,1,2,50,False,True,28.5,Moderate,medium
-Kayahwe Road,secondary,1,2,50,False,False,28.5,Moderate,medium
-Nile Road,tertiary,6,2,40,True,True,28.5,Moderate,low
-Lunga Lunga Roundabout,tertiary,4,2,50,True,True,28.5,Moderate,high
-Harambee Avenue,tertiary,7,4,50,False,True,28.1,Moderate,medium
-Mzima Springs Road,tertiary,6,2,50,True,True,28.1,Moderate,low
-Kirinyaga Road.,tertiary,2,2,40,True,True,28.0,Moderate,low
-Upperhill Links Road,tertiary,4,2,50,False,True,27.5,Moderate,medium
-Denis Pritt Road,secondary,6,2,50,False,True,27.2,Moderate,medium
-Mama Ngina Street,tertiary,5,2,50,True,True,27.2,Moderate,low
-Parliament Road,tertiary,5,4,50,False,True,26.7,Moderate,medium
-Jakaya Kikwete Road,tertiary,2,2,50,False,True,26.5,Moderate,medium
-Olenguruone Road,tertiary,6,2,50,False,True,26.5,Moderate,medium
-Woodlands Road,tertiary,4,2,50,False,True,26.1,Moderate,low
-Ambira Road,tertiary,1,2,40,False,True,26.0,Moderate,low
-Ragati Road,secondary,10,2,50,True,True,25.9,Moderate,low
-Mogotio Road,tertiary,1,2,50,False,True,25.5,Moderate,high
-Ngara Road,secondary,13,2,50,True,True,25.4,Moderate,low
-Koinage Street,tertiary,5,2,50,False,True,25.3,Moderate,low
-Lower Hill Road,tertiary,2,2,40,False,True,25.0,Moderate,low
-Matumbato Road,tertiary,4,2,40,False,True,25.0,Moderate,low
-Muthithi Road,unclassified,4,2,60,True,True,24.9,Moderate,medium
-Quarry Road,secondary,3,2,50,False,True,24.5,Moderate,low
-Milimani Road,tertiary,3,2,40,False,True,24.3,Moderate,low
-Taarifa Road,tertiary,3,2,40,False,True,24.3,Moderate,low
-Muindi Mbingu Street,secondary,8,2,50,False,True,23.9,Moderate,low
-Tubman Road,tertiary,3,2,40,False,True,23.7,Moderate,low
-Upper Hill Road,tertiary,9,2,50,True,True,23.4,Moderate,low
-Ring Road Parklands,tertiary,7,2,50,False,True,23.1,Moderate,medium
-Pumwani Road,tertiary,1,2,40,False,True,23.0,Moderate,low
-3rd Parklands Avenue,unclassified,1,2,40,True,True,23.0,Moderate,medium
-Butecho,tertiary,2,2,40,False,True,23.0,Moderate,low
-Sakwero Road,tertiary,1,2,40,False,True,23.0,Moderate,low
-Sergeant Kahande Street,tertiary,2,2,40,False,True,23.0,Moderate,low
-Kipande Athumani Street,tertiary,2,2,40,False,True,23.0,Moderate,low
-Mweni Road,tertiary,1,2,40,False,True,23.0,Moderate,medium
-Fairview Road,tertiary,1,2,40,False,True,23.0,Moderate,low
-Major Jackson Muirithi Street,tertiary,1,2,40,False,True,23.0,Moderate,low
-Kirongothi Street,tertiary,1,2,40,False,True,23.0,Moderate,low
-Captain Mungai Street,tertiary,1,2,40,False,True,23.0,Moderate,low
-Munyema Street,tertiary,1,2,40,False,True,23.0,Moderate,low
-Major Jackson Murithi Street,tertiary,1,2,40,False,True,23.0,Moderate,low
-Lamu Road,tertiary,1,2,40,False,True,23.0,Moderate,low
-Ahero Street,tertiary,1,2,40,False,True,23.0,Moderate,low
-2nd Avenue Eastleigh,tertiary,5,2,40,True,True,22.4,Moderate,low
-Kikambala Road,secondary,2,2,50,True,True,22.2,Moderate,medium
-Temple Road,unclassified,5,1,50,True,True,22.2,Moderate,low
-Mfangano Street,unclassified,4,1,50,True,True,21.8,Moderate,low
-Lenana Road,secondary,27,2,50,True,True,21.7,Moderate,low
-Dunga Road,tertiary,7,2,50,True,True,21.4,Moderate,low
-Ajuoga Road,tertiary,4,2,40,True,True,21.2,Moderate,low
-Wangombe Road,tertiary,1,2,40,False,False,21.0,Moderate,low
-Ol Leleshwa Road,tertiary,1,2,40,False,False,21.0,Moderate,low
-Hakati Road,unclassified,2,1,50,True,True,20.2,Moderate,low
-Sheikh Karume Road,unclassified,2,1,50,True,True,20.2,Moderate,low
-Hospital Close,tertiary,3,2,20,False,True,20.0,Low,medium
-Kirinyaga Rd.,tertiary,2,2,40,False,False,20.0,Low,low
-Karanja Road,unclassified,1,2,50,False,True,19.5,Low,high
-Accra Road,unclassified,12,1,60,True,True,19.2,Low,low
-Galana Road,secondary,2,2,50,False,True,19.2,Low,low
-Kolobot Road,unclassified,2,1,40,True,True,19.0,Low,low
-Kitengela Road,residential,1,1,30,True,True,19.0,Low,low
-Rukwa Road,residential,2,1,30,True,True,19.0,Low,low
-Mchumbi Road,residential,2,1,30,True,True,19.0,Low,low
-Mtongwe Road,unclassified,3,1,40,True,True,19.0,Low,low
-Mushembi Road,residential,1,1,30,True,True,19.0,Low,low
-White Castle Road,tertiary,1,1,40,False,True,19.0,Low,medium
-Luthuli Avenue,unclassified,2,1,50,True,True,18.8,Low,low
-Chyulu Road,residential,4,1,50,True,True,18.5,Low,medium
-Gichugu Road,residential,3,1,50,True,True,18.5,Low,medium
-Ole Kejuado Road,residential,1,1,50,True,True,18.5,Low,medium
-Mugo Kibiru Road,residential,1,1,50,True,True,18.5,Low,medium
-Kilome Road,unclassified,2,1,60,True,True,18.5,Low,low
-Gaberone Road,unclassified,1,1,50,False,True,18.5,Low,medium
-Meru Road,tertiary,3,2,40,True,True,18.3,Low,low
-Simba Street,unclassified,2,2,40,True,True,18.0,Low,low
-Hamza Road,tertiary,2,2,40,False,False,18.0,Low,low
-Ol Pogoni Road,tertiary,1,2,40,False,False,18.0,Low,low
-Keekorok Road,unclassified,1,1,60,False,True,18.0,Low,medium
-Jainsala Road,unclassified,1,1,60,False,True,18.0,Low,medium
-Kweria Road,unclassified,1,1,60,False,True,18.0,Low,medium
-Buruburu Road,tertiary,5,2,40,True,True,17.4,Low,low
-Nyeri Road,residential,4,1,50,True,True,17.4,Low,low
-Kandara Road,residential,2,1,50,True,True,17.2,Low,low
-Woodvale Grove,tertiary,5,2,40,False,True,17.0,Low,low
-Taifa Road,unclassified,2,1,50,False,True,17.0,Low,medium
-2nd Parklands Avenue,unclassified,1,2,40,False,True,17.0,Low,medium
-Langata Link Road,tertiary,9,2,50,False,True,16.9,Low,low
-Ngariama Lane,unclassified,3,1,60,True,True,16.7,Low,low
-Mbagathi Road,unclassified,7,2,40,True,True,16.7,Low,low
-Kilimani Road,residential,1,2,50,False,True,16.5,Low,high
-Othaya Road,unclassified,1,1,50,True,False,16.5,Low,medium
-Chai Road,tertiary,2,2,40,False,True,16.5,Low,low
-Athi Road,tertiary,2,2,40,False,True,16.5,Low,low
-Kanjata Road,residential,1,2,50,False,True,16.5,Low,high
-Wabera Street,tertiary,5,2,50,False,True,16.4,Low,low
-Ole Shapara Avenue,residential,1,1,30,True,True,16.0,Low,low
-Gandhi Avenue,residential,7,1,30,True,True,16.0,Low,low
-Kinyanjui Street,residential,1,1,30,True,True,16.0,Low,low
-Itesyo Lane,residential,1,1,30,True,True,16.0,Low,low
-Mkoma Road,residential,2,1,30,True,True,16.0,Low,low
-Daidai Road,residential,2,1,30,True,True,16.0,Low,low
-Agoi Road,residential,4,1,30,True,True,16.0,Low,low
-Shule Road,unclassified,2,1,40,True,True,16.0,Low,low
-Tegla Lorupe Road,residential,3,1,30,True,True,16.0,Low,low
-Muthaiti Road,residential,3,1,30,True,True,16.0,Low,low
-Kiganjo Avenue,residential,5,1,30,True,True,16.0,Low,low
-Sasuma Crescent,residential,1,1,30,True,True,16.0,Low,low
-Mukinduri Road,residential,1,1,30,True,True,16.0,Low,low
-Susumua Crescent,residential,1,1,30,True,True,16.0,Low,low
-Mbono Road,residential,1,1,30,True,True,16.0,Low,low
-K.L.B Road,residential,1,1,30,True,True,16.0,Low,low
-Aoko Road,residential,1,1,30,True,True,16.0,Low,low
-Westlands Road,residential,3,1,30,True,True,16.0,Low,low
-Munyu Road,residential,1,1,30,True,True,16.0,Low,low
-Sheikh Mahmoud Road,unclassified,5,2,50,False,True,15.9,Low,medium
-5th Avenue Ngong,unclassified,1,1,50,False,True,15.5,Low,medium
-Workshops Road,unclassified,1,1,50,False,True,15.5,Low,medium
-Factory Street,unclassified,6,1,40,True,True,15.5,Low,low
-Station Road,unclassified,1,1,50,False,True,15.5,Low,medium
-Banda Street,unclassified,2,1,50,False,True,15.5,Low,medium
-Temple Lane,unclassified,1,1,50,False,True,15.5,Low,medium
-Kigali Road,unclassified,1,1,50,False,True,15.5,Low,medium
-Chaka Road,unclassified,1,1,50,False,True,15.5,Low,medium
-Nyaribari Lane,unclassified,1,1,50,False,True,15.5,Low,medium
-Kieni Road,residential,6,1,50,True,True,15.4,Low,low
-Muhoho Avenue,residential,6,1,30,True,True,15.2,Low,low
-Forest Lane,unclassified,6,2,50,False,True,15.2,Low,low
-Mara Road,residential,12,1,50,True,True,15.2,Low,low
-Jabavu Road,unclassified,3,1,50,False,True,15.0,Low,low
-Pramukh Swami Avenue,unclassified,4,2,40,False,True,15.0,Low,low
-Mai Mahiu Road,residential,6,1,30,True,True,15.0,Low,low
-Mukenia Road,residential,6,1,30,True,True,15.0,Low,low
-Kibera Access Road,unclassified,2,2,40,False,True,15.0,Low,low
-Red Cross Road,residential,1,2,30,True,False,15.0,Low,medium
-Ojamaa Ojamong Road,unclassified,3,1,40,True,True,15.0,Low,low
-Ralph Bunche Road,unclassified,11,1,50,True,True,14.9,Low,low
-Ruiruaka Crescent,residential,4,1,30,True,True,14.5,Low,low
-Gatundu Road,residential,2,1,30,True,True,14.5,Low,low
-Kapiti Road,residential,6,1,30,True,True,14.0,Low,low
-Ngombeni Lane,unclassified,2,1,60,False,True,14.0,Low,low
-Bhanderi Road,residential,1,2,30,False,True,14.0,Low,medium
-Hooyo's Kitchen Road,residential,1,2,20,False,True,14.0,Low,high
-Marikani Road,residential,1,2,30,False,True,14.0,Low,medium
-Nass Drive,residential,1,2,30,False,True,14.0,Low,medium
-Processional Way,tertiary,8,2,50,True,True,13.9,Low,low
-Cardinal Otunga Street,unclassified,3,1,50,False,True,13.8,Low,low
-Margaret Wambui Kenyatta Road,unclassified,3,1,50,False,True,13.8,Low,low
-Ali Jaden Road,unclassified,3,2,40,False,True,13.7,Low,low
-Kilimanjaro Avenue,residential,6,1,50,True,True,13.7,Low,low
-Kiganjo,residential,5,1,30,True,True,13.6,Low,low
-Market Street,unclassified,4,1,50,False,True,13.6,Low,low
-Cathedral Road,residential,1,1,50,True,False,13.5,Low,medium
-Kawi Road,residential,4,2,30,True,True,13.5,Low,low
-Sore Road,residential,4,1,30,True,True,13.5,Low,low
-Kagundo Road,residential,4,1,50,False,True,13.4,Low,low
-Arboretum Drive,unclassified,5,1,50,False,True,13.1,Low,low
-Posta Street,unclassified,3,1,40,False,True,13.0,Low,low
-Woodvale Close,unclassified,1,1,40,False,True,13.0,Low,low
-Gatundu Crescent,residential,1,1,30,False,True,13.0,Low,low
-Kericho Road,unclassified,1,1,40,False,True,13.0,Low,low
-Uaso Road,unclassified,1,1,40,False,True,13.0,Low,low
-Nanyuki Road,unclassified,1,1,40,False,True,13.0,Low,low
-Keiyo Road,residential,1,1,30,False,True,13.0,Low,low
-Wambugu Lane,residential,1,1,30,False,True,13.0,Low,low
-Kampala Road,unclassified,1,1,40,False,True,13.0,Low,low
-Baridi Lane,residential,1,1,30,False,True,13.0,Low,low
-Baridi Road,residential,1,1,30,False,True,13.0,Low,low
-Marimbi Street,unclassified,1,1,40,False,True,13.0,Low,low
-Waudo Street,unclassified,1,1,40,False,True,13.0,Low,low
-Ol Doinyo Lengai Road,unclassified,1,1,40,False,True,13.0,Low,low
-Musembi Road,residential,1,1,30,False,True,13.0,Low,low
-Machakos Road,unclassified,1,1,40,False,True,13.0,Low,low
-Birongo Square,residential,1,1,30,False,True,13.0,Low,low
-Road C,unclassified,1,1,40,False,True,13.0,Low,low
-Shimo La Tewa Road,unclassified,1,1,40,False,True,13.0,Low,low
-Tsavo Road,residential,1,1,30,False,True,13.0,Low,low
-Mukandu Road,residential,1,1,30,False,True,13.0,Low,low
-Street 1000,unclassified,2,1,40,False,True,13.0,Low,low
-Falcon Road,unclassified,1,1,40,False,True,13.0,Low,low
-Waiyaki Way Service Road,residential,1,1,30,False,True,13.0,Low,low
-Laini Saba Road,unclassified,1,1,40,False,True,13.0,Low,low
-Andolo Way,unclassified,1,1,40,False,True,13.0,Low,low
-Harry Thuku Road,residential,4,2,30,False,True,13.0,Low,low
-Pate Road,unclassified,1,1,40,False,True,13.0,Low,low
-Lambwe Close,residential,1,1,30,False,True,13.0,Low,low
-Mau Mau Road,unclassified,1,1,40,False,True,13.0,Low,low
-Siaya Road,residential,1,1,30,False,True,13.0,Low,low
-Kombo Munyiri Road,unclassified,1,1,40,False,True,13.0,Low,low
-Government Lane,unclassified,1,1,40,False,True,13.0,Low,low
-Abidjan Road,unclassified,1,1,40,False,True,13.0,Low,low
-Mukunga Street,unclassified,1,1,40,False,True,13.0,Low,low
-Ole Sangale Road,residential,2,1,30,True,True,13.0,Low,low
-Shiyanga Avenue,residential,1,1,30,False,True,13.0,Low,low
-Mandera Road,residential,6,1,50,True,True,13.0,Low,low
-Hola Road,unclassified,3,1,40,False,True,13.0,Low,low
-Baricho Road,unclassified,1,1,40,False,True,13.0,Low,low
-S.P.S Lane,residential,1,1,30,False,True,13.0,Low,low
-Workshop Road,unclassified,3,1,40,False,True,13.0,Low,low
-Chemelil Road,residential,1,1,30,False,True,13.0,Low,low
-Munae Road,residential,1,1,30,False,True,13.0,Low,low
-Kiarie Hihu Road,residential,1,1,30,False,True,13.0,Low,low
-Lorian Road,unclassified,1,1,40,False,True,13.0,Low,low
-Shimo la Tewa Road,unclassified,1,1,40,False,True,13.0,Low,low
-Kitui Road,unclassified,1,1,40,False,True,13.0,Low,low
-Pembe Street,unclassified,2,1,40,False,True,13.0,Low,low
-Kabras Road,residential,1,1,30,False,True,13.0,Low,low
-Chepkorio Road,unclassified,1,1,40,False,True,13.0,Low,low
-Bukani Road,residential,1,1,30,False,True,13.0,Low,low
-Nderi road,unclassified,1,1,40,False,True,13.0,Low,low
-Kamukunji Road,tertiary,6,2,40,False,True,12.7,Low,low
-Kibera Road,residential,1,1,50,False,True,12.5,Low,medium
-4th Avenue Ngong,residential,1,1,50,False,True,12.5,Low,medium
-3rd Avenue Ngong,residential,1,1,50,False,True,12.5,Low,medium
-2nd Avenue Ngong,residential,1,1,50,False,True,12.5,Low,medium
-Argwings Kodhek Grove,residential,1,1,50,False,True,12.5,Low,medium
-Timau Road,residential,1,1,50,False,True,12.5,Low,medium
-Tigoni Road,residential,1,1,50,False,True,12.5,Low,medium
-Lantana Road,residential,1,1,50,False,True,12.5,Low,medium
-Kolobot Drive,residential,1,1,50,False,True,12.5,Low,medium
-Kivemia Road,residential,2,1,50,False,True,12.5,Low,medium
-Dorobo Road,residential,1,1,50,False,True,12.5,Low,medium
-Vihiga Road,residential,1,1,50,False,True,12.5,Low,medium
-Mwingi Road,residential,1,1,50,False,True,12.5,Low,medium
-Wood Avenue,residential,1,1,50,False,True,12.5,Low,medium
-Mageta Road,residential,1,1,50,False,True,12.5,Low,medium
-Dar Es Salam Road,residential,2,1,50,False,True,12.5,Low,medium
-Kirichwa Road,residential,1,1,50,False,True,12.5,Low,medium
-Chania Avenue,residential,1,1,50,False,True,12.5,Low,medium
-Komo Lane,residential,1,1,50,False,True,12.5,Low,medium
-Wood Garden Road,residential,1,1,50,False,True,12.5,Low,medium
-George Padmore Road,residential,1,1,50,False,True,12.5,Low,medium
-Lagiri Road,residential,1,1,50,False,True,12.5,Low,medium
-Sudek Grove,residential,1,1,50,False,True,12.5,Low,medium
-Kangethe Green,residential,1,1,50,False,True,12.5,Low,medium
-Biashara Street,residential,1,1,50,False,True,12.5,Low,medium
-Red Rose Court,residential,1,1,50,False,True,12.5,Low,medium
-Elgeyo Marakwet North,residential,1,1,50,False,True,12.5,Low,medium
-Muringa Road,residential,1,1,50,False,True,12.5,Low,medium
-Marcus Garvey Road,residential,1,1,50,False,True,12.5,Low,medium
-Westlands Avenue,residential,1,1,50,False,True,12.5,Low,medium
-Kirichwa Gardens,residential,1,1,50,False,True,12.5,Low,medium
-Muruka Lane,residential,1,1,50,False,True,12.5,Low,medium
-Rose Avenue,unclassified,6,1,50,False,True,12.4,Low,low
-Sports Road,residential,6,1,50,False,True,12.0,Low,low
-Plainsview Lane,residential,3,1,30,True,True,12.0,Low,low
-Plainsview Road,residential,7,1,30,True,True,12.0,Low,low
-Jahmby FayaMama Koikai Lane,residential,1,2,20,False,False,12.0,Low,high
-Lome Road,unclassified,5,1,40,False,True,11.8,Low,low
-Menelik Road,residential,3,1,50,False,True,11.7,Low,low
-Longonot Road,residential,3,1,50,False,True,11.7,Low,low
-Melili Road,residential,4,1,30,True,True,11.5,Low,low
-Hombe Road,unclassified,2,1,40,False,True,11.5,Low,low
-Sumba Road,residential,2,1,30,False,True,11.5,Low,low
-Chambers Road,residential,2,1,30,False,True,11.5,Low,low
-Rhapta Road,residential,4,1,50,False,True,11.2,Low,low
-Kindaruma Road,residential,2,1,50,False,True,11.2,Low,low
-Gatoto Road,residential,2,1,50,False,True,11.2,Low,low
-Hill Lane,residential,2,1,50,False,True,11.2,Low,low
-Kinsasha Road,unclassified,3,1,40,False,True,11.0,Low,low
-Kilifi Close,residential,1,1,30,True,False,11.0,Low,low
-Sasio Road,unclassified,3,1,40,False,True,11.0,Low,low
-Chebuvusi Crescent,residential,3,1,30,False,True,11.0,Low,low
-Cosmas Ndeti Road,residential,1,1,30,True,False,11.0,Low,low
-Bishop Road,residential,3,1,50,False,True,10.8,Low,medium
-Kijabe Street,residential,5,2,30,False,True,10.8,Low,low
-Mamlaka Road,residential,5,1,50,False,True,10.5,Low,low
-Tausi Road,residential,2,1,30,True,True,10.5,Low,low
-Police Dog Unit Road,unclassified,4,1,40,False,True,10.5,Low,low
-Kabarnet Gardens,residential,1,1,50,False,False,10.5,Low,medium
-Jamhuri Crescent,residential,2,1,50,False,True,10.2,Low,low
-Kindaruma Lane,residential,1,1,30,False,True,10.0,Low,low
-Mbaruk Road,residential,1,1,30,False,True,10.0,Low,low
-Argwings Kodhek Close,residential,1,1,30,False,True,10.0,Low,low
-Woodlands Lane,residential,1,1,30,False,True,10.0,Low,low
-Jabavu Lane,residential,1,1,30,False,True,10.0,Low,low
-Kasuku Lane,residential,1,1,30,False,True,10.0,Low,low
-Shivachi Road,residential,1,1,30,False,True,10.0,Low,low
-The Crescent,residential,3,1,30,False,True,10.0,Low,low
-Plums Lane,residential,1,1,30,False,True,10.0,Low,low
-Bweha Lane,residential,1,1,30,False,True,10.0,Low,low
-Lumbwa Street,residential,1,1,30,False,True,10.0,Low,low
-Kilungu Road,residential,1,1,30,False,True,10.0,Low,low
-Likoni Lane,residential,2,1,30,False,True,10.0,Low,low
-Likoni Close,residential,1,1,30,False,True,10.0,Low,low
-Maalim Juma Road,residential,1,1,30,False,True,10.0,Low,low
-Githunguri Road,residential,2,1,50,False,True,10.0,Low,medium
-Durham Road,residential,3,1,30,False,True,10.0,Low,low
-Tinderet Avenue,residential,1,1,30,False,True,10.0,Low,low
-Kitale Lane,residential,3,1,30,False,True,10.0,Low,low
-Ita Road,residential,1,1,30,False,True,10.0,Low,low
-Swamibapa Road,residential,1,1,30,False,True,10.0,Low,low
-Batubatu Road,residential,1,1,30,False,True,10.0,Low,low
-Gala Lane,residential,1,1,30,False,True,10.0,Low,low
-Shillingi Road,residential,1,1,30,False,True,10.0,Low,low
-Kienjeku Road,residential,1,1,30,False,True,10.0,Low,low
-Kipkabus Road,residential,1,1,30,False,True,10.0,Low,low
-Bandari Road,residential,1,1,30,False,True,10.0,Low,low
-Butere Road,residential,1,1,30,False,True,10.0,Low,low
-Maboko Road,residential,1,1,30,False,True,10.0,Low,low
-Chweya Road,residential,3,1,30,False,True,10.0,Low,low
-Amiani Road,residential,2,1,30,False,True,10.0,Low,low
-Golden Gate Drive,residential,1,1,30,False,True,10.0,Low,low
-Sore Drive,residential,1,1,30,False,True,10.0,Low,low
-Zanzibar Road,residential,1,1,30,False,True,10.0,Low,low
-Laxminaryan Road,residential,1,1,30,False,True,10.0,Low,low
-Galberobe Road,residential,1,1,30,False,True,10.0,Low,low
-Losai Road,residential,1,1,30,False,True,10.0,Low,low
-Mogira Road,residential,2,1,30,False,True,10.0,Low,low
-Ninth Street,residential,1,1,30,False,True,10.0,Low,low
-Eighth Street,residential,1,1,30,False,True,10.0,Low,low
-Tenth Street,residential,1,1,30,False,True,10.0,Low,low
-Thirteenth Street,residential,1,1,30,False,True,10.0,Low,low
-Pamba Road,residential,1,1,30,False,True,10.0,Low,low
-Pareto Lane,residential,1,1,30,False,True,10.0,Low,low
-Irungu Riika Road,residential,3,1,30,False,True,10.0,Low,low
-Musindi Road,residential,1,1,30,False,True,10.0,Low,low
-Mkonge Road,residential,1,1,30,False,True,10.0,Low,low
-Zambarau Lane,residential,1,1,30,False,True,10.0,Low,low
-Buni Lane,residential,1,1,30,False,True,10.0,Low,low
-Mbono Crescent,residential,1,1,30,False,True,10.0,Low,low
-Jairo Owino,residential,1,1,30,False,True,10.0,Low,low
-Voi Lane,residential,3,1,30,False,True,10.0,Low,low
-Mbale Road,residential,1,1,30,False,True,10.0,Low,low
-R Ui Rwaka Crescent,residential,1,1,30,False,True,10.0,Low,low
-Kivu Road,residential,1,1,30,False,True,10.0,Low,low
-Kyoga Crscent,residential,1,1,30,False,True,10.0,Low,low
-Katulo Road,residential,1,1,30,False,True,10.0,Low,low
-Hono Crescent,residential,1,1,30,False,True,10.0,Low,low
-Ol Doinyo Sabuk Road,residential,1,1,30,False,True,10.0,Low,low
-Batubatu Gardens,residential,1,1,30,False,True,10.0,Low,low
-Luhya Lane,residential,1,1,30,False,True,10.0,Low,low
-Oshwal Road,residential,1,1,30,False,True,10.0,Low,low
-Pokot Road,residential,1,1,30,False,True,10.0,Low,low
-Menengai Road,residential,1,1,30,False,True,10.0,Low,low
-Kodi (I) Road,residential,1,1,30,False,True,10.0,Low,low
-Naimey Road,residential,1,1,30,False,True,10.0,Low,low
-Naimey Lane,residential,1,1,30,False,True,10.0,Low,low
-Kipipiri Road,residential,1,1,30,False,True,10.0,Low,low
-Gem Lane,residential,1,1,30,False,True,10.0,Low,low
-Riverside Paddocks,residential,1,1,30,False,True,10.0,Low,low
-Chogoria Road,residential,1,1,30,False,True,10.0,Low,low
-Shikunga Road,residential,1,1,30,False,True,10.0,Low,low
-Mwembere Road,residential,1,1,30,False,True,10.0,Low,low
-Mawensi Garden,residential,1,1,30,False,True,10.0,Low,low
-Kenya Road,residential,1,1,30,False,True,10.0,Low,low
-Sunview,residential,4,1,30,False,True,10.0,Low,low
-Mosiro Road,residential,2,1,30,False,True,10.0,Low,low
-Ngobit Road,residential,3,1,30,False,True,10.0,Low,low
-Longinye Road,residential,2,1,30,False,True,10.0,Low,low
-Mutomo Road,residential,2,1,30,False,True,10.0,Low,low
-Kabarnet Lane,residential,1,1,30,False,True,10.0,Low,low
-City Stadium Road,residential,2,1,30,False,True,10.0,Low,low
-Garissa Road,residential,1,1,30,False,True,10.0,Low,low
-Baringo Road,residential,1,1,30,False,True,10.0,Low,low
-Krape Road,residential,1,1,30,False,True,10.0,Low,low
-Tosha,residential,1,1,30,False,True,10.0,Low,low
-Natron Road,residential,2,1,30,False,True,10.0,Low,low
-Yakuti Rd,residential,1,1,30,False,True,10.0,Low,low
-Asembo Lane,residential,1,1,30,False,True,10.0,Low,low
-Ruiru Lane,residential,1,1,30,False,True,10.0,Low,low
-Kisiwa Lane,residential,1,1,30,False,True,10.0,Low,low
-Karakuta Road,residential,1,1,30,False,True,10.0,Low,low
-Ukwala Road,residential,1,1,30,False,True,10.0,Low,low
-Guasi Road,residential,1,1,30,False,True,10.0,Low,low
-Yatta Road,residential,1,1,30,False,True,10.0,Low,low
-State House Crescent,residential,1,1,30,False,True,10.0,Low,low
-Paa Crescent,residential,2,1,30,False,True,10.0,Low,low
-Kifaru Crescent,residential,1,1,30,False,True,10.0,Low,low
-Swara Crescent,residential,1,1,30,False,True,10.0,Low,low
-Punda Milia Crescent,residential,1,1,30,False,True,10.0,Low,low
-Sungura Road,residential,1,1,30,False,True,10.0,Low,low
-Kiasungur Road,residential,1,1,30,False,True,10.0,Low,low
-Oluvimu Road,residential,1,1,30,False,True,10.0,Low,low
-Muhuti Avenue,residential,1,1,30,False,True,10.0,Low,low
-Rugunga Lane,residential,1,1,30,False,True,10.0,Low,low
-Kabiyeti Road,residential,1,1,30,False,True,10.0,Low,low
-Thogoto Road,residential,1,1,30,False,True,10.0,Low,low
-Uchumi Road,residential,1,1,30,False,True,10.0,Low,low
-Mufuli Avenue,residential,1,1,30,False,True,10.0,Low,low
-Bumi Road,residential,1,1,30,False,True,10.0,Low,low
-Kolobot Crescent,residential,1,1,30,False,True,10.0,Low,low
-Kalobot Road,residential,1,1,30,False,True,10.0,Low,low
-258 Extension Way,residential,1,1,30,False,True,10.0,Low,low
-Kalasa Road,residential,1,1,30,False,True,10.0,Low,low
-Maboko Close,residential,1,1,30,False,True,10.0,Low,low
-Maboko Crescent,residential,1,1,30,False,True,10.0,Low,low
-Malibet Road,residential,1,1,30,False,True,10.0,Low,low
-Malibet close,residential,1,1,30,False,True,10.0,Low,low
-Amiani Crescent,residential,1,1,30,False,True,10.0,Low,low
-Lagiri Close,residential,1,1,30,False,True,10.0,Low,low
-Kirichwa Lane Court,residential,1,1,30,False,True,10.0,Low,low
-St Mary's School Private Road,residential,1,1,30,False,True,10.0,Low,low
-Woodvale Lane,residential,1,1,30,False,True,10.0,Low,low
-Uwanja Road,residential,1,1,30,False,True,10.0,Low,low
-Guthera Crescent,residential,1,1,30,False,True,10.0,Low,low
-Mazinga Road,residential,1,1,30,False,True,10.0,Low,low
-Muchai Drive,residential,1,1,30,False,True,10.0,Low,low
-Musufi Road,residential,1,1,30,False,True,10.0,Low,low
-Green Lane,residential,1,1,30,False,True,10.0,Low,low
-Keri Road,residential,3,1,30,False,True,10.0,Low,low
-Lemule Road,residential,1,1,30,False,True,10.0,Low,low
-Kifaru Court,residential,2,1,30,False,True,10.0,Low,low
-Nderiroad,residential,1,1,30,False,True,10.0,Low,low
-Ngomeni Road,residential,1,1,30,False,True,10.0,Low,low
-Guru Close,residential,1,1,30,False,True,10.0,Low,low
-Waiga Close,residential,1,1,30,False,True,10.0,Low,low
-Mutanda Road,residential,1,1,30,False,True,10.0,Low,low
-Musingu Road,residential,1,1,30,False,True,10.0,Low,low
-Tana Crescent,residential,1,1,30,False,True,10.0,Low,low
-Mumbi Raod,residential,1,1,30,False,True,10.0,Low,low
-Chege Kibiro,residential,1,1,30,False,True,10.0,Low,low
-Revsymekha Road,residential,1,1,30,False,True,10.0,Low,low
-Bumbani Road,residential,1,1,30,False,True,10.0,Low,low
-Buchuma Crescent,residential,3,1,30,False,True,10.0,Low,low
-Ahmed Road,residential,1,1,30,False,True,10.0,Low,low
-Soit Ololol Road,residential,1,1,30,False,True,10.0,Low,low
-Mshane Lane,residential,1,1,30,False,True,10.0,Low,low
-Mwangi Riika Crescent,residential,2,1,30,False,True,10.0,Low,low
-Metropolitan Estate,residential,1,1,30,False,True,10.0,Low,low
-Gusii Avenue,residential,1,1,30,False,True,10.0,Low,low
-Buruburu Crescent,residential,1,1,30,False,True,10.0,Low,low
-Bombeya Court,residential,2,1,30,False,True,10.0,Low,low
-Katulo Crescent,residential,1,1,30,False,True,10.0,Low,low
-Tinda Close,residential,1,1,30,False,True,10.0,Low,low
-Nairobi Pickleball Club Road,residential,1,1,30,False,True,10.0,Low,low
-Ngiya Road,residential,1,1,30,False,True,10.0,Low,low
-Kenjaro Road,residential,2,1,30,False,True,10.0,Low,low
-Bagamoyo Road,residential,2,1,30,False,True,10.0,Low,low
-Mijikenda Road,residential,1,1,30,False,True,10.0,Low,low
-Golden Gate Road,residential,1,1,30,False,True,10.0,Low,low
-Munyaka Lane,residential,1,1,30,False,True,10.0,Low,low
-Munyaka Drive,residential,1,1,30,False,True,10.0,Low,low
-Golden Gate Lane,residential,1,1,30,False,True,10.0,Low,low
-Githeri Drive,residential,1,1,30,False,True,10.0,Low,low
-Githeri Close,residential,1,1,30,False,True,10.0,Low,low
-Karuku Road,residential,1,1,30,False,True,10.0,Low,low
-Githeri Rise,residential,1,1,30,False,True,10.0,Low,low
-Sadi Road,residential,2,1,30,False,True,10.0,Low,low
-Kapiti Crescent,residential,3,1,30,False,True,10.0,Low,low
-Riverside Grove,residential,2,1,30,False,True,10.0,Low,low
-Riverside Mews,residential,1,1,30,False,True,10.0,Low,low
-Gatundu Close,residential,2,1,30,False,True,10.0,Low,low
-Rumbi Road,residential,2,1,30,False,True,10.0,Low,low
-Kanga Road,residential,2,1,30,False,True,10.0,Low,low
-Lindi Road,residential,2,1,30,False,True,10.0,Low,low
-Makina Road,residential,1,1,30,False,True,10.0,Low,low
-Ndovu Close,residential,1,1,30,False,True,10.0,Low,low
-Guthera Lane,residential,1,1,30,False,True,10.0,Low,low
-Mukuyu Lane,residential,3,1,30,False,True,10.0,Low,low
-Theta Lane,residential,2,1,30,False,True,10.0,Low,low
-Kirichwa Creek,residential,1,1,30,False,True,10.0,Low,low
-Ngong Lane,residential,1,1,30,False,True,10.0,Low,low
-Mwtate Road,residential,1,1,30,False,True,10.0,Low,low
-Gore Street,residential,1,1,30,False,True,10.0,Low,low
-Kianda Close,residential,1,1,30,False,True,10.0,Low,low
-Simbi Road,residential,1,1,30,False,True,10.0,Low,low
-Chaanan Singh Road,residential,1,1,30,False,True,10.0,Low,low
-Webuye Road,residential,3,1,30,False,True,10.0,Low,low
-Kano Street,residential,1,1,30,False,True,10.0,Low,low
-11th Street,residential,1,1,30,False,True,10.0,Low,low
-Kikuyu Street,residential,1,1,30,False,True,10.0,Low,low
-Paa Lane,residential,1,1,30,False,True,10.0,Low,low
-Kisauni Road,residential,1,1,30,False,True,10.0,Low,low
-Makina Crescent,residential,1,1,30,False,True,10.0,Low,low
-Kodi II Road,residential,1,1,30,False,True,10.0,Low,low
-Mbuni Close,residential,1,1,30,False,True,10.0,Low,low
-Geta Close,residential,2,1,30,False,True,10.0,Low,low
-Chweya Lane,residential,1,1,30,False,True,10.0,Low,low
-Gandhi Road,residential,1,1,30,False,True,10.0,Low,low
-Makhan Singh Road,residential,1,1,30,False,True,10.0,Low,low
-Twelfth Street,residential,1,1,30,False,True,10.0,Low,low
-Softa Road,residential,1,1,30,False,True,10.0,Low,low
-Ole Sangale Link Road,residential,2,1,30,False,True,10.0,Low,low
-Kiambere Road,residential,1,1,30,False,True,10.0,Low,low
-Oldeani Crescent,residential,1,1,30,False,True,10.0,Low,low
-Mwanesi Road,residential,1,1,30,False,True,10.0,Low,low
-Matumbato Close,residential,1,1,30,False,True,10.0,Low,low
-Kifaru Close,residential,1,1,30,False,True,10.0,Low,low
-Olesoi Road,residential,1,1,30,False,True,10.0,Low,low
-Laiboni Road,residential,1,1,30,False,True,10.0,Low,low
-Mumbi Close,residential,1,1,30,False,True,10.0,Low,low
-Narok Road,residential,1,1,30,False,True,10.0,Low,low
-Dik Dik Lane,residential,1,1,30,False,True,10.0,Low,low
-Rose Close,residential,1,1,30,False,True,10.0,Low,low
-Kadong Road,residential,3,1,30,False,True,10.0,Low,low
-Mubiru Road,residential,1,1,30,False,True,10.0,Low,low
-Mpweke Lane,residential,1,1,30,False,True,10.0,Low,low
-Ndekwa Avenue,residential,2,1,30,False,True,10.0,Low,low
-Hodari Avenue,residential,1,1,30,False,True,10.0,Low,low
-Jombo Road,residential,1,1,30,False,True,10.0,Low,low
-Mtelo Road,residential,2,1,30,False,True,10.0,Low,low
-Muhuti Crescent,residential,1,1,30,False,True,10.0,Low,low
-Kambere Road,residential,1,1,30,False,True,10.0,Low,low
-Githeri Lane,residential,1,1,30,False,True,10.0,Low,low
-Bungoma Road,residential,1,1,30,False,True,10.0,Low,low
-Solai Road,residential,1,1,30,False,True,10.0,Low,low
-Dunga Close,residential,2,1,30,False,True,10.0,Low,low
-Robin Lane,residential,1,1,30,False,True,10.0,Low,low
-Bonde Lane,residential,1,1,30,False,True,10.0,Low,low
-Batians Lane,residential,1,1,30,False,True,10.0,Low,low
-Karuri Gakure Road,residential,1,1,30,False,True,10.0,Low,low
-Okoth Aura Road,residential,1,1,30,False,True,10.0,Low,low
-Banjui Road,residential,5,1,30,False,True,10.0,Low,low
-Ramesh Gautama Road,residential,1,1,30,False,True,10.0,Low,low
-Tende Drive,residential,2,1,30,False,True,10.0,Low,low
-Aboretum Drive,residential,2,1,30,False,True,10.0,Low,low
-Utalii Lane,residential,1,1,30,False,True,10.0,Low,low
-Moktar Daddah Street,residential,1,1,30,False,True,10.0,Low,low
-Abdihafid road,residential,1,1,30,False,True,10.0,Low,low
-Lanet Road,residential,2,1,30,False,True,10.0,Low,low
-Ngara Lane,residential,1,1,30,False,True,10.0,Low,low
-Lenana Close,residential,1,1,30,False,True,10.0,Low,low
-Wambugu Close,residential,1,1,30,False,True,10.0,Low,low
-Riverside Park,residential,5,1,30,False,True,10.0,Low,low
-Cape Gardens,residential,1,1,30,False,True,10.0,Low,low
-Risa Apartments,residential,1,1,30,False,True,10.0,Low,low
-The Gables Kilimani,residential,1,1,30,False,True,10.0,Low,low
-Muringa Groove,residential,1,1,30,False,True,10.0,Low,low
-Dik Dik Gardens,residential,1,1,30,False,True,10.0,Low,low
-Sri Aurobindo Avenue,residential,1,1,30,False,True,10.0,Low,low
-Ndovu Ahmed Lane,residential,2,1,30,False,True,10.0,Low,low
-Moran Road,residential,1,1,30,False,True,10.0,Low,low
-Gura Grove,residential,1,1,30,False,True,10.0,Low,low
-Kirichwa Lane,residential,1,1,30,False,True,10.0,Low,low
-Maratha Road,residential,1,1,30,False,True,10.0,Low,low
-Shiko Road,residential,1,1,30,False,True,10.0,Low,low
-Jabavu Court,residential,4,1,30,False,True,10.0,Low,low
-Musindi Lane,residential,1,1,30,False,True,10.0,Low,low
-Jodongo Lane,residential,1,1,30,False,True,10.0,Low,low
-Thingiri Road,residential,1,1,30,False,True,10.0,Low,low
-Mersok Lane,residential,1,1,30,False,True,10.0,Low,low
-Ndovu Lane,residential,1,1,30,False,True,10.0,Low,low
-Bustani Lane,residential,1,1,30,False,True,10.0,Low,low
-Nicobar Close,residential,1,1,30,False,True,10.0,Low,low
-Melawa Road,residential,1,1,30,False,True,10.0,Low,low
-Olosolani Court,residential,2,1,30,False,True,10.0,Low,low
-Sagam Road,residential,1,1,30,False,True,10.0,Low,low
-Ofafa Jericho Entrance,residential,1,1,30,False,True,10.0,Low,low
-Tree Shade Heights,residential,1,1,30,False,True,10.0,Low,low
-Pokomo Road,residential,1,1,30,False,True,10.0,Low,low
-Maratha CL Road,residential,1,1,30,False,True,10.0,Low,low
-Ndovu Close 2,residential,1,1,30,False,True,10.0,Low,low
-1st Parklands Avenue,residential,3,1,30,False,True,10.0,Low,low
-Wambugu Gardens,residential,1,1,30,False,True,10.0,Low,low
-Wambugu Road,residential,1,1,30,False,True,10.0,Low,low
-Wambugu Close (Lower),residential,1,1,30,False,True,10.0,Low,low
-Glenbrooke Apartments,residential,1,1,30,False,True,10.0,Low,low
-Mahiga Mairu Avenue,residential,1,1,30,False,True,10.0,Low,low
-Malanga Street,residential,1,1,30,False,True,10.0,Low,low
-Amara Lane,residential,1,1,30,False,True,10.0,Low,low
-Muhoho Road,residential,1,1,30,False,True,10.0,Low,low
-Prof David Wasawo Drive,residential,1,1,30,False,True,10.0,Low,low
-Arboretum Park Lane,residential,2,1,30,False,True,10.0,Low,low
-Thika Lane,residential,1,1,30,False,True,10.0,Low,low
-Jondongo Road,residential,1,1,30,False,True,10.0,Low,low
-Mariakani Gardens,residential,1,1,30,False,True,10.0,Low,low
-Wambugu Grove,residential,1,1,30,False,True,10.0,Low,low
-Mpaka Road,unclassified,10,1,40,True,True,9.9,Low,low
-Popo Road,residential,5,1,30,True,False,9.8,Low,low
-Tabere Crescent,residential,7,1,50,False,True,9.3,Low,low
-Makueni Road,unclassified,2,1,50,False,False,9.2,Low,low
-Voi Road,unclassified,2,1,40,False,True,9.0,Low,low
-Riverside Close,residential,1,2,30,False,False,9.0,Low,medium
-Marimbi street,residential,1,2,30,False,False,9.0,Low,high
-Five Star Road,residential,4,1,30,False,True,8.8,Low,low
-Masaba Road,residential,4,1,30,False,True,8.8,Low,low
-Ngariama Road,unclassified,1,1,40,False,False,8.0,Low,low
-Ndumberi Road,unclassified,1,1,40,False,False,8.0,Low,low
-Maumau Road,unclassified,1,1,40,False,False,8.0,Low,low
-Mathare N Road,unclassified,1,1,40,False,False,8.0,Low,low
-Seniour Private ✭ Hezekiah Rabala Ochuka road,residential,1,2,40,False,True,8.0,Low,high
-Upperhill Close,residential,1,1,50,False,False,7.5,Low,medium
-1st Ngong Avenue,residential,3,1,50,False,True,7.5,Low,low
-Mwingi Court Gate,residential,2,1,30,False,True,7.5,Low,low
-East Church Road,residential,2,1,50,False,False,7.5,Low,medium
-David Osieli Road,residential,1,1,50,False,False,7.5,Low,medium
-Maendeleo Road,residential,2,1,30,False,True,7.5,Low,low
-Kumasi Road,residential,2,1,30,False,True,7.5,Low,low
-Muchai Road,residential,2,1,30,False,True,7.5,Low,low
-Jodongo Road,residential,2,1,30,False,True,7.5,Low,low
-Vijana Road,residential,2,1,30,False,True,7.5,Low,low
-Migori Road,residential,1,1,50,False,False,7.5,Low,medium
-Kirichwa Road Gardens,residential,2,1,30,False,True,7.5,Low,low
-Laikipia Road,residential,1,1,50,False,False,7.5,Low,medium
-Mimosa Lane,residential,2,1,50,False,False,7.5,Low,medium
-Sasumua Road,residential,2,1,30,False,True,7.5,Low,low
-Nyasi Lane,residential,2,1,30,False,True,7.5,Low,low
-Masai Road,residential,2,1,30,False,True,7.5,Low,low
-Mtito Andei Road,residential,1,1,30,False,True,7.0,Low,low
-Njiwa Road,residential,5,1,30,False,True,7.0,Low,low
-Muslim Road,unclassified,1,1,40,False,True,7.0,Low,low
-Eldoret Road,residential,3,1,30,False,True,6.7,Low,low
-Palm Springs,residential,2,1,30,False,False,6.5,Low,low
-Ngiri Road,residential,1,1,50,False,True,6.5,Low,high
-Mwende Street,unclassified,4,1,40,False,False,5.8,Low,low
-Kamburu Drive,residential,2,1,30,False,False,5.0,Low,low
-Kayahweh Road,residential,2,1,30,False,False,5.0,Low,low
-Mugoya Estate,residential,1,1,30,False,False,5.0,Low,low
-Msapo Close,residential,1,1,30,False,False,5.0,Low,low
-George Padmore Lane,residential,1,1,30,False,False,5.0,Low,low
-Suguta Road,residential,2,1,30,False,False,5.0,Low,low
-Mazeras Road,residential,1,1,30,False,False,5.0,Low,low
-Mugoiri Road,residential,1,1,30,False,False,5.0,Low,low
-Hamisi Road,residential,1,1,30,False,False,5.0,Low,low
-Nyangumi Road,residential,1,1,30,False,False,5.0,Low,low
-Church Road,residential,1,1,30,False,False,5.0,Low,low
-St. Michael's Road,residential,1,1,30,False,False,5.0,Low,low
-Mvuli Road,residential,1,1,30,False,False,5.0,Low,low
-Makadara Road,residential,1,1,30,False,False,5.0,Low,low
-Luka Road,residential,1,1,30,False,False,5.0,Low,low
-Luka Cres Road,residential,1,1,30,False,False,5.0,Low,low
-Sixth Street,residential,1,1,30,False,False,5.0,Low,low
-Fifth Street,residential,1,1,30,False,False,5.0,Low,low
-Galole Road,residential,1,1,30,False,False,5.0,Low,low
-Fourth Street,residential,1,1,30,False,False,5.0,Low,low
-Third Street,residential,1,1,30,False,False,5.0,Low,low
-Muyuyu Avenue,residential,1,1,30,False,False,5.0,Low,low
-Sergeant Major Kamugobe Street,residential,1,1,30,False,False,5.0,Low,low
-Muga Street,residential,1,1,30,False,False,5.0,Low,low
-Major Kinyanjui Street,residential,1,1,30,False,False,5.0,Low,low
-Second Street,residential,1,1,30,False,False,5.0,Low,low
-Busagawa Lane,residential,1,1,30,False,False,5.0,Low,low
-Eighteenth Street,residential,2,1,30,False,False,5.0,Low,low
-Mvuma Nyuki Street,residential,1,1,30,False,False,5.0,Low,low
-Ole Sinoni Road,residential,1,1,30,False,False,5.0,Low,low
-Eastlands Crescent,residential,1,1,30,False,False,5.0,Low,low
-Ambala Road,residential,1,1,30,False,False,5.0,Low,low
-Laikipia Close,residential,1,1,30,False,False,5.0,Low,low
-Kirichwa Grove Road,residential,1,1,30,False,False,5.0,Low,low
-Riverside Lane,residential,3,1,30,False,False,5.0,Low,low
-Krapf Road,residential,1,1,30,False,False,5.0,Low,low
-Jagoo Lane,residential,1,1,30,False,False,5.0,Low,low
-614-656 Imara Drive,residential,1,1,30,False,False,5.0,Low,low
-Daisy Close,residential,1,1,30,False,False,5.0,Low,low
-655 Avocado Lane,residential,1,1,30,False,False,5.0,Low,low
-Wattle Lane,residential,1,1,30,False,False,5.0,Low,low
-Pondo Lane,residential,1,1,30,False,False,5.0,Low,low
-Tobacco Drive,residential,1,1,30,False,False,5.0,Low,low
-Tamarind Close,residential,1,1,30,False,False,5.0,Low,low
-Rose Lane,residential,1,1,30,False,False,5.0,Low,low
-7 Siala Lane,residential,1,1,30,False,False,5.0,Low,low
-Nandi Flame Road,residential,1,1,30,False,False,5.0,Low,low
-37 Quinine Lane,residential,1,1,30,False,False,5.0,Low,low
-Uwanja Lane,residential,1,1,30,False,False,5.0,Low,low
-Bamboo Cresent,residential,1,1,30,False,False,5.0,Low,low
-Ole musalala court,residential,1,1,30,False,False,5.0,Low,low
-Nazing Cresent,residential,1,1,30,False,False,5.0,Low,low
-Wangombe Waihura Road,residential,2,1,30,False,False,5.0,Low,low
-Kikwata Crescent,residential,1,1,30,False,False,5.0,Low,low
-Mugumo Close,residential,1,1,30,False,False,5.0,Low,low
-Oldeani Road,residential,1,1,30,False,False,5.0,Low,low
-Podium Road,residential,3,1,30,False,False,5.0,Low,low
-Golden Gate Close,residential,1,1,30,False,False,5.0,Low,low
-Riverside Lane West,residential,1,1,30,False,False,5.0,Low,low
-Riverside Gardens,residential,3,1,30,False,False,5.0,Low,low
-Mugumo Crescent,residential,1,1,30,False,False,5.0,Low,low
-Khanga Court,residential,2,1,30,False,False,5.0,Low,low
-Nziu Road,residential,5,1,30,False,False,5.0,Low,low
-Khanga Road,residential,1,1,30,False,False,5.0,Low,low
-Nziu Lane,residential,1,1,30,False,False,5.0,Low,low
-Sonia Lane,residential,1,1,30,False,False,5.0,Low,low
-Seventeenth Street,residential,1,1,30,False,False,5.0,Low,low
-Amani Street,residential,1,1,30,False,False,5.0,Low,low
-Animal Orphanage Road,residential,2,1,30,False,False,5.0,Low,low
-Royal Close,residential,1,1,30,False,False,5.0,Low,low
-Sim Sim Lane,residential,1,1,30,False,False,5.0,Low,low
-Mugumo Lane,residential,1,1,30,False,False,5.0,Low,low
-Uwanja Close,residential,1,1,30,False,False,5.0,Low,low
-Madura Lane,residential,1,1,30,False,False,5.0,Low,low
-Pilipili Way,residential,1,1,30,False,False,5.0,Low,low
-Terrace Close,residential,1,1,30,False,False,5.0,Low,low
-Kacha Road,residential,1,1,30,False,False,5.0,Low,low
-Riverside Garden Close,residential,3,1,30,False,False,5.0,Low,low
-Nyeri Close,residential,2,1,30,False,False,5.0,Low,low
-Mbooni,residential,1,1,30,False,False,5.0,Low,low
-Sandalwood Lane,residential,2,1,30,False,False,5.0,Low,low
-Pearl Homes,residential,1,1,30,False,False,5.0,Low,low
-Elite Regency,residential,3,1,30,False,False,5.0,Low,low
-Mvuli Park,residential,1,1,30,False,False,5.0,Low,low
-Mangu Gardens Street,residential,1,1,30,False,False,5.0,Low,low
-Konokono Road,residential,1,1,30,False,False,5.0,Low,low
-Churo Close,residential,1,1,30,False,False,5.0,Low,low
-Luka Crescent,residential,3,1,30,False,False,5.0,Low,low
-Kilimambogo Road,residential,1,1,30,False,False,5.0,Low,low
-Ndovu Lane 1,residential,1,1,30,False,False,5.0,Low,low
-Bombax Lane,residential,1,1,30,False,False,5.0,Low,low
-Danny Ct Road,residential,1,1,30,False,False,5.0,Low,low
-Nyeri close,residential,1,1,30,False,False,5.0,Low,low
-Baraza Road,residential,1,1,30,False,False,5.0,Low,low
-720 Ober Close,residential,1,1,30,False,False,5.0,Low,low
-M.G. Cres,residential,1,1,30,False,False,5.0,Low,low
-Upper Hill Close,residential,1,1,30,False,False,5.0,Low,low
-850 Acacia Lane,residential,1,1,30,False,False,5.0,Low,low
-Jaylaani Boulevard,residential,1,1,30,False,False,5.0,Low,low
-Kirichwa Close,residential,1,1,30,False,False,5.0,Low,low
-Liam lane,residential,1,1,30,False,False,5.0,Low,low
-Casa Palacio,residential,1,1,30,False,False,5.0,Low,low
-Access road,residential,1,1,30,False,False,5.0,Low,low
-Argwings Kodhek Groove,residential,1,1,30,False,True,4.0,Low,low
-Noshaba Lane,residential,1,1,30,False,True,4.0,Low,low
-Sports Avenue,residential,1,1,30,False,True,4.0,Low,low
-Turbo Road,residential,4,1,30,False,False,0.5,Low,low
-Mkoko Close,residential,1,1,30,False,False,-1.0,Low,low
+road,modal_class,segments,mean_lanes,mean_speed_kmh,oneway_share,transit_share,commercial_share,junction_share,unpaved_share,lanes_imputed_share,speed_imputed_share,mean_segment_score,category,confidence
+Nyayo Stadium Roundabout,trunk,6,4.0,70,0.0,0.83,1.0,0.0,0.0,0.0,1.0,63.5,High,medium
+Nairobi Expressway,motorway,44,2.3,80,1.0,0.0,0.91,0.0,0.0,0.0,0.02,59.7,High,medium
+Chiromo Road,trunk,8,3.0,62,1.0,1.0,1.0,0.0,0.0,0.0,0.62,58.6,High,medium
+Muranga Road,trunk,4,2.0,70,1.0,1.0,1.0,0.0,0.0,1.0,1.0,56.5,High,low
+Haile Selassie Roundabout,trunk,6,3.0,50,1.0,1.0,1.0,0.0,0.0,0.0,0.0,55.5,High,high
+University Way Round About,trunk,4,2.0,65,1.0,1.0,1.0,0.0,0.0,0.75,0.75,55.2,High,low
+Uhuru Highway,trunk,16,3.0,54,1.0,0.75,1.0,0.0,0.0,0.0,0.19,54.9,High,medium
+Mombasa Road,trunk,23,2.8,51,1.0,1.0,0.87,0.09,0.0,0.0,0.04,54.5,High,medium
+Nairobi - Mombasa Road,trunk,2,2.5,70,1.0,1.0,0.0,0.0,0.0,0.5,1.0,53.5,High,low
+Globe Roundabout,trunk,11,2.2,52,0.0,1.0,1.0,0.0,0.0,0.73,0.09,52.7,High,low
+University Way,trunk,8,3.5,50,1.0,0.75,1.0,0.25,0.0,0.0,0.0,52.2,High,high
+Kiambu Road,trunk,1,2.0,70,1.0,1.0,0.0,0.0,0.0,1.0,1.0,51.5,High,low
+Westlands Roundabout,trunk,6,1.8,63,0.83,1.0,1.0,0.33,0.0,1.0,1.0,50.8,High,low
+Waiyaki Way,trunk,6,1.7,63,1.0,0.83,1.0,0.0,0.0,0.33,1.0,50.5,High,low
+Kenyatta Avenue Round About,trunk,5,2.0,50,1.0,0.8,1.0,0.0,0.0,1.0,0.0,50.3,High,medium
+Southern Bypass,trunk,17,2.0,86,1.0,0.0,0.35,0.0,0.0,0.24,0.06,50.1,High,low
+Bunyala Roundabout,trunk,5,2.0,54,1.0,0.6,1.0,0.0,0.0,1.0,0.2,50.1,High,low
+Murang'a Road,trunk,54,2.5,58,0.98,0.93,0.7,0.0,0.0,0.56,0.85,49.9,High,low
+Slip Road,trunk,5,2.2,50,1.0,0.8,1.0,0.0,0.0,0.4,0.0,47.1,High,medium
+City Mortuary Round About,secondary,7,3.3,50,1.0,1.0,1.0,0.0,0.0,0.29,0.0,46.6,High,medium
+Southern Bypass Expressway Entry,motorway_link,6,1.8,68,1.0,0.0,0.67,0.0,0.0,0.17,0.33,45.8,High,low
+Ladhies Road-,secondary,1,3.0,50,1.0,1.0,1.0,0.0,0.0,0.0,1.0,45.5,High,medium
+Mondlane Street,tertiary,1,4.0,50,1.0,1.0,1.0,1.0,0.0,0.0,0.0,44.5,High,high
+Capital Centre Expressway Entry,motorway_link,5,1.6,60,1.0,0.0,1.0,0.0,0.0,0.4,0.4,44.4,High,low
+Westlands Expressway Entry,motorway_link,2,1.5,60,1.0,0.0,1.0,0.0,0.0,0.5,1.0,44.0,High,low
+Oloitokitok Road,secondary,9,2.0,50,0.78,1.0,1.0,0.67,0.0,0.89,0.44,43.1,High,low
+Park Road,secondary,4,2.0,50,1.0,1.0,1.0,0.5,0.0,1.0,1.0,43.0,High,low
+Capital Center Exit B,motorway_link,3,1.7,50,1.0,0.0,1.0,0.0,0.0,0.0,0.0,42.2,High,high
+Riverside Westlands Lane,secondary,2,2.0,50,0.5,1.0,1.0,0.5,0.0,1.0,1.0,42.0,High,low
+Museum Hill Exit A,motorway_link,3,1.0,60,1.0,0.0,1.0,0.0,0.0,0.33,1.0,42.0,High,low
+Capital Center Exit A,motorway_link,3,1.0,60,1.0,0.0,1.0,0.0,0.0,0.33,1.0,42.0,High,low
+Museum Hill Expressway Exit,motorway_link,1,1.0,60,1.0,0.0,1.0,0.0,0.0,1.0,1.0,42.0,High,low
+Haile Selassie Avenue,secondary,50,2.6,49,0.64,1.0,0.74,0.1,0.0,0.3,0.14,41.9,High,low
+Madaraka Roundabout,secondary,7,2.0,50,1.0,1.0,1.0,0.0,0.0,1.0,1.0,41.5,High,low
+Mbagathi Way,secondary,1,2.0,50,1.0,1.0,1.0,0.0,0.0,0.0,1.0,41.5,High,medium
+Old Mombasa Road,primary,3,2.0,50,1.0,0.0,1.0,0.0,0.0,1.0,1.0,41.5,High,low
+Raila Odinga Way,secondary,19,2.0,50,1.0,1.0,0.89,0.11,0.0,0.0,0.42,41.3,High,medium
+Limuru Road,secondary,18,1.7,48,1.0,0.89,1.0,0.0,0.0,0.44,0.33,41.3,High,low
+Dr. G.W. Griffin Road,secondary,20,2.1,50,1.0,0.9,0.8,0.3,0.0,0.8,1.0,41.1,High,low
+First Avenue Eastleigh,secondary,12,2.0,50,1.0,0.83,0.92,0.33,0.0,1.0,1.0,41.1,High,low
+Langata Road,secondary,30,2.1,50,1.0,0.9,0.87,0.07,0.0,0.47,0.07,41.0,High,low
+Southern Bypass Expressway Exit,motorway_link,2,2.0,50,1.0,0.0,0.5,0.0,0.0,0.0,0.0,41.0,High,high
+City Stadium Roundabout,secondary,9,2.3,50,0.0,1.0,1.0,0.0,0.0,0.11,0.44,40.8,High,low
+Valley Road,secondary,9,2.0,50,0.67,0.89,1.0,0.22,0.0,0.0,0.22,40.8,High,medium
+ICD Road,primary,3,2.0,50,0.67,0.0,1.0,0.0,0.0,1.0,1.0,40.8,High,low
+Racecourse Road,secondary,13,2.0,50,0.92,0.92,0.85,0.15,0.0,1.0,0.46,40.6,High,low
+Ojijo Rd.,secondary,2,2.0,50,1.0,1.0,0.5,0.5,0.0,0.0,1.0,40.5,High,medium
+Juja Road,secondary,34,2.0,50,0.62,0.97,0.91,0.21,0.0,1.0,1.0,40.4,High,low
+Ojijo Road,secondary,5,2.0,50,0.4,1.0,1.0,0.0,0.0,1.0,1.0,40.3,High,low
+Tom Mboya Street,secondary,24,1.9,50,1.0,0.96,1.0,0.46,0.0,1.0,0.21,40.2,High,low
+Prof. Wangari Maathai Road,primary,34,1.9,49,0.94,0.35,1.0,0.03,0.0,0.18,0.76,40.2,High,low
+Moi Avenue,secondary,33,2.0,49,1.0,0.94,1.0,0.27,0.0,1.0,0.09,39.9,High,low
+Landhies Road,secondary,5,1.8,48,1.0,0.8,1.0,0.6,0.0,0.6,1.0,39.8,High,low
+Eastleigh 1st Avenue,secondary,9,2.0,50,1.0,1.0,0.67,0.0,0.0,1.0,1.0,39.8,High,low
+Farm Engineering Industrial,secondary,1,2.0,50,0.0,1.0,1.0,0.0,0.0,1.0,0.0,39.5,High,medium
+Muniami Street,secondary,1,2.0,50,0.0,1.0,1.0,0.0,0.0,1.0,1.0,39.5,High,low
+Prof. Wangari Mathai Road,secondary,1,3.0,50,1.0,0.0,1.0,0.0,0.0,0.0,1.0,39.5,High,medium
+Digo Road,secondary,5,2.0,50,0.0,1.0,1.0,0.0,0.0,1.0,1.0,39.5,High,low
+Cargen Roundabout,secondary,8,2.0,50,0.0,1.0,1.0,0.0,0.0,1.0,1.0,39.5,High,low
+M.P. Shah Roundabout,secondary,6,2.0,50,0.0,1.0,1.0,0.0,0.0,1.0,1.0,39.5,High,low
+Cotton Avenue,secondary,13,2.0,50,0.92,1.0,0.46,0.23,0.0,1.0,0.0,39.3,High,medium
+Ring Road,secondary,9,2.0,50,1.0,1.0,0.56,0.0,0.0,1.0,1.0,39.3,High,low
+Ngong Road,secondary,57,2.0,50,0.96,0.93,0.53,0.23,0.0,0.16,0.07,39.2,High,low
+Lusaka Road,secondary,17,2.1,46,1.0,0.76,0.94,0.0,0.0,0.41,0.18,39.1,High,medium
+Enterprise Road,secondary,38,2.0,50,0.68,0.63,1.0,0.08,0.0,0.97,0.29,38.5,High,low
+Oloiktoktok Road,secondary,7,2.0,50,0.71,0.71,0.86,0.0,0.0,1.0,0.14,38.5,High,low
+Argwings Kodhek Road,secondary,20,1.9,50,0.75,0.9,1.0,0.15,0.0,1.0,0.0,38.5,High,medium
+Lusaka Road Round About,secondary,6,2.0,50,0.0,0.83,1.0,0.0,0.0,1.0,0.0,38.5,High,medium
+Ring Road Kileleshwa,secondary,7,2.0,50,0.71,1.0,0.29,0.29,0.0,0.71,0.0,38.2,High,medium
+Ring Road Kilimani,secondary,8,2.0,50,0.75,0.88,0.5,0.12,0.0,1.0,0.0,38.1,High,medium
+Parklands Road,secondary,16,1.9,49,0.62,0.5,0.94,0.12,0.0,0.81,0.81,37.8,Moderate,low
+Outer Ring Road,secondary,25,2.0,60,0.64,0.64,0.0,0.04,0.0,0.64,0.76,37.7,Moderate,low
+Rabai Road,secondary,11,2.0,50,0.27,0.91,0.45,0.27,0.0,1.0,1.0,37.6,Moderate,low
+Jogoo Road,secondary,35,2.0,49,1.0,0.97,0.34,0.06,0.0,0.06,0.09,37.5,Moderate,low
+River Road,secondary,10,1.8,54,0.3,0.9,0.8,0.5,0.0,1.0,0.4,37.4,Moderate,low
+Kipande Road,secondary,8,1.9,48,0.88,0.75,1.0,0.12,0.0,0.75,1.0,37.2,Moderate,low
+Lunga Lunga Road,secondary,5,2.0,50,0.4,1.0,1.0,0.0,0.0,1.0,0.4,37.1,Moderate,low
+General Waruingi Street,secondary,8,2.0,50,1.0,0.38,0.88,0.0,0.0,1.0,1.0,37.1,Moderate,low
+Mumias Road,secondary,6,2.0,50,0.67,1.0,0.0,0.33,0.0,1.0,1.0,36.8,Moderate,low
+D.O.D Roundabout,secondary,4,2.0,50,0.0,0.5,1.0,0.0,0.0,1.0,0.0,36.5,Moderate,medium
+Bunyala Road Roundabout,secondary,2,2.0,50,0.0,0.5,1.0,0.0,0.0,0.0,1.0,36.5,Moderate,medium
+General Waruinge Street,secondary,4,2.0,50,0.5,0.75,0.5,0.0,0.0,1.0,1.0,36.5,Moderate,low
+Thika Road,secondary,1,2.0,50,1.0,1.0,0.0,0.0,0.0,1.0,1.0,36.5,Moderate,low
+Haile Selassie Exit,motorway_link,5,1.0,52,1.0,0.0,0.6,0.0,0.0,1.0,0.4,36.4,Moderate,low
+Northview Road,secondary,3,2.0,50,0.0,0.67,0.33,0.67,0.0,1.0,1.0,36.2,Moderate,low
+Ronald Ngala Street,tertiary,15,2.0,49,0.93,0.93,1.0,0.67,0.0,1.0,0.13,36.2,Moderate,low
+Ring Road Ngara,secondary,4,2.0,50,0.75,1.0,0.0,0.0,0.0,1.0,1.0,36.0,Moderate,low
+Ladhies Road,tertiary,3,2.0,43,1.0,1.0,1.0,0.33,0.0,0.0,1.0,35.5,Moderate,medium
+Aerodrome Road,secondary,1,2.0,50,1.0,0.0,1.0,0.0,0.0,1.0,0.0,35.5,Moderate,medium
+Narayan Road,primary_link,3,1.7,43,1.0,0.0,1.0,0.33,0.0,0.33,1.0,35.5,Moderate,low
+Lang'ata Link Road,secondary,41,2.0,50,1.0,0.2,0.68,0.07,0.0,0.12,0.1,35.3,Moderate,low
+Suna Road,tertiary,1,2.0,50,0.0,1.0,1.0,1.0,0.0,1.0,0.0,34.5,Moderate,medium
+Kariakor Roundabout,secondary,8,2.0,50,0.0,1.0,0.0,0.0,0.0,1.0,1.0,34.5,Moderate,low
+Uyoma Street,tertiary,4,2.0,48,1.0,1.0,1.0,0.5,0.0,1.0,0.25,34.4,Moderate,low
+Ring Road Westlands,secondary,12,1.8,45,0.83,0.67,1.0,0.25,0.0,0.92,0.33,34.1,Moderate,low
+Likoni Road,secondary,18,2.0,49,1.0,0.5,0.94,0.0,0.0,0.56,0.11,34.1,Moderate,low
+Kirinyaga Road,tertiary,2,2.0,60,0.0,0.5,1.0,1.0,0.0,1.0,0.0,34.0,Moderate,medium
+Dennis Pritt Road,secondary,14,2.0,50,0.86,0.43,0.21,0.0,0.0,1.0,1.0,33.9,Moderate,low
+Latema Road,tertiary,13,2.0,49,1.0,1.0,1.0,0.15,0.0,1.0,0.08,33.8,Moderate,low
+Mumias South Road,secondary,7,2.0,47,0.57,1.0,0.14,0.14,0.0,1.0,1.0,33.8,Moderate,low
+Oloitoktok Road,secondary,3,2.0,50,0.67,0.67,0.0,0.0,0.0,0.67,0.0,33.8,Moderate,medium
+Mutarawka Road,secondary,2,1.5,45,1.0,0.5,0.0,1.0,0.0,0.5,1.0,33.2,Moderate,low
+Kimathi Street,tertiary,6,2.0,50,1.0,0.5,1.0,0.67,0.0,1.0,0.0,32.5,Moderate,medium
+Kenyatta Avenue,secondary,23,1.7,49,1.0,0.61,0.87,0.39,0.0,0.48,0.13,32.0,Moderate,low
+Heshima Road,tertiary,3,2.0,40,0.0,1.0,1.0,1.0,0.0,1.0,1.0,32.0,Moderate,low
+State House Road,secondary,16,2.0,48,0.69,0.0,0.75,0.25,0.0,1.0,0.69,31.7,Moderate,low
+State House Avenue,secondary,3,2.0,50,0.67,0.0,0.33,0.0,0.0,1.0,1.0,31.5,Moderate,low
+Kibera Drive,tertiary,1,2.0,50,0.0,1.0,1.0,0.0,0.0,1.0,0.0,31.5,Moderate,medium
+Nairobi Park East Gate Road,primary,3,1.7,47,0.33,0.0,1.0,0.0,0.0,1.0,1.0,31.3,Moderate,low
+Charles New Road,tertiary,3,2.0,40,0.0,1.0,1.0,0.67,0.0,1.0,1.0,31.0,Moderate,low
+Kilimani Roundabout,tertiary,2,2.0,40,1.0,1.0,1.0,0.0,0.0,1.0,1.0,31.0,Moderate,low
+Commercial Street,secondary,4,1.8,48,0.5,0.0,1.0,0.5,0.0,1.0,1.0,30.9,Moderate,low
+Elgon Road,tertiary,4,2.0,45,1.0,0.5,1.0,0.5,0.0,1.0,0.5,30.8,Moderate,low
+Joseph Kang'ethe,tertiary,4,2.0,50,0.25,0.75,1.0,0.0,0.0,1.0,0.0,30.5,Moderate,medium
+Muratina Street,secondary,7,1.7,47,0.57,0.0,1.0,0.43,0.0,1.0,1.0,30.1,Moderate,low
+Kungu Karumba Road,secondary,10,1.7,43,0.8,1.0,0.4,0.1,0.0,0.7,0.5,30.1,Moderate,low
+Chiromo Lane,tertiary,3,2.0,40,0.0,0.67,1.0,1.0,0.0,1.0,1.0,30.0,Moderate,low
+Hospital Road,tertiary,8,1.8,48,0.88,0.88,1.0,0.25,0.0,1.0,0.12,29.4,Moderate,low
+Riverside Drive,tertiary,13,1.8,42,0.62,0.85,1.0,0.38,0.0,1.0,0.62,29.4,Moderate,low
+Karbarnet Road,tertiary,2,2.0,45,0.0,1.0,0.5,0.5,0.0,1.0,0.5,29.2,Moderate,low
+City Hall Way,tertiary,14,2.0,46,0.86,0.36,1.0,0.29,0.0,0.36,0.43,29.1,Moderate,low
+Nyasa Road,tertiary,2,2.0,40,0.0,1.0,1.0,0.0,0.0,1.0,1.0,29.0,Moderate,low
+Desai Road,secondary,11,1.6,45,0.55,0.45,0.64,0.55,0.0,1.0,0.73,29.0,Moderate,low
+Wangu Avenue,tertiary,1,2.0,40,0.0,1.0,1.0,0.0,0.0,1.0,1.0,29.0,Moderate,low
+Kabarnet Road,tertiary,2,2.0,50,0.5,1.0,0.0,0.5,0.0,1.0,0.0,29.0,Moderate,medium
+Bunyala Road,tertiary,10,2.0,46,0.7,0.1,1.0,0.0,0.0,1.0,0.5,28.9,Moderate,low
+Nyerere Road,tertiary,4,2.0,48,0.75,0.0,1.0,0.75,0.0,1.0,0.25,28.6,Moderate,low
+Elgeyo Marakwet Road,tertiary,1,2.0,50,0.0,0.0,1.0,1.0,0.0,1.0,0.0,28.5,Moderate,medium
+Kayahwe Road,secondary,1,2.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,28.5,Moderate,medium
+Nile Road,tertiary,6,2.0,40,0.0,0.83,1.0,0.17,0.0,1.0,1.0,28.5,Moderate,low
+Lunga Lunga Roundabout,tertiary,4,2.0,50,0.0,0.5,1.0,0.0,0.0,0.0,0.0,28.5,Moderate,high
+Harambee Avenue,tertiary,7,2.3,50,0.71,0.0,1.0,0.0,0.0,0.86,0.0,28.1,Moderate,medium
+Mzima Springs Road,tertiary,6,2.0,48,0.0,0.5,1.0,0.0,0.0,1.0,0.17,28.1,Moderate,low
+Kirinyaga Road.,tertiary,2,2.0,40,1.0,0.5,1.0,0.0,0.0,1.0,1.0,28.0,Moderate,low
+Upperhill Links Road,tertiary,4,2.0,50,1.0,0.0,1.0,0.0,0.0,0.5,0.0,27.5,Moderate,medium
+Denis Pritt Road,secondary,6,1.8,50,0.67,0.0,0.17,0.0,0.0,1.0,0.0,27.2,Moderate,medium
+Mama Ngina Street,tertiary,5,1.6,44,1.0,0.6,1.0,0.8,0.0,0.8,0.6,27.2,Moderate,low
+Parliament Road,tertiary,5,2.2,50,0.8,0.0,1.0,0.0,0.0,0.8,0.0,26.7,Moderate,medium
+Jakaya Kikwete Road,tertiary,2,2.0,50,0.5,0.0,1.0,0.0,0.0,1.0,0.0,26.5,Moderate,medium
+Olenguruone Road,tertiary,6,2.0,50,0.5,0.0,1.0,0.0,0.0,1.0,0.0,26.5,Moderate,medium
+Woodlands Road,tertiary,4,2.0,42,0.5,0.0,1.0,0.5,0.0,1.0,0.75,26.1,Moderate,low
+Ambira Road,tertiary,1,2.0,40,0.0,0.0,1.0,1.0,0.0,1.0,1.0,26.0,Moderate,low
+Ragati Road,secondary,10,1.5,50,0.9,0.9,0.3,0.0,0.0,1.0,0.1,25.9,Moderate,low
+Mogotio Road,tertiary,1,2.0,50,0.0,0.0,1.0,0.0,0.0,0.0,0.0,25.5,Moderate,high
+Ngara Road,unclassified,13,1.3,43,0.69,0.62,1.0,0.31,0.0,1.0,0.77,25.4,Moderate,low
+Koinage Street,tertiary,5,2.0,46,0.4,0.0,1.0,0.0,0.0,1.0,0.4,25.3,Moderate,low
+Lower Hill Road,tertiary,2,2.0,40,1.0,0.0,1.0,0.0,0.0,1.0,1.0,25.0,Moderate,low
+Matumbato Road,tertiary,4,2.0,40,1.0,0.0,1.0,0.0,0.0,1.0,1.0,25.0,Moderate,low
+Muthithi Road,residential,4,1.8,58,0.0,0.5,1.0,1.0,0.0,0.25,0.0,24.9,Moderate,medium
+Quarry Road,tertiary,3,2.0,43,0.67,0.0,0.33,0.0,0.0,1.0,1.0,24.5,Moderate,low
+Milimani Road,tertiary,3,2.0,40,0.67,0.0,1.0,0.0,0.0,1.0,1.0,24.3,Moderate,low
+Taarifa Road,tertiary,3,2.0,40,0.67,0.0,1.0,0.0,0.0,0.67,1.0,24.3,Moderate,low
+Muindi Mbingu Street,tertiary,8,1.5,48,1.0,0.0,1.0,0.0,0.0,0.75,0.38,23.9,Moderate,low
+Tubman Road,tertiary,3,2.0,40,0.33,0.0,1.0,0.0,0.0,1.0,1.0,23.7,Moderate,low
+Upper Hill Road,tertiary,9,1.9,41,0.89,0.11,0.56,0.44,0.0,0.89,0.89,23.4,Moderate,low
+Ring Road Parklands,tertiary,7,1.4,49,1.0,0.0,1.0,0.0,0.29,0.43,0.14,23.1,Moderate,medium
+Pumwani Road,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+3rd Parklands Avenue,unclassified,1,2.0,40,0.0,1.0,1.0,0.0,0.0,0.0,1.0,23.0,Moderate,medium
+Butecho,tertiary,2,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Sakwero Road,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Sergeant Kahande Street,tertiary,2,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Kipande Athumani Street,tertiary,2,2.0,40,0.0,0.0,1.0,0.0,0.0,0.5,1.0,23.0,Moderate,low
+Mweni Road,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,0.0,1.0,23.0,Moderate,medium
+Fairview Road,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Major Jackson Muirithi Street,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Kirongothi Street,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Captain Mungai Street,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Munyema Street,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Major Jackson Murithi Street,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Lamu Road,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+Ahero Street,tertiary,1,2.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,23.0,Moderate,low
+2nd Avenue Eastleigh,tertiary,5,2.0,40,0.0,0.4,0.4,0.0,0.0,1.0,1.0,22.4,Moderate,low
+Kikambala Road,secondary,2,1.5,30,0.0,0.5,0.5,0.0,0.0,1.0,0.0,22.2,Moderate,medium
+Temple Road,unclassified,5,1.0,48,0.4,1.0,1.0,0.4,0.0,1.0,0.2,22.2,Moderate,low
+Mfangano Street,unclassified,4,1.0,45,0.5,0.75,1.0,1.0,0.0,1.0,0.25,21.8,Moderate,low
+Lenana Road,secondary,27,1.6,43,0.7,0.3,0.07,0.07,0.0,1.0,0.78,21.7,Moderate,low
+Dunga Road,residential,7,1.4,37,0.71,0.71,1.0,0.0,0.0,1.0,0.71,21.4,Moderate,low
+Ajuoga Road,tertiary,4,1.8,38,0.0,0.25,1.0,0.0,0.0,1.0,1.0,21.2,Moderate,low
+Wangombe Road,tertiary,1,2.0,40,0.0,0.0,0.0,1.0,0.0,1.0,1.0,21.0,Moderate,low
+Ol Leleshwa Road,tertiary,1,2.0,40,0.0,0.0,0.0,1.0,0.0,1.0,1.0,21.0,Moderate,low
+Hakati Road,unclassified,2,1.0,45,0.0,1.0,1.0,0.0,0.0,1.0,0.5,20.2,Moderate,low
+Sheikh Karume Road,residential,2,1.0,40,0.0,1.0,1.0,0.5,0.0,1.0,0.5,20.2,Moderate,low
+Hospital Close,tertiary,3,1.7,20,0.67,0.0,1.0,0.0,0.0,1.0,0.0,20.0,Low,medium
+Kirinyaga Rd.,tertiary,2,2.0,40,1.0,0.0,0.0,0.0,0.0,1.0,1.0,20.0,Low,low
+Karanja Road,unclassified,1,2.0,50,0.0,0.0,1.0,0.0,0.0,0.0,0.0,19.5,Low,high
+Accra Road,unclassified,12,1.0,43,1.0,0.83,0.83,0.42,0.0,1.0,0.83,19.2,Low,low
+Galana Road,secondary,2,1.5,40,0.0,0.0,0.5,0.0,0.0,1.0,0.5,19.2,Low,low
+Kolobot Road,unclassified,2,1.0,40,0.0,0.5,1.0,1.0,0.0,1.0,1.0,19.0,Low,low
+Kitengela Road,residential,1,1.0,30,0.0,1.0,1.0,1.0,0.0,1.0,1.0,19.0,Low,low
+Rukwa Road,residential,2,1.0,30,0.0,1.0,1.0,1.0,0.0,1.0,1.0,19.0,Low,low
+Mchumbi Road,residential,2,1.0,30,0.0,1.0,1.0,1.0,0.0,1.0,1.0,19.0,Low,low
+Mtongwe Road,unclassified,3,1.0,40,0.0,1.0,1.0,0.0,0.0,1.0,1.0,19.0,Low,low
+Mushembi Road,residential,1,1.0,30,0.0,1.0,1.0,1.0,0.0,1.0,1.0,19.0,Low,low
+White Castle Road,tertiary,1,1.0,40,0.0,0.0,1.0,0.0,0.0,0.0,1.0,19.0,Low,medium
+Luthuli Avenue,unclassified,2,1.0,45,0.0,0.5,1.0,0.5,0.0,1.0,0.5,18.8,Low,low
+Chyulu Road,residential,4,1.0,50,1.0,1.0,1.0,0.0,0.0,1.0,0.0,18.5,Low,medium
+Gichugu Road,residential,3,1.0,50,0.0,1.0,1.0,0.0,0.0,1.0,0.0,18.5,Low,medium
+Ole Kejuado Road,residential,1,1.0,50,0.0,1.0,1.0,0.0,0.0,1.0,0.0,18.5,Low,medium
+Mugo Kibiru Road,residential,1,1.0,50,0.0,1.0,1.0,0.0,0.0,1.0,0.0,18.5,Low,medium
+Kilome Road,residential,2,1.0,45,0.5,0.5,1.0,0.5,0.0,1.0,0.5,18.5,Low,low
+Gaberone Road,unclassified,1,1.0,50,0.0,0.0,1.0,1.0,0.0,1.0,0.0,18.5,Low,medium
+Meru Road,residential,3,1.3,33,0.0,0.67,1.0,0.0,0.0,1.0,1.0,18.3,Low,low
+Simba Street,unclassified,2,1.5,40,1.0,0.5,1.0,0.0,0.0,0.5,1.0,18.0,Low,low
+Hamza Road,tertiary,2,2.0,40,0.0,0.0,0.0,0.0,0.0,1.0,1.0,18.0,Low,low
+Ol Pogoni Road,tertiary,1,2.0,40,0.0,0.0,0.0,0.0,0.0,1.0,1.0,18.0,Low,low
+Keekorok Road,unclassified,1,1.0,60,1.0,0.0,1.0,0.0,0.0,1.0,0.0,18.0,Low,medium
+Jainsala Road,unclassified,1,1.0,60,0.0,0.0,1.0,0.0,0.0,1.0,0.0,18.0,Low,medium
+Kweria Road,unclassified,1,1.0,60,0.0,0.0,1.0,0.0,0.0,1.0,0.0,18.0,Low,medium
+Buruburu Road,unclassified,5,1.2,40,0.4,0.2,1.0,0.4,0.0,1.0,1.0,17.4,Low,low
+Nyeri Road,residential,4,1.0,35,0.5,1.0,1.0,0.25,0.0,1.0,0.75,17.4,Low,low
+Kandara Road,residential,2,1.0,40,0.0,1.0,1.0,0.0,0.0,1.0,0.5,17.2,Low,low
+Woodvale Grove,tertiary,5,1.2,36,0.4,0.0,1.0,0.0,0.0,0.6,1.0,17.0,Low,low
+Taifa Road,unclassified,2,1.0,50,1.0,0.0,1.0,0.5,0.0,1.0,0.0,17.0,Low,medium
+2nd Parklands Avenue,unclassified,1,2.0,40,0.0,0.0,1.0,0.0,0.0,0.0,1.0,17.0,Low,medium
+Langata Link Road,tertiary,9,1.6,46,0.89,0.0,0.33,0.0,0.0,0.56,0.22,16.9,Low,low
+Ngariama Lane,residential,3,1.0,40,1.0,0.67,1.0,0.0,0.0,1.0,0.67,16.7,Low,low
+Mbagathi Road,unclassified,7,1.3,40,0.0,0.29,1.0,0.29,0.0,0.71,1.0,16.7,Low,low
+Kilimani Road,residential,1,2.0,50,0.0,0.0,1.0,0.0,0.0,0.0,0.0,16.5,Low,high
+Othaya Road,unclassified,1,1.0,50,0.0,1.0,0.0,0.0,0.0,1.0,0.0,16.5,Low,medium
+Chai Road,residential,2,1.5,35,0.0,0.0,1.0,0.0,0.0,1.0,1.0,16.5,Low,low
+Athi Road,residential,2,1.5,35,0.0,0.0,1.0,0.0,0.0,1.0,1.0,16.5,Low,low
+Kanjata Road,residential,1,2.0,50,0.0,0.0,1.0,0.0,0.0,0.0,0.0,16.5,Low,high
+Wabera Street,unclassified,5,1.2,44,0.8,0.0,1.0,0.0,0.0,0.6,0.6,16.4,Low,low
+Ole Shapara Avenue,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Gandhi Avenue,residential,7,1.0,30,0.29,0.86,1.0,0.29,0.0,1.0,1.0,16.0,Low,low
+Kinyanjui Street,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Itesyo Lane,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Mkoma Road,residential,2,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Daidai Road,residential,2,1.0,30,0.0,0.5,1.0,1.0,0.0,1.0,1.0,16.0,Low,low
+Agoi Road,residential,4,1.0,30,0.0,0.75,1.0,0.5,0.0,1.0,1.0,16.0,Low,low
+Shule Road,residential,2,1.0,35,0.0,0.5,1.0,0.5,0.0,1.0,1.0,16.0,Low,low
+Tegla Lorupe Road,residential,3,1.0,30,0.67,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Muthaiti Road,residential,3,1.0,30,0.0,0.67,1.0,0.67,0.0,1.0,1.0,16.0,Low,low
+Kiganjo Avenue,residential,5,1.0,30,0.4,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Sasuma Crescent,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Mukinduri Road,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Susumua Crescent,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Mbono Road,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+K.L.B Road,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Aoko Road,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Westlands Road,residential,3,1.0,30,0.0,0.67,1.0,0.67,0.0,1.0,1.0,16.0,Low,low
+Munyu Road,residential,1,1.0,30,0.0,1.0,1.0,0.0,0.0,1.0,1.0,16.0,Low,low
+Sheikh Mahmoud Road,unclassified,5,1.6,42,0.0,0.0,1.0,0.0,0.0,0.0,0.8,15.9,Low,medium
+5th Avenue Ngong,unclassified,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Workshops Road,unclassified,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Factory Street,residential,6,1.0,35,0.33,0.5,1.0,0.33,0.0,1.0,1.0,15.5,Low,low
+Station Road,unclassified,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Banda Street,unclassified,2,1.0,50,1.0,0.0,1.0,0.0,0.0,0.5,0.0,15.5,Low,medium
+Temple Lane,unclassified,1,1.0,50,1.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Kigali Road,unclassified,1,1.0,50,1.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Chaka Road,unclassified,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Nyaribari Lane,unclassified,1,1.0,50,1.0,0.0,1.0,0.0,0.0,1.0,0.0,15.5,Low,medium
+Kieni Road,residential,6,1.0,33,0.67,0.5,1.0,0.67,0.0,1.0,0.83,15.4,Low,low
+Muhoho Avenue,residential,6,1.0,30,0.17,1.0,0.83,0.0,0.0,1.0,1.0,15.2,Low,low
+Forest Lane,unclassified,6,1.3,43,0.83,0.0,1.0,0.0,0.0,0.67,0.67,15.2,Low,low
+Mara Road,residential,12,1.0,40,0.5,0.67,1.0,0.0,0.0,1.0,0.5,15.2,Low,low
+Jabavu Road,unclassified,3,1.0,47,0.33,0.0,0.67,0.67,0.0,1.0,0.33,15.0,Low,low
+Pramukh Swami Avenue,unclassified,4,1.5,40,0.5,0.0,1.0,0.0,0.0,0.5,1.0,15.0,Low,low
+Mai Mahiu Road,residential,6,1.0,30,0.0,0.83,1.0,0.0,0.0,1.0,1.0,15.0,Low,low
+Mukenia Road,residential,6,1.0,30,0.0,0.83,1.0,0.0,0.0,1.0,1.0,15.0,Low,low
+Kibera Access Road,unclassified,2,1.5,40,0.0,0.0,1.0,0.0,0.0,0.5,1.0,15.0,Low,low
+Red Cross Road,residential,1,2.0,30,0.0,1.0,0.0,0.0,0.0,0.0,1.0,15.0,Low,medium
+Ojamaa Ojamong Road,residential,3,1.0,33,0.0,0.67,1.0,0.0,0.0,1.0,1.0,15.0,Low,low
+Ralph Bunche Road,residential,11,1.0,45,0.36,0.36,1.0,0.18,0.0,1.0,0.36,14.9,Low,low
+Ruiruaka Crescent,residential,4,1.0,30,0.0,0.5,1.0,0.5,0.0,1.0,1.0,14.5,Low,low
+Gatundu Road,residential,2,1.0,30,0.0,0.5,1.0,0.5,0.0,1.0,1.0,14.5,Low,low
+Kapiti Road,residential,6,1.0,30,0.33,0.67,1.0,0.0,0.0,1.0,1.0,14.0,Low,low
+Ngombeni Lane,residential,2,1.0,45,0.0,0.0,1.0,0.0,0.0,1.0,0.5,14.0,Low,low
+Bhanderi Road,residential,1,2.0,30,0.0,0.0,1.0,0.0,0.0,0.0,1.0,14.0,Low,medium
+Hooyo's Kitchen Road,residential,1,2.0,20,0.0,0.0,1.0,0.0,0.0,0.0,0.0,14.0,Low,high
+Marikani Road,residential,1,2.0,30,0.0,0.0,1.0,0.0,0.0,0.0,1.0,14.0,Low,medium
+Nass Drive,residential,1,2.0,30,0.0,0.0,1.0,0.0,0.0,0.0,1.0,14.0,Low,medium
+Processional Way,residential,8,1.4,40,0.0,0.12,0.25,0.38,0.0,1.0,0.62,13.9,Low,low
+Cardinal Otunga Street,unclassified,3,1.0,43,0.33,0.0,1.0,0.0,0.0,1.0,0.67,13.8,Low,low
+Margaret Wambui Kenyatta Road,unclassified,3,1.0,43,0.67,0.0,1.0,0.0,0.0,1.0,0.67,13.8,Low,low
+Ali Jaden Road,unclassified,3,1.7,40,0.0,0.0,1.0,0.0,0.33,0.33,1.0,13.7,Low,low
+Kilimanjaro Avenue,residential,6,1.0,43,1.0,0.33,1.0,0.0,0.0,1.0,0.33,13.7,Low,low
+Kiganjo,residential,5,1.0,30,0.0,0.6,1.0,0.0,0.0,1.0,1.0,13.6,Low,low
+Market Street,unclassified,4,1.0,42,0.75,0.0,1.0,0.0,0.0,1.0,0.75,13.6,Low,low
+Cathedral Road,residential,1,1.0,50,0.0,1.0,0.0,0.0,0.0,1.0,0.0,13.5,Low,medium
+Kawi Road,residential,4,1.8,30,0.0,0.5,0.5,0.0,0.0,0.25,1.0,13.5,Low,low
+Sore Road,residential,4,1.0,30,0.0,0.75,0.5,0.5,0.0,1.0,1.0,13.5,Low,low
+Kagundo Road,residential,4,1.0,45,0.5,0.0,1.0,0.5,0.0,1.0,0.25,13.4,Low,low
+Arboretum Drive,unclassified,5,1.0,42,0.6,0.0,0.8,0.2,0.0,1.0,0.8,13.1,Low,low
+Posta Street,unclassified,3,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Woodvale Close,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Gatundu Crescent,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Kericho Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Uaso Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Nanyuki Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Keiyo Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Wambugu Lane,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Kampala Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Baridi Lane,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Baridi Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Marimbi Street,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Waudo Street,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Ol Doinyo Lengai Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Musembi Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Machakos Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Birongo Square,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Road C,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Shimo La Tewa Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Tsavo Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Mukandu Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Street 1000,unclassified,2,1.0,40,1.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Falcon Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Waiyaki Way Service Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Laini Saba Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Andolo Way,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Harry Thuku Road,residential,4,1.8,30,0.0,0.0,1.0,0.0,0.0,0.25,1.0,13.0,Low,low
+Pate Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Lambwe Close,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Mau Mau Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Siaya Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Kombo Munyiri Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Government Lane,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Abidjan Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Mukunga Street,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Ole Sangale Road,residential,2,1.0,30,0.0,0.5,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Shiyanga Avenue,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Mandera Road,residential,6,1.0,43,0.33,0.5,0.67,0.0,0.0,0.67,0.33,13.0,Low,low
+Hola Road,unclassified,3,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Baricho Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+S.P.S Lane,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Workshop Road,unclassified,3,1.0,40,0.67,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Chemelil Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Munae Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Kiarie Hihu Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Lorian Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Shimo la Tewa Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Kitui Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Pembe Street,unclassified,2,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Kabras Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Chepkorio Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Bukani Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,0.0,1.0,1.0,13.0,Low,low
+Nderi road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,1.0,13.0,Low,low
+Kamukunji Road,residential,6,1.2,33,0.0,0.0,1.0,0.0,0.0,1.0,1.0,12.7,Low,low
+Kibera Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+4th Avenue Ngong,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+3rd Avenue Ngong,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+2nd Avenue Ngong,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Argwings Kodhek Grove,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Timau Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Tigoni Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Lantana Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Kolobot Drive,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Kivemia Road,residential,2,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Dorobo Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Vihiga Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Mwingi Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Wood Avenue,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Mageta Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Dar Es Salam Road,residential,2,1.0,50,0.5,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Kirichwa Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Chania Avenue,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Komo Lane,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Wood Garden Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+George Padmore Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Lagiri Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Sudek Grove,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Kangethe Green,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Biashara Street,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Red Rose Court,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Elgeyo Marakwet North,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Muringa Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Marcus Garvey Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Westlands Avenue,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Kirichwa Gardens,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Muruka Lane,residential,1,1.0,50,0.0,0.0,1.0,0.0,0.0,1.0,0.0,12.5,Low,medium
+Rose Avenue,residential,6,1.0,38,0.0,0.0,1.0,0.17,0.0,1.0,0.83,12.4,Low,low
+Sports Road,residential,6,1.0,37,0.67,0.0,0.83,0.67,0.0,1.0,0.67,12.0,Low,low
+Plainsview Lane,residential,3,1.0,30,0.0,0.33,1.0,0.0,0.0,1.0,1.0,12.0,Low,low
+Plainsview Road,residential,7,1.0,30,0.0,0.57,0.71,0.0,0.0,1.0,1.0,12.0,Low,low
+Jahmby FayaMama Koikai Lane,residential,1,2.0,20,0.0,0.0,0.0,1.0,0.0,0.0,0.0,12.0,Low,high
+Lome Road,unclassified,5,1.0,36,0.0,0.0,1.0,0.0,0.0,1.0,1.0,11.8,Low,low
+Menelik Road,residential,3,1.0,43,0.0,0.0,1.0,0.0,0.0,1.0,0.33,11.7,Low,low
+Longonot Road,residential,3,1.0,43,0.67,0.0,1.0,0.0,0.0,1.0,0.33,11.7,Low,low
+Melili Road,residential,4,1.0,30,0.5,0.25,1.0,0.0,0.0,1.0,1.0,11.5,Low,low
+Hombe Road,residential,2,1.0,35,0.0,0.0,1.0,0.0,0.0,1.0,1.0,11.5,Low,low
+Sumba Road,residential,2,1.0,30,0.0,0.0,1.0,0.5,0.0,1.0,1.0,11.5,Low,low
+Chambers Road,residential,2,1.0,30,0.0,0.0,1.0,0.5,0.0,1.0,1.0,11.5,Low,low
+Rhapta Road,residential,4,1.0,40,0.5,0.0,1.0,0.0,0.0,1.0,0.5,11.2,Low,low
+Kindaruma Road,residential,2,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,0.5,11.2,Low,low
+Gatoto Road,residential,2,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,0.5,11.2,Low,low
+Hill Lane,residential,2,1.0,40,0.0,0.0,1.0,0.0,0.0,1.0,0.5,11.2,Low,low
+Kinsasha Road,residential,3,1.0,33,0.0,0.0,1.0,0.0,0.0,1.0,1.0,11.0,Low,low
+Kilifi Close,residential,1,1.0,30,0.0,1.0,0.0,0.0,0.0,1.0,1.0,11.0,Low,low
+Sasio Road,residential,3,1.0,33,0.0,0.0,1.0,0.0,0.0,1.0,1.0,11.0,Low,low
+Chebuvusi Crescent,residential,3,1.0,30,0.0,0.0,1.0,0.33,0.0,1.0,1.0,11.0,Low,low
+Cosmas Ndeti Road,residential,1,1.0,30,0.0,1.0,0.0,0.0,0.0,1.0,1.0,11.0,Low,low
+Bishop Road,residential,3,1.0,50,0.0,0.0,0.67,0.0,0.0,1.0,0.0,10.8,Low,medium
+Kijabe Street,residential,5,1.2,30,0.8,0.0,1.0,0.0,0.0,0.6,1.0,10.8,Low,low
+Mamlaka Road,residential,5,1.0,42,0.0,0.0,0.8,0.0,0.0,1.0,0.4,10.5,Low,low
+Tausi Road,residential,2,1.0,30,0.0,0.5,0.5,0.0,0.0,1.0,1.0,10.5,Low,low
+Police Dog Unit Road,unclassified,4,1.0,40,0.5,0.0,0.5,0.0,0.0,1.0,1.0,10.5,Low,low
+Kabarnet Gardens,residential,1,1.0,50,0.0,0.0,0.0,1.0,0.0,1.0,0.0,10.5,Low,medium
+Jamhuri Crescent,residential,2,1.0,40,0.0,0.0,0.5,0.5,0.0,1.0,0.5,10.2,Low,low
+Kindaruma Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mbaruk Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Argwings Kodhek Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Woodlands Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Jabavu Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kasuku Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Shivachi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+The Crescent,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Plums Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bweha Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Lumbwa Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kilungu Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Likoni Lane,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Likoni Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Maalim Juma Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Githunguri Road,residential,2,1.0,50,0.0,0.0,0.5,0.0,0.0,1.0,0.0,10.0,Low,medium
+Durham Road,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tinderet Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kitale Lane,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ita Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Swamibapa Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Batubatu Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gala Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Shillingi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kienjeku Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kipkabus Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bandari Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Butere Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Maboko Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Chweya Road,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Amiani Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Golden Gate Drive,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Sore Drive,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Zanzibar Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Laxminaryan Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Galberobe Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Losai Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mogira Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ninth Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Eighth Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tenth Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Thirteenth Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Pamba Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Pareto Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Irungu Riika Road,residential,3,1.0,30,0.67,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Musindi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mkonge Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Zambarau Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Buni Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mbono Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Jairo Owino,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Voi Lane,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mbale Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+R Ui Rwaka Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kivu Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kyoga Crscent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Katulo Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Hono Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ol Doinyo Sabuk Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Batubatu Gardens,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Luhya Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Oshwal Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Pokot Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Menengai Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kodi (I) Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Naimey Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Naimey Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kipipiri Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gem Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Riverside Paddocks,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Chogoria Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Shikunga Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mwembere Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mawensi Garden,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kenya Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Sunview,residential,4,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mosiro Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ngobit Road,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Longinye Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mutomo Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kabarnet Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+City Stadium Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Garissa Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Baringo Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Krape Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tosha,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Natron Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Yakuti Rd,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Asembo Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ruiru Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kisiwa Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Karakuta Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ukwala Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Guasi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Yatta Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+State House Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Paa Crescent,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kifaru Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Swara Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Punda Milia Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Sungura Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kiasungur Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Oluvimu Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Muhuti Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Rugunga Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kabiyeti Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Thogoto Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Uchumi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mufuli Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bumi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kolobot Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kalobot Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+258 Extension Way,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kalasa Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Maboko Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Maboko Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Malibet Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Malibet close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Amiani Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Lagiri Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kirichwa Lane Court,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+St Mary's School Private Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Woodvale Lane,residential,1,1.0,30,1.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Uwanja Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Guthera Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mazinga Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Muchai Drive,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Musufi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Green Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Keri Road,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Lemule Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kifaru Court,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Nderiroad,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ngomeni Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Guru Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Waiga Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mutanda Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Musingu Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tana Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mumbi Raod,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Chege Kibiro,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Revsymekha Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bumbani Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Buchuma Crescent,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ahmed Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Soit Ololol Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mshane Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mwangi Riika Crescent,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Metropolitan Estate,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gusii Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Buruburu Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bombeya Court,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Katulo Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tinda Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Nairobi Pickleball Club Road,residential,1,1.0,30,1.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ngiya Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kenjaro Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bagamoyo Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mijikenda Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Golden Gate Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Munyaka Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Munyaka Drive,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Golden Gate Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Githeri Drive,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Githeri Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Karuku Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Githeri Rise,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Sadi Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kapiti Crescent,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Riverside Grove,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Riverside Mews,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gatundu Close,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Rumbi Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kanga Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Lindi Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Makina Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ndovu Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Guthera Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mukuyu Lane,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Theta Lane,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kirichwa Creek,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ngong Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mwtate Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gore Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kianda Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Simbi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Chaanan Singh Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Webuye Road,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kano Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+11th Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kikuyu Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Paa Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kisauni Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Makina Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kodi II Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mbuni Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Geta Close,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Chweya Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gandhi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Makhan Singh Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Twelfth Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Softa Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ole Sangale Link Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kiambere Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Oldeani Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mwanesi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Matumbato Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kifaru Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Olesoi Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Laiboni Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mumbi Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Narok Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Dik Dik Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Rose Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kadong Road,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mubiru Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mpweke Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ndekwa Avenue,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Hodari Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Jombo Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mtelo Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Muhuti Crescent,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kambere Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Githeri Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bungoma Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Solai Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Dunga Close,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Robin Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bonde Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Batians Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Karuri Gakure Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Okoth Aura Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Banjui Road,residential,5,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ramesh Gautama Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tende Drive,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Aboretum Drive,residential,2,1.0,30,0.5,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Utalii Lane,residential,1,1.0,30,1.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Moktar Daddah Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Abdihafid road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Lanet Road,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ngara Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Lenana Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Wambugu Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Riverside Park,residential,5,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Cape Gardens,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Risa Apartments,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+The Gables Kilimani,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Muringa Groove,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Dik Dik Gardens,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Sri Aurobindo Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ndovu Ahmed Lane,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Moran Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Gura Grove,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Kirichwa Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Maratha Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Shiko Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Jabavu Court,residential,4,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Musindi Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Jodongo Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Thingiri Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mersok Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ndovu Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Bustani Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Nicobar Close,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Melawa Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Olosolani Court,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Sagam Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ofafa Jericho Entrance,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Tree Shade Heights,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Pokomo Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Maratha CL Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Ndovu Close 2,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+1st Parklands Avenue,residential,3,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Wambugu Gardens,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Wambugu Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Wambugu Close (Lower),residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Glenbrooke Apartments,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mahiga Mairu Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Malanga Street,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Amara Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Muhoho Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Prof David Wasawo Drive,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Arboretum Park Lane,residential,2,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Thika Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Jondongo Road,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mariakani Gardens,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Wambugu Grove,residential,1,1.0,30,0.0,0.0,1.0,0.0,0.0,1.0,1.0,10.0,Low,low
+Mpaka Road,residential,10,1.0,34,0.5,0.1,0.5,0.2,0.0,1.0,1.0,9.9,Low,low
+Popo Road,residential,5,1.0,30,0.4,0.8,0.0,0.0,0.0,1.0,1.0,9.8,Low,low
+Tabere Crescent,residential,7,1.0,41,0.29,0.0,0.57,0.0,0.0,0.71,0.43,9.3,Low,low
+Makueni Road,unclassified,2,1.0,45,0.5,0.0,0.0,0.0,0.0,1.0,0.5,9.2,Low,low
+Voi Road,residential,2,1.0,35,0.0,0.0,0.5,0.0,0.0,1.0,1.0,9.0,Low,low
+Riverside Close,residential,1,2.0,30,0.0,0.0,0.0,0.0,0.0,0.0,1.0,9.0,Low,medium
+Marimbi street,residential,1,2.0,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0,Low,high
+Five Star Road,residential,4,1.0,30,0.0,0.0,0.75,0.0,0.0,1.0,1.0,8.8,Low,low
+Masaba Road,residential,4,1.0,30,1.0,0.0,0.75,0.0,0.0,1.0,1.0,8.8,Low,low
+Ngariama Road,unclassified,1,1.0,40,0.0,0.0,0.0,0.0,0.0,1.0,1.0,8.0,Low,low
+Ndumberi Road,unclassified,1,1.0,40,0.0,0.0,0.0,0.0,0.0,1.0,1.0,8.0,Low,low
+Maumau Road,unclassified,1,1.0,40,0.0,0.0,0.0,0.0,0.0,1.0,1.0,8.0,Low,low
+Mathare N Road,unclassified,1,1.0,40,0.0,0.0,0.0,0.0,0.0,1.0,1.0,8.0,Low,low
+Seniour Private ✭ Hezekiah Rabala Ochuka road,residential,1,2.0,40,0.0,0.0,1.0,0.0,1.0,0.0,0.0,8.0,Low,high
+Upperhill Close,residential,1,1.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.5,Low,medium
+1st Ngong Avenue,residential,3,1.0,37,0.67,0.0,0.33,0.0,0.0,1.0,0.67,7.5,Low,low
+Mwingi Court Gate,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+East Church Road,residential,2,1.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.5,Low,medium
+David Osieli Road,residential,1,1.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.5,Low,medium
+Maendeleo Road,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Kumasi Road,residential,2,1.0,30,0.5,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Muchai Road,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Jodongo Road,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Vijana Road,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Migori Road,residential,1,1.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.5,Low,medium
+Kirichwa Road Gardens,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Laikipia Road,residential,1,1.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.5,Low,medium
+Mimosa Lane,residential,2,1.0,50,0.0,0.0,0.0,0.0,0.0,1.0,0.0,7.5,Low,medium
+Sasumua Road,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Nyasi Lane,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Masai Road,residential,2,1.0,30,0.0,0.0,0.5,0.0,0.0,1.0,1.0,7.5,Low,low
+Mtito Andei Road,residential,1,1.0,30,0.0,0.0,1.0,1.0,1.0,1.0,1.0,7.0,Low,low
+Njiwa Road,residential,5,1.0,30,0.0,0.0,0.4,0.0,0.0,1.0,1.0,7.0,Low,low
+Muslim Road,unclassified,1,1.0,40,0.0,0.0,1.0,0.0,1.0,1.0,1.0,7.0,Low,low
+Eldoret Road,residential,3,1.0,30,0.0,0.0,0.33,0.0,0.0,1.0,1.0,6.7,Low,low
+Palm Springs,residential,2,1.0,30,0.0,0.0,0.0,0.5,0.0,1.0,1.0,6.5,Low,low
+Ngiri Road,residential,1,1.0,50,0.0,0.0,1.0,0.0,1.0,0.0,0.0,6.5,Low,high
+Mwende Street,residential,4,1.0,32,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.8,Low,low
+Kamburu Drive,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Kayahweh Road,residential,2,1.0,30,0.5,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mugoya Estate,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Msapo Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+George Padmore Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Suguta Road,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mazeras Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mugoiri Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Hamisi Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nyangumi Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Church Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+St. Michael's Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mvuli Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Makadara Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Luka Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Luka Cres Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Sixth Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Fifth Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Galole Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Fourth Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Third Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Muyuyu Avenue,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Sergeant Major Kamugobe Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Muga Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Major Kinyanjui Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Second Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Busagawa Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Eighteenth Street,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mvuma Nyuki Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Ole Sinoni Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Eastlands Crescent,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Ambala Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Laikipia Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Kirichwa Grove Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Riverside Lane,residential,3,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Krapf Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Jagoo Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+614-656 Imara Drive,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Daisy Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+655 Avocado Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Wattle Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Pondo Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Tobacco Drive,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Tamarind Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Rose Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+7 Siala Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nandi Flame Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+37 Quinine Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Uwanja Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Bamboo Cresent,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Ole musalala court,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nazing Cresent,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Wangombe Waihura Road,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Kikwata Crescent,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mugumo Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Oldeani Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Podium Road,residential,3,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Golden Gate Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Riverside Lane West,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Riverside Gardens,residential,3,1.0,27,0.0,0.0,0.0,0.0,0.0,1.0,0.67,5.0,Low,low
+Mugumo Crescent,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Khanga Court,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nziu Road,residential,5,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Khanga Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nziu Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Sonia Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Seventeenth Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Amani Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Animal Orphanage Road,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Royal Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Sim Sim Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mugumo Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Uwanja Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Madura Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Pilipili Way,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Terrace Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Kacha Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Riverside Garden Close,residential,3,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nyeri Close,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mbooni,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Sandalwood Lane,residential,2,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Pearl Homes,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Elite Regency,residential,3,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mvuli Park,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Mangu Gardens Street,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Konokono Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Churo Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Luka Crescent,residential,3,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Kilimambogo Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Ndovu Lane 1,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Bombax Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Danny Ct Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Nyeri close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Baraza Road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+720 Ober Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+M.G. Cres,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Upper Hill Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+850 Acacia Lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Jaylaani Boulevard,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Kirichwa Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Liam lane,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Casa Palacio,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Access road,residential,1,1.0,30,0.0,0.0,0.0,0.0,0.0,1.0,1.0,5.0,Low,low
+Argwings Kodhek Groove,residential,1,1.0,30,0.0,0.0,1.0,0.0,1.0,1.0,1.0,4.0,Low,low
+Noshaba Lane,residential,1,1.0,30,0.0,0.0,1.0,0.0,1.0,1.0,1.0,4.0,Low,low
+Sports Avenue,residential,1,1.0,30,0.0,0.0,1.0,0.0,1.0,1.0,1.0,4.0,Low,low
+Turbo Road,residential,4,1.0,30,0.0,0.0,0.0,0.0,0.75,1.0,1.0,0.5,Low,low
+Mkoko Close,residential,1,1.0,30,0.0,0.0,0.0,0.0,1.0,1.0,1.0,-1.0,Low,low

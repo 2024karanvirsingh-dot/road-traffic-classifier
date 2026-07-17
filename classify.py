@@ -117,7 +117,8 @@ def parse_speed_kmh(tag):
 
 def parse_lanes(tag):
     try:
-        return int(float(tag.split(";")[0]))
+        v = int(float(tag.split(";")[0]))
+        return v if v >= 1 else None   # malformed 0/negative values fall back to class default
     except (AttributeError, ValueError):
         return None
 
@@ -210,6 +211,7 @@ def classify(data):
             "name": tags.get("name", "(unnamed)"), "class": cls, "lanes": lanes,
             "kmh": round(kmh), "oneway": oneway, "transit": transit,
             "commercial": commercial, "junction": junction, "unpaved": unpaved,
+            "lanes_imputed": lanes_i, "speed_imputed": speed_i,
             "score": score, "confidence": conf, "category": categorize(score),
             "geometry": [[round(p["lat"], 5), round(p["lon"], 5)] for p in g],
         }
@@ -217,27 +219,43 @@ def classify(data):
         if seg["name"] != "(unnamed)":
             by_name[seg["name"]].append(seg)
 
+    # Road level rows aggregate segments CONSISTENTLY with the score: the road
+    # score is the mean of its segment scores, so every displayed feature is the
+    # mean (or share) over the same segments. A reviewer can reproduce each row:
+    # class_points(modal class) + 4*(mean_lanes-1) + 0.25*max(0, mean_kmh-40)
+    # + shares * their weights approximates the mean segment score.
     roads_out = []
     for name, segs in by_name.items():
-        score = round(sum(s["score"] for s in segs) / len(segs), 1)
+        n = len(segs)
+        share = lambda key: round(sum(1 for s in segs if s[key]) / n, 2)
+        modal_cls = max(set(s["class"] for s in segs),
+                        key=lambda c: sum(1 for s in segs if s["class"] == c))
+        score = round(sum(s["score"] for s in segs) / n, 1)
         roads_out.append({
             "road": name,
-            "osm_class": max(segs, key=lambda s: CLASS_POINTS[s["class"]])["class"],
-            "segments": len(segs),
-            "lanes": max(s["lanes"] for s in segs),
-            "speed_kmh": max(s["kmh"] for s in segs),
-            "transit": any(s["transit"] for s in segs),
-            "commercial": any(s["commercial"] for s in segs),
-            "score": score,
+            "modal_class": modal_cls,
+            "segments": n,
+            "mean_lanes": round(sum(s["lanes"] for s in segs) / n, 1),
+            "mean_speed_kmh": round(sum(s["kmh"] for s in segs) / n),
+            "oneway_share": share("oneway"),
+            "transit_share": share("transit"),
+            "commercial_share": share("commercial"),
+            "junction_share": share("junction"),
+            "unpaved_share": share("unpaved"),
+            "lanes_imputed_share": round(sum(1 for s in segs if s["lanes_imputed"]) / n, 2),
+            "speed_imputed_share": round(sum(1 for s in segs if s["speed_imputed"]) / n, 2),
+            "mean_segment_score": score,
             "category": categorize(score),
             "confidence": min((s["confidence"] for s in segs),
                               key=["low", "medium", "high"].index),
         })
-    roads_out.sort(key=lambda r: -r["score"])
+    roads_out.sort(key=lambda r: -r["mean_segment_score"])
     return segments, roads_out
 
 
 def write_outputs(slug, city_name, center, segments, roads_out):
+    if not roads_out:
+        raise RuntimeError("No named supported roads were found in the selected area.")
     d = os.path.join(DATA, slug)
     os.makedirs(d, exist_ok=True)
     with open(os.path.join(d, "results.csv"), "w", newline="") as f:
@@ -251,12 +269,14 @@ def write_outputs(slug, city_name, center, segments, roads_out):
              + [r for r in multi if r["category"] == "Low"][:6])
     with open(os.path.join(d, "results.md"), "w") as f:
         f.write(f"### {city_name}\n\n")
-        f.write("| Road | OSM class | Lanes | Speed (km/h) | Transit | Commercial | Score | Category | Confidence |\n")
-        f.write("|---|---|---|---|---|---|---|---|---|\n")
+        f.write("All feature columns are aggregated the same way the score is: as means or\n"
+                "shares over the road's segments, so each row can be reproduced from the\n"
+                "formula. Shares are the fraction of segments (0 to 1) with that feature.\n\n")
+        f.write("| Road | Modal class | Mean lanes | Mean speed (km/h) | One way share | Transit share | Commercial share | Junction share | Unpaved share | Mean segment score | Category | Confidence |\n")
+        f.write("|---|---|---|---|---|---|---|---|---|---|---|---|\n")
         for r in picks:
-            f.write("| {road} | {osm_class} | {lanes} | {speed_kmh} | {t} | {c} | {score} | {category} | {confidence} |\n"
-                    .format(t="yes" if r["transit"] else "no",
-                            c="yes" if r["commercial"] else "no", **r))
+            f.write("| {road} | {modal_class} | {mean_lanes} | {mean_speed_kmh} | {oneway_share} | {transit_share} | {commercial_share} | {junction_share} | {unpaved_share} | {mean_segment_score} | {category} | {confidence} |\n"
+                    .format(**r))
 
     json.dump({"city": city_name, "center": center, "segments": segments},
               open(os.path.join(d, "map.json"), "w"))
