@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Road Traffic Classification: Cambridge / Allston, MA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  html, body { margin: 0; height: 100%; font-family: -apple-system, Segoe UI, sans-serif; }
+  #map { height: 100%; }
+  .panel {
+    position: absolute; top: 12px; right: 12px; z-index: 1000;
+    background: rgba(255,255,255,.95); border-radius: 10px; padding: 14px 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.18); max-width: 300px; font-size: 13px;
+  }
+  .panel h1 { font-size: 15px; margin: 0 0 4px; }
+  .panel p { margin: 4px 0; color: #444; }
+  .sw { display: inline-block; width: 22px; height: 5px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+  .row { margin: 3px 0; cursor: pointer; user-select: none; }
+  .row.off { opacity: .35; }
+  .stats { color: #666; font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+  <h1>Road Traffic Classification</h1>
+  <p>Cambridge / Allston, MA. Every road segment scored from public OpenStreetMap data only (road class, lanes, speed limit, bus routes, nearby land use). Click a road for its score breakdown. Click a legend row to toggle a category.</p>
+  <div class="row" data-cat="High"><span class="sw" style="background:#d73027"></span><b>High</b> <span id="n-High"></span></div>
+  <div class="row" data-cat="Moderate"><span class="sw" style="background:#fc8d2f"></span><b>Moderate</b> <span id="n-Moderate"></span></div>
+  <div class="row" data-cat="Low"><span class="sw" style="background:#4a90d9"></span><b>Low</b> <span id="n-Low"></span></div>
+  <div class="stats" id="stats"></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map_data.js"></script>
+<script>
+const map = L.map('map').setView([42.373, -71.11], 14);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19
+}).addTo(map);
+
+const COLORS = { High: '#d73027', Moderate: '#fc8d2f', Low: '#4a90d9' };
+const WEIGHTS = { High: 5, Moderate: 4, Low: 2 };
+const layers = { High: L.layerGroup(), Moderate: L.layerGroup(), Low: L.layerGroup() };
+const counts = { High: 0, Moderate: 0, Low: 0 };
+
+ROADS.forEach(r => {
+  if (!r.geometry || r.geometry.length < 2) return;
+  counts[r.category]++;
+  const line = L.polyline(r.geometry, {
+    color: COLORS[r.category], weight: WEIGHTS[r.category], opacity: .85
+  });
+  line.bindPopup(
+    `<b>${r.name}</b><br>` +
+    `Category: <b style="color:${COLORS[r.category]}">${r.category}</b> (score ${r.score})<br>` +
+    `OSM class: ${r.class}<br>` +
+    `Lanes: ${r.lanes} &middot; Speed: ${r.speed_mph} mph<br>` +
+    `Bus route: ${r.bus_route ? 'yes' : 'no'} &middot; Commercial nearby: ${r.near_commercial ? 'yes' : 'no'}<br>` +
+    `Data confidence: ${r.confidence}`);
+  line.addTo(layers[r.category]);
+});
+// draw Low first so busy roads sit on top
+['Low', 'Moderate', 'High'].forEach(c => layers[c].addTo(map));
+Object.keys(counts).forEach(c => document.getElementById('n-' + c).textContent = '(' + counts[c] + ' segments)');
+document.getElementById('stats').textContent = ROADS.length + ' road segments scored in well under a second, no ML, no paid data.';
+document.querySelectorAll('.row').forEach(el => el.addEventListener('click', () => {
+  const c = el.dataset.cat;
+  if (map.hasLayer(layers[c])) { map.removeLayer(layers[c]); el.classList.add('off'); }
+  else { layers[c].addTo(map); el.classList.remove('off'); }
+}));
+</script>
+</body>
+</html>
