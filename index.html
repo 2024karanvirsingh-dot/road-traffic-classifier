@@ -93,12 +93,17 @@ function render(d, note) {
     if (r.oneway) extras.push('one way');
     if (r.junction) extras.push('junction hub');
     if (r.unpaved) extras.push('unpaved');
+    const c = r.components;
+    const breakdown = c ? `<br>Breakdown: ${[c.class_pts, c.lane_pts, c.speed_pts,
+      c.oneway_pts, c.transit_pts, c.commercial_pts, c.junction_pts, c.surface_pts]
+      .map(v => Math.round(v * 100) / 100).join(' + ')}` : '';
     line.bindPopup(
       `<b>${r.name}</b><br>` +
       `Category: <b style="color:${COLORS[r.category]}">${r.category}</b> (score ${r.score})<br>` +
-      `OSM class: ${r.class} &middot; Lanes: ${r.lanes} &middot; ${r.kmh} km/h<br>` +
-      `Transit route: ${yn(r.transit)} &middot; Commercial nearby: ${yn(r.commercial)}` +
+      `OSM class: ${r.class} &middot; Lanes: ${r.lanes} &middot; ${r.mph} mph<br>` +
+      `Transit routes: ${r.transit_routes} &middot; Trip generator points: ${r.generator_pts}` +
       (extras.length ? `<br>${extras.join(' &middot; ')}` : '') +
+      breakdown +
       `<br>Data confidence: ${r.confidence}`);
     line.addTo(layers[r.category]);
   });
@@ -132,22 +137,25 @@ const CLASS_POINTS = { motorway: 40, motorway_link: 32, trunk: 34, trunk_link: 2
 const DEF_LANES = { motorway: 3, motorway_link: 1, trunk: 2, trunk_link: 1,
   primary: 2, primary_link: 1, secondary: 2, secondary_link: 1,
   tertiary: 2, unclassified: 1, residential: 1 };
-const DEF_KMH = { motorway: 90, motorway_link: 60, trunk: 70, trunk_link: 50,
-  primary: 50, primary_link: 40, secondary: 50, secondary_link: 40,
-  tertiary: 40, unclassified: 40, residential: 30 };
+const DEF_MPH = { motorway: 55, motorway_link: 35, trunk: 45, trunk_link: 30,
+  primary: 30, primary_link: 25, secondary: 30, secondary_link: 25,
+  tertiary: 25, unclassified: 25, residential: 25 };
 const UNPAVED = new Set(['unpaved','dirt','gravel','sand','ground','earth','grass',
   'mud','compacted','fine_gravel','pebblestone','rock']);
+const GENERATOR_POINTS = { commercial: 5, retail: 5, marketplace: 4, hospital: 4,
+  university: 4, industrial: 3, school: 2 };
+const transitPoints = n => n >= 4 ? 7 : n >= 2 ? 5 : n === 1 ? 3 : 0;
 
-function parseKmh(tag) {
+function parseMph(tag) {
   if (!tag) return null;
   const t = tag.split(';')[0].trim().toLowerCase();
-  if (t === 'walk') return 10;
+  if (t === 'walk') return 6;
   const m = t.match(/^(\d+(?:\.\d+)?)\s*(mph|knots)?$/);
   if (!m) return null;
-  let v = parseFloat(m[1]);
-  if (m[2] === 'mph') v *= 1.609344;
-  if (m[2] === 'knots') v *= 1.852;
-  return v;
+  const v = parseFloat(m[1]);
+  if (m[2] === 'mph') return v;
+  if (m[2] === 'knots') return v * 1.15078;
+  return v * 0.621371;   // bare numbers are km/h in OSM
 }
 
 function classifyElements(elements) {
@@ -157,20 +165,31 @@ function classifyElements(elements) {
     else if (e.tags && CLASS_POINTS[e.tags.highway] !== undefined) roads.push(e);
     else land.push(e);
   });
-  const transitWays = new Set();
-  rels.forEach(r => (r.members || []).forEach(m => { if (m.type === 'way') transitWays.add(m.ref); }));
+  const routeCount = {};
+  rels.forEach(r => {
+    const refs = new Set((r.members || []).filter(m => m.type === 'way').map(m => m.ref));
+    refs.forEach(ref => routeCount[ref] = (routeCount[ref] || 0) + 1);
+  });
 
-  const CELL = 0.0015, hot = new Set();
-  land.forEach(e => (e.geometry || []).forEach(p =>
-    hot.add(Math.round(p.lat / CELL) + ':' + Math.round(p.lon / CELL))));
-  const nearCommercial = g => {
+  const CELL = 0.0015, hot = {};
+  land.forEach(e => {
+    const tags = e.tags || {};
+    const pts = GENERATOR_POINTS[tags.landuse || tags.amenity] || 0;
+    if (!pts) return;
+    (e.geometry || []).forEach(p => {
+      const k = Math.round(p.lat / CELL) + ':' + Math.round(p.lon / CELL);
+      hot[k] = Math.max(hot[k] || 0, pts);
+    });
+  });
+  const generatorPtsNear = g => {
+    let best = 0;
     const step = Math.max(1, Math.floor(g.length / 8));
     for (let i = 0; i < g.length; i += step) {
       const r0 = Math.round(g[i].lat / CELL), c0 = Math.round(g[i].lon / CELL);
       for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++)
-        if (hot.has((r0 + dr) + ':' + (c0 + dc))) return true;
+        best = Math.max(best, hot[(r0 + dr) + ':' + (c0 + dc)] || 0);
     }
-    return false;
+    return best;
   };
 
   const endCount = {};
@@ -187,26 +206,32 @@ function classifyElements(elements) {
     const tags = w.tags || {}, g = w.geometry || [];
     if (g.length < 2) return;
     const cls = tags.highway;
-    let lanes = parseInt(tags.lanes), kmh = parseKmh(tags.maxspeed);
+    let lanes = parseInt(tags.lanes), mph = parseMph(tags.maxspeed);
     if (lanes < 1) lanes = NaN;
-    const lanesI = isNaN(lanes), speedI = kmh === null;
+    const lanesI = isNaN(lanes), speedI = mph === null;
     if (lanesI) lanes = DEF_LANES[cls];
-    if (speedI) kmh = DEF_KMH[cls];
+    if (speedI) mph = DEF_MPH[cls];
     const oneway = tags.oneway === 'yes' || tags.oneway === '-1';
-    const transit = transitWays.has(w.id);
-    const commercial = nearCommercial(g);
+    const routes = routeCount[w.id] || 0;
+    const genPts = generatorPtsNear(g);
     const junction = Math.max(endCount[ek(g[0])] || 0, endCount[ek(g[g.length - 1])] || 0) >= 4;
     const unpaved = UNPAVED.has(tags.surface);
-    let s = CLASS_POINTS[cls] + 4 * (lanes - 1) + 0.25 * Math.max(0, kmh - 40);
-    if (oneway && ['primary', 'secondary', 'tertiary'].includes(cls)) s += 2;
-    if (transit) s += 6;
-    if (commercial) s += 5;
-    if (junction) s += 3;
-    if (unpaved) s -= 6;
-    s = Math.round(s * 10) / 10;
+    // identical components to classify.py's score_components()
+    const components = {
+      class_pts: CLASS_POINTS[cls],
+      lane_pts: 4 * (lanes - 1),
+      speed_pts: 0.4 * Math.max(0, mph - 25),
+      oneway_pts: oneway && ['primary', 'secondary', 'tertiary'].includes(cls) ? 2 : 0,
+      transit_pts: transitPoints(routes),
+      commercial_pts: genPts,
+      junction_pts: junction ? 3 : 0,
+      surface_pts: unpaved ? -6 : 0,
+    };
+    const s = Math.round(Object.values(components).reduce((a, b) => a + b, 0) * 10) / 10;
     segments.push({
-      name: tags.name || '(unnamed)', class: cls, lanes, kmh: Math.round(kmh),
-      oneway, transit, commercial, junction, unpaved, score: s,
+      name: tags.name || '(unnamed)', class: cls, lanes, mph: Math.round(mph),
+      oneway, transit_routes: routes, generator_pts: genPts, junction, unpaved,
+      components, score: s,
       confidence: (!lanesI && !speedI) ? 'high' : (lanesI && speedI) ? 'low' : 'medium',
       category: s <= 20 ? 'Low' : s <= 38 ? 'Moderate' : 'High',
       geometry: g.map(p => [Math.round(p.lat * 1e5) / 1e5, Math.round(p.lon * 1e5) / 1e5]),

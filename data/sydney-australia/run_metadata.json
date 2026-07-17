@@ -1,0 +1,18 @@
+{
+  "algorithm_version": "3.0.0",
+  "retrieved_at": "2026-07-17",
+  "study_area": "Sydney, Australia",
+  "bbox_south_west_north_east": [
+    -33.9098439,
+    151.1562848,
+    -33.8298439,
+    151.2602848
+  ],
+  "thresholds": {
+    "low_max": 20,
+    "moderate_max": 38
+  },
+  "units": "mph, meters",
+  "source": "OpenStreetMap via the Overpass API; geocoding by Nominatim",
+  "license": "Map data (c) OpenStreetMap contributors, ODbL"
+}

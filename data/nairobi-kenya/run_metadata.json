@@ -1,0 +1,18 @@
+{
+  "algorithm_version": "3.0.0",
+  "retrieved_at": "2026-07-17",
+  "study_area": "Nairobi, Kenya",
+  "bbox_south_west_north_east": [
+    -1.342398,
+    36.7768509,
+    -1.262398,
+    36.8808509
+  ],
+  "thresholds": {
+    "low_max": 20,
+    "moderate_max": 38
+  },
+  "units": "mph, meters",
+  "source": "OpenStreetMap via the Overpass API; geocoding by Nominatim",
+  "license": "Map data (c) OpenStreetMap contributors, ODbL"
+}

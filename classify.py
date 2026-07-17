@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Global road traffic classification from public OpenStreetMap data.
+"""Road traffic classification from public OpenStreetMap data.
 
-Classifies every road in any city on Earth as Low / Moderate / High traffic
-using a transparent additive score over OSM features. No ML, no paid data,
-no API keys.
+Classifies roads as Low / Moderate / High traffic using a transparent
+additive score over OSM features. No ML, no paid data, no API keys.
 
 Usage:
     python3 classify.py "Cambridge, Massachusetts"
@@ -13,18 +12,23 @@ Usage:
 The city name is geocoded with Nominatim, road + transit + land use data is
 pulled in a single Overpass API request and cached under data/<slug>/, then
 scored offline. Outputs per city:
-    data/<slug>/results.csv   one row per named road: features, score, category
-    data/<slug>/results.md    sample table (20 roads across all categories)
-    data/<slug>/map.json      per segment scores for the interactive map
+    data/<slug>/results.csv        one row per named road: every feature, every
+                                   score contribution, uncertainty fields
+    data/<slug>/results.md         sample table (20 roads across all categories)
+    data/<slug>/map.json           per segment scores for the interactive map
+    data/<slug>/run_metadata.json  bbox, thresholds, version, retrieval date
 and refreshes data/cities.js, the manifest the map UI reads.
 """
 
-import argparse, csv, json, os, re, sys, time, urllib.parse, urllib.request
+import argparse, csv, datetime, json, math, os, re, sys, time
+import urllib.parse, urllib.request
 from collections import defaultdict
+from statistics import pstdev
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-UA = "road-traffic-classifier/2.0 (educational assignment demo)"
+UA = "road-traffic-classifier/3.0 (educational assignment demo)"
+ALGORITHM_VERSION = "3.0.0"
 
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
@@ -44,13 +48,32 @@ DEFAULT_LANES = {
     "primary": 2, "primary_link": 1, "secondary": 2, "secondary_link": 1,
     "tertiary": 2, "unclassified": 1, "residential": 1,
 }
-DEFAULT_KMH = {   # class based speed defaults, km/h (world standard unit)
-    "motorway": 90, "motorway_link": 60, "trunk": 70, "trunk_link": 50,
-    "primary": 50, "primary_link": 40, "secondary": 50, "secondary_link": 40,
-    "tertiary": 40, "unclassified": 40, "residential": 30,
+DEFAULT_MPH = {   # class based speed defaults, mph
+    "motorway": 55, "motorway_link": 35, "trunk": 45, "trunk_link": 30,
+    "primary": 30, "primary_link": 25, "secondary": 30, "secondary_link": 25,
+    "tertiary": 25, "unclassified": 25, "residential": 25,
 }
 UNPAVED = {"unpaved", "dirt", "gravel", "sand", "ground", "earth", "grass",
            "mud", "compacted", "fine_gravel", "pebblestone", "rock"}
+
+# Trip generators contribute the MAXIMUM applicable value, not a sum, so a road
+# beside a mall and a school gets 5, not 7. Keeps the term bounded and simple.
+GENERATOR_POINTS = {
+    "commercial": 5, "retail": 5, "marketplace": 4, "hospital": 4,
+    "university": 4, "industrial": 3, "school": 2,
+}
+
+# Transit contributes by how many distinct routes use the segment: a corridor
+# carrying four bus lines is a stronger demand signal than a single route.
+# Service frequency (headways) is still not captured.
+def transit_points(route_count):
+    if route_count >= 4:
+        return 7
+    if route_count >= 2:
+        return 5
+    if route_count == 1:
+        return 3
+    return 0
 
 LOW_MAX, MODERATE_MAX = 20, 38
 
@@ -97,22 +120,22 @@ relation["route"~"^(bus|trolleybus|tram|share_taxi)$"]({b});out;
     sys.exit(f"Overpass fetch failed on all mirrors: {last_err}")
 
 
-def parse_speed_kmh(tag):
-    """Handles '50', '30 mph', '50;70', 'walk', 'RU:urban' style values."""
+def parse_speed_mph(tag):
+    """Handles '30 mph', '50' (km/h per OSM convention), '50;70', 'walk'."""
     if not tag:
         return None
     t = tag.split(";")[0].strip().lower()
     if t == "walk":
-        return 10.0
+        return 6.0
     m = re.match(r"^(\d+(?:\.\d+)?)\s*(mph|knots)?$", t)
     if not m:
         return None
     v = float(m.group(1))
     if m.group(2) == "mph":
-        v *= 1.609344
-    elif m.group(2) == "knots":
-        v *= 1.852
-    return v
+        return v
+    if m.group(2) == "knots":
+        return v * 1.15078
+    return v * 0.621371   # bare numbers are km/h in OSM
 
 
 def parse_lanes(tag):
@@ -123,25 +146,54 @@ def parse_lanes(tag):
         return None
 
 
-def score_segment(cls, lanes, kmh, oneway, transit, commercial, junction, unpaved):
-    s = CLASS_POINTS.get(cls, 5)
-    s += 4 * (lanes - 1)               # capacity that exists because demand justified it
-    s += 0.25 * max(0, kmh - 40)       # design speed above urban baseline
-    if oneway and cls in ("primary", "secondary", "tertiary"):
-        s += 2                         # urban one way pairs are arterial couplets
-    if transit:
-        s += 6                         # agencies route transit where demand is proven
-    if commercial:
-        s += 5                         # retail and big institutions generate trips
-    if junction:
-        s += 3                         # segment feeds 3+ other roads: a connector
-    if unpaved:
-        s -= 6                         # unpaved surface suppresses through traffic
-    return round(s, 1)
+def haversine_m(a, b):
+    """Great circle distance in meters between two [lat, lon] points."""
+    lat1, lon1, lat2, lon2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = (math.sin((lat2 - lat1) / 2) ** 2
+         + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2)
+    return 2 * 6371000 * math.asin(math.sqrt(h))
+
+
+def segment_length_m(geom):
+    return sum(haversine_m(geom[i], geom[i + 1]) for i in range(len(geom) - 1))
+
+
+def score_components(cls, lanes, mph, oneway, transit_routes, generator_pts,
+                     junction, unpaved):
+    """Returns the eight score contributions; the score is exactly their sum."""
+    return {
+        "class_pts": CLASS_POINTS.get(cls, 5),
+        "lane_pts": 4 * (lanes - 1),          # capacity that exists because demand justified it
+        "speed_pts": 0.4 * max(0, mph - 25),  # design speed above urban baseline
+        "oneway_pts": 2 if oneway and cls in ("primary", "secondary", "tertiary") else 0,
+        "transit_pts": transit_points(transit_routes),
+        "commercial_pts": generator_pts,      # max applicable trip generator value
+        "junction_pts": 3 if junction else 0, # segment feeds 3+ other roads: a connector
+        "surface_pts": -6 if unpaved else 0,  # unpaved surface suppresses through traffic
+    }
+
+
+def score_segment(cls, lanes, mph, oneway, transit_routes, generator_pts,
+                  junction, unpaved):
+    return round(sum(score_components(cls, lanes, mph, oneway, transit_routes,
+                                      generator_pts, junction, unpaved).values()), 1)
 
 
 def categorize(score):
     return "Low" if score <= LOW_MAX else ("Moderate" if score <= MODERATE_MAX else "High")
+
+
+def classification_margin(score):
+    """Distance to the nearest category threshold: how stable the label is."""
+    return round(min(abs(score - LOW_MAX), abs(score - MODERATE_MAX)), 1)
+
+
+def margin_label(margin):
+    return "borderline" if margin < 2 else ("moderate" if margin <= 5 else "stable")
+
+
+COMPONENT_KEYS = ["class_pts", "lane_pts", "speed_pts", "oneway_pts",
+                  "transit_pts", "commercial_pts", "junction_pts", "surface_pts"]
 
 
 def classify(data):
@@ -155,26 +207,35 @@ def classify(data):
         else:
             landuse.append(e)
 
-    transit_ways = set()
+    route_count = defaultdict(int)   # way id -> number of distinct transit routes
     for rel in relations:
-        for m in rel.get("members", []):
-            if m["type"] == "way":
-                transit_ways.add(m["ref"])
+        for ref in set(m["ref"] for m in rel.get("members", []) if m["type"] == "way"):
+            route_count[ref] += 1
 
-    # Commercial proximity via a coarse spatial grid (~150 m cells): we only
-    # need "is there a trip generator nearby", not an exact distance. O(n).
+    # Trip generator proximity via a coarse spatial grid (~150 m cells). Each
+    # cell stores the highest value generator touching it; a segment picks up
+    # the maximum over its own cell plus the eight neighbors. This is a coarse
+    # local proximity indicator (reach roughly 150 to 450 m), not an exact buffer.
     CELL = 0.0015
-    hot_cells = set()
+    hot_cells = {}
     for e in landuse:
+        tags = e.get("tags", {})
+        kind = tags.get("landuse") or tags.get("amenity")
+        pts = GENERATOR_POINTS.get(kind, 0)
+        if not pts:
+            continue
         for pt in e.get("geometry", []):
-            hot_cells.add((round(pt["lat"] / CELL), round(pt["lon"] / CELL)))
+            key = (round(pt["lat"] / CELL), round(pt["lon"] / CELL))
+            hot_cells[key] = max(hot_cells.get(key, 0), pts)
 
-    def near_commercial(geom):
+    def generator_points_near(geom):
+        best = 0
         for pt in geom[:: max(1, len(geom) // 8)]:
             r0, c0 = round(pt["lat"] / CELL), round(pt["lon"] / CELL)
-            if any((r0 + dr, c0 + dc) in hot_cells for dr in (-1, 0, 1) for dc in (-1, 0, 1)):
-                return True
-        return False
+            for dr in (-1, 0, 1):
+                for dc in (-1, 0, 1):
+                    best = max(best, hot_cells.get((r0 + dr, c0 + dc), 0))
+        return best
 
     # Junction connectivity: hash segment endpoints; an endpoint shared by 4+
     # segments marks a real intersection hub. Free proxy for network centrality.
@@ -194,66 +255,87 @@ def classify(data):
             continue
         cls = tags["highway"]
         lanes = parse_lanes(tags.get("lanes"))
-        kmh = parse_speed_kmh(tags.get("maxspeed"))
-        lanes_i, speed_i = lanes is None, kmh is None
+        mph = parse_speed_mph(tags.get("maxspeed"))
+        lanes_i, speed_i = lanes is None, mph is None
         if lanes is None:
             lanes = DEFAULT_LANES[cls]
-        if kmh is None:
-            kmh = DEFAULT_KMH[cls]
+        if mph is None:
+            mph = DEFAULT_MPH[cls]
         oneway = tags.get("oneway") in ("yes", "-1")
-        transit = w["id"] in transit_ways
-        commercial = near_commercial(g)
+        routes = route_count[w["id"]]
+        gen_pts = generator_points_near(g)
         junction = max(end_count[endkey(g[0])], end_count[endkey(g[-1])]) >= 4
         unpaved = tags.get("surface") in UNPAVED
-        score = score_segment(cls, lanes, kmh, oneway, transit, commercial, junction, unpaved)
+        comps = score_components(cls, lanes, mph, oneway, routes, gen_pts,
+                                 junction, unpaved)
+        score = round(sum(comps.values()), 1)
         conf = "high" if not (lanes_i or speed_i) else ("low" if lanes_i and speed_i else "medium")
+        geometry = [[round(p["lat"], 5), round(p["lon"], 5)] for p in g]
         seg = {
             "name": tags.get("name", "(unnamed)"), "class": cls, "lanes": lanes,
-            "kmh": round(kmh), "oneway": oneway, "transit": transit,
-            "commercial": commercial, "junction": junction, "unpaved": unpaved,
+            "mph": round(mph), "oneway": oneway, "transit_routes": routes,
+            "generator_pts": gen_pts, "junction": junction, "unpaved": unpaved,
             "lanes_imputed": lanes_i, "speed_imputed": speed_i,
+            "length_m": round(segment_length_m(geometry)),
+            "components": comps,
             "score": score, "confidence": conf, "category": categorize(score),
-            "geometry": [[round(p["lat"], 5), round(p["lon"], 5)] for p in g],
+            "geometry": geometry,
         }
         segments.append(seg)
         if seg["name"] != "(unnamed)":
             by_name[seg["name"]].append(seg)
 
-    # Road level rows aggregate segments CONSISTENTLY with the score: the road
-    # score is the mean of its segment scores, so every displayed feature is the
-    # mean (or share) over the same segments. A reviewer can reproduce each row:
-    # class_points(modal class) + 4*(mean_lanes-1) + 0.25*max(0, mean_kmh-40)
-    # + shares * their weights approximates the mean segment score.
+    # Road level aggregation, LENGTH WEIGHTED so a 1 km segment counts 50x a
+    # 20 m fragment. The road score is exactly the sum of the eight reported
+    # mean contribution columns, so every row is auditable by addition.
     roads_out = []
     for name, segs in by_name.items():
-        n = len(segs)
-        share = lambda key: round(sum(1 for s in segs if s[key]) / n, 2)
+        total_len = sum(s["length_m"] for s in segs) or 1
+        wmean = lambda vals: sum(v * s["length_m"] for v, s in zip(vals, segs)) / total_len
+        comps = {k: round(wmean([s["components"][k] for s in segs]), 2)
+                 for k in COMPONENT_KEYS}
+        score = round(sum(comps.values()), 1)
+        scores = [s["score"] for s in segs]
+        cats = [s["category"] for s in segs]
+        dominant = max(set(cats), key=cats.count)
+        lanes_imp = round(wmean([s["lanes_imputed"] for s in segs]), 2)
+        speed_imp = round(wmean([s["speed_imputed"] for s in segs]), 2)
+        margin = classification_margin(score)
         modal_cls = max(set(s["class"] for s in segs),
-                        key=lambda c: sum(1 for s in segs if s["class"] == c))
-        score = round(sum(s["score"] for s in segs) / n, 1)
-        roads_out.append({
+                        key=lambda c: sum(s["length_m"] for s in segs if s["class"] == c))
+        row = {
             "road": name,
             "modal_class": modal_cls,
-            "segments": n,
-            "mean_lanes": round(sum(s["lanes"] for s in segs) / n, 1),
-            "mean_speed_kmh": round(sum(s["kmh"] for s in segs) / n),
-            "oneway_share": share("oneway"),
-            "transit_share": share("transit"),
-            "commercial_share": share("commercial"),
-            "junction_share": share("junction"),
-            "unpaved_share": share("unpaved"),
-            "lanes_imputed_share": round(sum(1 for s in segs if s["lanes_imputed"]) / n, 2),
-            "speed_imputed_share": round(sum(1 for s in segs if s["speed_imputed"]) / n, 2),
-            "mean_segment_score": score,
+            "segments": len(segs),
+            "length_m": round(total_len),
+            "mean_lanes": round(wmean([s["lanes"] for s in segs]), 1),
+            "mean_speed_mph": round(wmean([s["mph"] for s in segs])),
+            "oneway_share": round(wmean([s["oneway"] for s in segs]), 2),
+            "transit_share": round(wmean([s["transit_routes"] > 0 for s in segs]), 2),
+            "max_transit_routes": max(s["transit_routes"] for s in segs),
+            "commercial_share": round(wmean([s["generator_pts"] > 0 for s in segs]), 2),
+            "junction_share": round(wmean([s["junction"] for s in segs]), 2),
+            "unpaved_share": round(wmean([s["unpaved"] for s in segs]), 2),
+            **comps,
+            "score": score,
             "category": categorize(score),
-            "confidence": min((s["confidence"] for s in segs),
-                              key=["low", "medium", "high"].index),
-        })
-    roads_out.sort(key=lambda r: -r["mean_segment_score"])
+            "min_segment_score": round(min(scores), 1),
+            "max_segment_score": round(max(scores), 1),
+            "score_std": round(pstdev(scores), 1) if len(scores) > 1 else 0.0,
+            "dominant_category": dominant,
+            "category_consistency": round(cats.count(dominant) / len(cats), 2),
+            "classification_margin": margin,
+            "margin_label": margin_label(margin),
+            "lanes_imputed_share": lanes_imp,
+            "speed_imputed_share": speed_imp,
+            "data_completeness": round(1 - (lanes_imp + speed_imp) / 2, 2),
+        }
+        roads_out.append(row)
+    roads_out.sort(key=lambda r: -r["score"])
     return segments, roads_out
 
 
-def write_outputs(slug, city_name, center, segments, roads_out):
+def write_outputs(slug, city_name, center, bbox, segments, roads_out, retrieved_at):
     if not roads_out:
         raise RuntimeError("No named supported roads were found in the selected area.")
     d = os.path.join(DATA, slug)
@@ -269,17 +351,31 @@ def write_outputs(slug, city_name, center, segments, roads_out):
              + [r for r in multi if r["category"] == "Low"][:6])
     with open(os.path.join(d, "results.md"), "w") as f:
         f.write(f"### {city_name}\n\n")
-        f.write("All feature columns are aggregated the same way the score is: as means or\n"
-                "shares over the road's segments, so each row can be reproduced from the\n"
-                "formula. Shares are the fraction of segments (0 to 1) with that feature.\n\n")
-        f.write("| Road | Modal class | Mean lanes | Mean speed (km/h) | One way share | Transit share | Commercial share | Junction share | Unpaved share | Mean segment score | Category | Confidence |\n")
-        f.write("|---|---|---|---|---|---|---|---|---|---|---|---|\n")
+        f.write("Features and score contributions are length weighted means over the road's\n"
+                "segments. The breakdown column lists the eight contributions (class + lanes\n"
+                "+ speed + one way + transit + commercial + junction + surface); the score is\n"
+                "exactly their sum. Consistency is the share of road length whose segments\n"
+                "agree with the dominant category. Full columns are in results.csv.\n\n")
+        f.write("| Road | Modal class | Mean lanes | Mean speed (mph) | Score breakdown | Score | Category | Consistency | Margin | Data completeness |\n")
+        f.write("|---|---|---|---|---|---|---|---|---|---|\n")
         for r in picks:
-            f.write("| {road} | {modal_class} | {mean_lanes} | {mean_speed_kmh} | {oneway_share} | {transit_share} | {commercial_share} | {junction_share} | {unpaved_share} | {mean_segment_score} | {category} | {confidence} |\n"
-                    .format(**r))
+            breakdown = " + ".join(str(r[k]) for k in COMPONENT_KEYS)
+            f.write("| {road} | {modal_class} | {mean_lanes} | {mean_speed_mph} | {b} | {score} | {category} | {category_consistency} | {margin_label} | {data_completeness} |\n"
+                    .format(b=breakdown, **r))
 
     json.dump({"city": city_name, "center": center, "segments": segments},
               open(os.path.join(d, "map.json"), "w"))
+
+    json.dump({
+        "algorithm_version": ALGORITHM_VERSION,
+        "retrieved_at": retrieved_at,
+        "study_area": city_name,
+        "bbox_south_west_north_east": list(bbox),
+        "thresholds": {"low_max": LOW_MAX, "moderate_max": MODERATE_MAX},
+        "units": "mph, meters",
+        "source": "OpenStreetMap via the Overpass API; geocoding by Nominatim",
+        "license": "Map data (c) OpenStreetMap contributors, ODbL",
+    }, open(os.path.join(d, "run_metadata.json"), "w"), indent=2)
 
     # refresh the manifest the map UI reads
     cities = []
@@ -325,11 +421,14 @@ def main():
         slug = "city"
     if a.place and city_name.encode("ascii", "ignore").decode().strip(", ") == "":
         city_name = a.place  # keep a readable name when the display name is non-Latin
+
+    cache = os.path.join(DATA, slug, "raw.json")
     t0 = time.time()
-    data = fetch_city(bbox, os.path.join(DATA, slug, "raw.json"))
+    data = fetch_city(bbox, cache)
+    retrieved_at = datetime.date.fromtimestamp(os.path.getmtime(cache)).isoformat()
     t1 = time.time()
     segments, roads_out = classify(data)
-    write_outputs(slug, city_name, center, segments, roads_out)
+    write_outputs(slug, city_name, center, bbox, segments, roads_out, retrieved_at)
     cats = defaultdict(int)
     for r in roads_out:
         cats[r["category"]] += 1

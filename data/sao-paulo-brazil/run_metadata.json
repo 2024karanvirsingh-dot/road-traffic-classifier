@@ -1,0 +1,18 @@
+{
+  "algorithm_version": "3.0.0",
+  "retrieved_at": "2026-07-17",
+  "study_area": "S\u00e3o Paulo, Brasil",
+  "bbox_south_west_north_east": [
+    -23.590650699999998,
+    -46.6853824,
+    -23.5106507,
+    -46.5813824
+  ],
+  "thresholds": {
+    "low_max": 20,
+    "moderate_max": 38
+  },
+  "units": "mph, meters",
+  "source": "OpenStreetMap via the Overpass API; geocoding by Nominatim",
+  "license": "Map data (c) OpenStreetMap contributors, ODbL"
+}

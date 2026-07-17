@@ -1,0 +1,18 @@
+{
+  "algorithm_version": "3.0.0",
+  "retrieved_at": "2026-07-17",
+  "study_area": "Paris, France",
+  "bbox_south_west_north_east": [
+    48.813495100000004,
+    2.2963915,
+    48.8934951,
+    2.4003915
+  ],
+  "thresholds": {
+    "low_max": 20,
+    "moderate_max": 38
+  },
+  "units": "mph, meters",
+  "source": "OpenStreetMap via the Overpass API; geocoding by Nominatim",
+  "license": "Map data (c) OpenStreetMap contributors, ODbL"
+}
