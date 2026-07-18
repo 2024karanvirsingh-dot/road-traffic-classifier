@@ -1,0 +1,13 @@
+{
+  "source": "FHWA TMAS 2023 continuous count stations",
+  "window": "Greater Boston, bbox [42.28, -71.2, 42.46, -70.98]",
+  "aadt_bins": {
+    "low_under": 5000,
+    "moderate_to": 20000
+  },
+  "stations_matched": 11,
+  "exact_agreement": "11/11",
+  "adjacent_or_better": "11/11",
+  "spearman_score_vs_aadt": 0.547,
+  "caveat": "TMAS continuous stations sit almost entirely on freeways, so this validates the High end of the scale and rank ordering, not the Low/Moderate boundary."
+}

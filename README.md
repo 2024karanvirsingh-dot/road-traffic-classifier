@@ -32,6 +32,8 @@ Only sources that are free, keyless, and available worldwide are used. Anything 
 
 One Overpass request per city fetches everything and is cached under `data/<city>/raw.json`, so reruns are fully offline. All eight cities were retrieved on 2026-07-17 (recorded per city in `run_metadata.json`). OSM changes over time, so a rerun without the cache may differ slightly.
 
+**Validation only (never a runtime input):** FHWA TMAS, the Travel Monitoring Analysis System, is used to grade the classifier against measured traffic. It is free and covers the whole USA in one uniform format, but it is US only, so it lives in a separate `validation/` module and the classifier itself never reads it.
+
 ## 3. System pipeline
 
 ```
@@ -124,9 +126,22 @@ The map classifies per segment, which is the precise view for long roads.
 
 The primary deliverable is `data/cambridge-usa/`: `results.md` holds a 20 road sample spanning all three categories with per component score breakdowns, `results.csv` holds all 667 named roads with every column. Each of the other seven cities has the same files. Open `index.html` (any static server, or the hosted copy) to explore every scored segment; popups show the full breakdown.
 
-## 9. Validation and sanity checks
+## 9. Validation
 
-Numeric validation against measured traffic counts has **not** been performed; published count programs are region specific and this project deliberately restricts itself to globally available inputs. The checks are qualitative: in Cambridge, Memorial Drive, McGrath Highway, and Soldiers Field Road land in High and neighborhood streets land in Low, matching these corridors' known roles, and equivalent spot checks hold in the other cities (Uhuru Highway and the Nairobi Expressway top Nairobi, the Western Express Highway and the Sea Link top Mumbai). Anyone applying this in production should calibrate the weights and thresholds against whatever count data exists locally; the contribution columns make that a simple regression.
+**Measured counts (FHWA TMAS, USA wide).** `validation/validate_tmas.py` downloads the 2023 TMAS station file and all twelve monthly hourly volume files, computes AADT per continuous count station (mean of every recorded day, requiring at least 30 days), classifies the Greater Boston window with the standard classifier, and matches each station to the nearest segment of the facility type the station instruments (within 150 m, using the station's published functional class so a freeway station cannot snap to a side street). Observed bins: Low under 5,000 vehicles/day, Moderate 5,000 to 20,000, High above 20,000.
+
+Results for the 11 stations with a full year of 2023 data (`validation/results_tmas.csv`, summary in `validation/summary_tmas.json`):
+
+| Metric | Result |
+|---|---|
+| Exact category agreement | 11 / 11 |
+| Adjacent or better | 11 / 11 |
+| Spearman rank correlation, score vs measured AADT | 0.547 |
+| Measured AADT range | 41,526 to 149,226 vehicles/day |
+
+Honest caveats: TMAS continuous stations in this window sit entirely on freeways and expressways, so this validates the High end of the scale, not the Low/Moderate boundary. And because all 11 matched roads are the same facility type, the classifier's features saturate there, which is why within freeway rank ordering is only moderate (0.547). The category level claim it does support is strong: every road that measured above 41,000 vehicles/day is classified High.
+
+**Qualitative spot checks (global).** In Cambridge, Memorial Drive, McGrath Highway, and Soldiers Field Road land in High and neighborhood streets land in Low, matching these corridors' known roles; equivalent checks hold in the other cities (Uhuru Highway and the Nairobi Expressway top Nairobi, the Western Express Highway and the Sea Link top Mumbai). Anyone applying this in production should calibrate weights and thresholds against local counts; the contribution columns make that a simple regression, and the TMAS module is a template for doing it anywhere the USA is in scope.
 
 ## 10. Runtime and scalability
 
@@ -139,7 +154,8 @@ Numeric validation against measured traffic counts has **not** been performed; p
 
 | Limitation | Likely effect | Improvement |
 |---|---|---|
-| No measured traffic at runtime | Labels estimate likely volume, not counts | Calibrate weights and thresholds against local count data where it exists |
+| No measured traffic at runtime | Labels estimate likely volume, not counts | TMAS validation covers the US High end; calibrate against local counts elsewhere |
+| Continuous count stations cluster on freeways | Low/Moderate boundary is unvalidated by measurement | Add state DOT short duration counts, which cover arterials and local streets |
 | No time dimension | Cannot distinguish peak and off peak | Ingest GTFS headways, derive peak factors from land use mix |
 | Uneven OSM completeness | Lower reliability in poorly tagged areas | data_completeness flags it; betweenness centrality as a tag free signal |
 | Route count ignores frequency | A 10 minute headway counts like an hourly one | Use GTFS service frequency where published |
@@ -157,4 +173,4 @@ To reproduce a city: `python3 classify.py "City, Country"`. Everything regenerat
 
 ## Data attribution
 
-Map data © OpenStreetMap contributors, available under the Open Data Commons Open Database License (ODbL). OpenStreetMap data were accessed through the Overpass API; geocoding by Nominatim; basemap tiles by CARTO. Data retrieved 2026-07-17.
+Map data © OpenStreetMap contributors, available under the Open Data Commons Open Database License (ODbL). OpenStreetMap data were accessed through the Overpass API; geocoding by Nominatim; basemap tiles by CARTO. Data retrieved 2026-07-17. Validation traffic counts from the FHWA Travel Monitoring Analysis System (TMAS), 2023 station and continuous count volume files, US DOT public data.
