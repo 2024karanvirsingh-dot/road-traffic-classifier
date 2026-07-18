@@ -192,7 +192,8 @@ def main():
         a, days = aadt[sid]
         obs = observed_category(a)
         rows.append({
-            "station_id": sid, "description": desc[:60],
+            "station_id": sid,
+            "description": "".join(c if c.isascii() else " " for c in desc)[:60],
             "count_year": 2023, "days_recorded": days,
             "measured_aadt": round(a),
             "matched_road": best["name"], "osm_class": best["class"],

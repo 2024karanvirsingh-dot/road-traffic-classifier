@@ -5,7 +5,7 @@ station_id,description,count_year,days_recorded,measured_aadt,matched_road,osm_c
 008087,LEE BURBANK HIGHWAY NORTH OF BOSTON,2023,361,59637,Lee Burbank Highway,trunk,49,55.0,High,High,exact
 008098,INTERSTATE 93 AT MEDFORD,2023,276,101087,(unnamed),motorway,11,69.0,High,High,exact
 008099,INTERSTATE 93 RAMP-RT 93 SB TO MYSTIC AVE,2023,356,115801,(unnamed),motorway,16,78.0,High,High,exact
-008932,SERGEANT WILLIAM G WALSH EXPRESSWAYÃ¯Â¿Â½AT HALLET ST,2023,317,149226,Sergeant William G. Walsh Memorial Expressway,motorway,53,67.0,High,High,exact
+008932,SERGEANT WILLIAM G WALSH EXPRESSWAY      AT HALLET ST,2023,317,149226,Sergeant William G. Walsh Memorial Expressway,motorway,53,67.0,High,High,exact
 009000,MAURICE TOBIN BRIDGE,2023,348,41526,Tobin Bridge,motorway,35,68.0,High,High,exact
 0AET13,MASSACHUSETTS TURNPIKE EAST OF CARLTON,2023,327,127918,Massachusetts Turnpike,motorway,16,76.0,High,High,exact
 0AET14,MASSACHUSETTS TURNPIKE EAST OF D STREET,2023,323,95263,Massachusetts Turnpike,motorway,3,63.0,High,High,exact
