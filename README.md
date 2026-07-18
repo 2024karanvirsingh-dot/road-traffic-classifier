@@ -2,6 +2,8 @@
 
 **Assignment submission by Karanvir Singh.**
 
+**Live demos.** Start with the [walkthrough](https://2024karanvirsingh-dot.github.io/road-traffic-classifier/walkthrough.html) for a short guided tour of the method and the Cambridge results, then open the [interactive map](https://2024karanvirsingh-dot.github.io/road-traffic-classifier/) to classify any city on Earth in your browser.
+
 ## Summary
 
 This project classifies roads as Low, Moderate, or High traffic using nothing but publicly available OpenStreetMap data. There is no machine learning, no paid data, and no API key anywhere in the pipeline. Every road gets a score that is the exact sum of eight printed contribution columns, so any number in the output can be checked by hand with simple addition.
